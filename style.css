@@ -639,3 +639,12 @@ a.thumb{display:block;cursor:pointer}
 .dv-nav button.on b{color:#1a1a1a}
 .dv-nav button em{display:none}
 .dv-nav button:hover{transform:none;box-shadow:none}.dv-nav button:hover b{color:#1a1a1a}
+
+/* calmer cards, keep plane */
+.dv-nav button:after,.dv-nav button:before,.dv-nav button.past:before{display:none!important}
+.dv-nav button,.dv-nav button.on{padding:1.1rem 1.2rem 1.2rem;align-self:start}
+.dv-nav button .n{border:0;padding:0;margin:0 0 .5rem}
+.dv-nav button:hover{transform:none}
+.dv-nav button.on{transform:none;box-shadow:0 14px 28px -16px rgba(255,90,0,.5)}
+.dv-nav{align-items:stretch}
+.dv-nav button{align-self:stretch}
