@@ -56,6 +56,13 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:3rem}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start}
 .about-lead{font-size:clamp(1.6rem,3vw,2.4rem)!important;line-height:1.25;color:var(--fg)!important;font-weight:700}
 .about-body p:last-child{margin-bottom:0}
+.snaps{display:flex;gap:1rem;margin-top:2rem}
+.snap{position:relative;width:130px;height:130px;border-radius:50%;overflow:hidden;border:3px solid #fff;box-shadow:0 0 0 2px var(--accent);transition:transform .25s}
+.snap:hover{transform:scale(1.12) rotate(-3deg)}
+.snap img{width:100%;height:100%;object-fit:cover;display:block}
+.snap:first-child img{object-position:50% 55%}
+.snap figcaption{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem;font-size:.72rem;font-weight:600;line-height:1.25;color:#fff;background:rgba(255,106,0,.88);opacity:0;transition:opacity .2s}
+.snap:hover figcaption,.snap:focus-within figcaption{opacity:1}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:4rem}
 .steps div{padding:1.4rem;border:1px solid var(--line);border-radius:16px;transition:border-color .2s,transform .2s}
 .steps div:hover{border-color:var(--accent);transform:translateY(-4px)}
