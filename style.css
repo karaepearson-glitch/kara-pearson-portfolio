@@ -91,7 +91,7 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:3rem}
 .cs>*{grid-column:2}
 .cs>.back{display:none}
 .cs>.toc{grid-column:1;grid-row:1/span 200;align-self:start;position:sticky;top:6rem;display:flex;flex-direction:column;gap:2px}
-.cs>:not(.shot):not(.meta):not(.next):not(.toc){max-width:780px}
+.cs>:not(.shot):not(.meta):not(.next):not(.toc):not(.screens){max-width:780px}
 .toc-top{display:flex;flex-direction:row;align-items:center;gap:2px;margin-bottom:.5rem}
 .toc-top .pane-back{flex:1;min-width:0}
 .toc.closed .toc-top{flex-direction:column;align-items:flex-start}
@@ -150,11 +150,11 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 }
 
 /* app screens: neutral stage, Verizon-style UI inside */
-.screens{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:2.2rem;margin:2rem 0;padding:3rem 1rem 2.2rem;border-radius:var(--r-lg);background:#e9ecf2}
-.screens.hero{background:#14161b}
+.screens{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:2rem 1.5rem;margin:2rem 0;padding:3rem 1rem 2.2rem;border-radius:var(--r-lg);background:#e9ecf2}
+.screens.dark{background:#14161b}
 .screens figure{margin:0}
 .screens figcaption{text-align:center;margin-top:1rem;font-size:.9rem;color:#5b6270;max-width:270px}
-.screens.hero figcaption{color:#c9ced8}
+.screens.dark figcaption{color:#c9ced8}
 .phone{--red:#ee0000;--ai:#4a5cf0;--aib:#eef1ff;--bg:#f6f5f3;width:270px;height:585px;background:var(--bg);border-radius:38px;border:7px solid #111;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 24px 50px rgba(0,0,0,.35);font:400 11px/1.35 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#000;text-align:left}
 .phone *{box-sizing:border-box}
 .phone b,.phone .h{font-weight:800;letter-spacing:-.03em}
