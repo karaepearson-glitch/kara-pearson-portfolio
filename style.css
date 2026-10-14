@@ -56,14 +56,16 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:3rem}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start}
 .about-lead{font-size:clamp(1.6rem,3vw,2.4rem)!important;line-height:1.25;color:var(--fg)!important;font-weight:700}
 .about-body p:last-child{margin-bottom:0}
-.snaps{display:flex;gap:1rem;margin-top:2rem}
-.snap{position:relative;width:130px;height:130px;border-radius:50%;overflow:hidden;border:3px solid #fff;box-shadow:0 0 0 2px var(--accent);transition:transform .25s}
-.snap:hover{transform:scale(1.12) rotate(-3deg)}
-.snap img{width:100%;height:100%;object-fit:cover;display:block}
+.snaps{display:flex;justify-content:center;align-items:flex-start;gap:3rem;margin-top:2.5rem;padding-bottom:2.8rem}
+.snap{position:relative;width:130px;height:130px;transform:rotate(var(--r,0deg));transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.snap:nth-child(2){margin-top:1.8rem}
+.snap:hover{transform:rotate(calc(var(--r,0deg)*-.5)) scale(1.08)}
+.snap img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--accent)}
 .snap:first-child img{object-position:50% 55%}
-.snap figcaption{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem;font-size:.72rem;font-weight:600;line-height:1.25;color:#fff;background:rgba(255,106,0,.88);opacity:0;transition:opacity .2s}
-.snap:hover figcaption,.snap:focus-within figcaption{opacity:1}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:4rem}
+.snap svg{position:absolute;left:-45px;top:-45px;width:220px;height:220px;overflow:visible;pointer-events:none;opacity:0;transition:opacity .25s}
+.snap svg text{font-size:11.5px;font-weight:700;fill:var(--accent)}
+.snap:hover svg,.snap:focus-within svg{opacity:1}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:4rem}
 .steps div{padding:1.4rem;border:1px solid var(--line);border-radius:16px;transition:border-color .2s,transform .2s}
 .steps div:hover{border-color:var(--accent);transform:translateY(-4px)}
 .steps b{display:block;font-size:1.1rem}
@@ -73,7 +75,7 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:3rem}
 .ai-lead{font-size:clamp(1.3rem,2.6vw,2rem);font-weight:700;max-width:30ch;line-height:1.25;margin:1rem 0 0}
 .ai-steps{margin-top:2rem}
 .ai-proof{margin-top:1.5rem;padding:1.2rem 1.4rem;border-left:3px solid var(--accent);background:#fff6ee;border-radius:0 12px 12px 0;max-width:70ch}
-@media(max-width:800px){.about-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:800px){.snaps{gap:1.5rem}.about-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
 .philo-title{font-size:1.6rem;margin:3rem 0 1rem}
 .about .quote-line{color:var(--fg);border-left:4px solid var(--accent);padding-left:1.5rem}
 .stats{display:flex;gap:4rem;margin-top:3rem;flex-wrap:wrap}
