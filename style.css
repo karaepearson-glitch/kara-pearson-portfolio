@@ -642,3 +642,10 @@ a.thumb{display:block;cursor:pointer}
 .ca-lead{margin:.2rem 0 0;color:#5a4d43}
 .ca-sub{margin:1.6rem 0 .2rem;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#9a8c80;font-weight:600}
 .finds.four u{display:block;margin-top:.7rem;text-decoration:none;font-size:.78rem;font-weight:600;color:#c2410c;background:#fff1e6;border-radius:99px;padding:.2rem .6rem;width:max-content}
+
+/* modest scale-up */
+.cs h1{font-size:clamp(2.2rem,5vw,3.8rem)!important;letter-spacing:-.03em;line-height:1.05}
+.cs h2{margin-top:4rem}
+.cs .label{margin-top:5.5rem}
+.cs .meta{margin:2.5rem 0}
+.cs .hero-img,.cs .shot{border-radius:16px}
