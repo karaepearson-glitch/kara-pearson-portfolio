@@ -444,3 +444,10 @@ a.thumb{display:block;cursor:pointer}
 .cs .problem-split .chat{max-width:none!important;margin:0}
 .chat .b{max-width:88%}
 @media (max-width:820px){.cs .problem-split{grid-template-columns:1fr;gap:1.5rem}.cs .problem-split>p{position:static}}
+
+.shot.has-img{aspect-ratio:auto;background:none;display:block}
+.shot.has-img img{width:100%;height:auto;display:block;border-radius:var(--r-md);border:1px solid var(--line)}
+.shot.has-img.hero-img{background:none}
+.shot.has-img figcaption{font-size:.9rem;color:var(--muted);margin-top:.6rem}
+.shot-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:2rem 0}
+.shot-row .shot{margin:0}
