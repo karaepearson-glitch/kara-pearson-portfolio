@@ -393,3 +393,9 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .now-chips b{margin-right:.35rem}
 .now-chips li{gap:.3rem}
 .now-chips b{margin-right:0}
+
+.now-chips{margin:1rem 0 1.5rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.hero-cta .btn{margin-top:0;padding:.8rem 1.6rem}
+.hero-cta .btn.ghost{background:transparent;color:var(--accent-text);border:1.5px solid var(--accent-text)}
+.hero-cta .btn.ghost:hover{background:var(--accent-text);color:#fff;box-shadow:none}
