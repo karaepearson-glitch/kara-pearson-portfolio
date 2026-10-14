@@ -342,3 +342,11 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 @media(max-width:1100px){.cs>ul{grid-template-columns:1fr}}
 
 .phone .card .btns{flex-direction:column;gap:var(--g)}.phone .card .btns>span{flex:none;width:100%}
+
+/* Work I can't show */
+.private-work{padding:4rem 6vw}
+.pw-lead{color:var(--muted);font-size:var(--fs-lead);max-width:780px;margin:0 0 2rem}
+.pw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+.pw{background:#fbf6f0;border:1px solid var(--line);border-radius:var(--r-lg);padding:1.5rem}
+.pw h3{font-size:var(--fs-lead);margin:.5rem 0}
+.pw p{color:var(--muted);font-size:var(--fs-body);margin:0}
