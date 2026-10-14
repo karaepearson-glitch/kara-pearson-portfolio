@@ -510,3 +510,12 @@ a.thumb{display:block;cursor:pointer}
 
 .heu li{padding:1.05rem 1.2rem;counter-increment:h}
 .heu li:before{content:"0" counter(h);position:static;transform:none;display:block;width:auto;height:auto;background:none;box-shadow:none;border-radius:0;color:#ff6a00;font-size:.72rem;font-weight:600;letter-spacing:.16em;margin-bottom:.35rem}
+
+.heu{background:none;padding:0;border-radius:0;gap:2rem;align-items:center}
+.heu .shot{padding:0;box-shadow:none;background:none;border-radius:0}
+.heu .shot img{border:1px solid #eadfd3;border-radius:12px}
+.heu .shot figcaption{padding:.6rem 0 0}
+.heu ol{gap:1.4rem}
+.heu li{background:none;box-shadow:none;backdrop-filter:none;border-radius:0;padding:0 0 0 .8rem;border-left:2px solid #ff6a00;font-size:1.05rem;font-weight:500;color:#2a2018}
+.heu li:before{content:none}
+.heu li b{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-text);font-weight:600;margin-bottom:.3rem}
