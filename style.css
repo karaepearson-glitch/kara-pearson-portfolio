@@ -417,5 +417,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .snap img{box-shadow:none;outline:2px solid var(--accent);outline-offset:4px;transition:outline-offset .3s ease}
 .snap:hover img{box-shadow:none;outline-color:var(--accent);outline-offset:7px}
 .snap svg text{font-size:11.5px;font-weight:300;font-style:normal;letter-spacing:.01em;text-transform:none;fill:var(--fg)}
-.private-work{background:#fff7f0;border-top:1px solid rgba(194,65,12,.18);border-bottom:1px solid rgba(194,65,12,.18);margin-bottom:2rem}
+.private-work{background:none;border:0;margin-bottom:0;padding-bottom:3rem}
+.about{position:relative;padding-top:9rem}
+.about::before{content:"";position:absolute;top:0;left:6vw;right:6vw;height:1px;background:linear-gradient(90deg,var(--accent) 0,rgba(255,106,0,.25) 12%,var(--line,#eadfd6) 40%,var(--line,#eadfd6) 100%)}
 .snap img{animation:wobble2 7s ease-in-out infinite}.snap:nth-child(2) img{animation-delay:-3.5s}@keyframes wobble2{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-4px) rotate(.6deg)}}.snap:nth-child(2){margin-left:4rem}@media(prefers-reduced-motion:reduce){.snap img{animation:none}}
