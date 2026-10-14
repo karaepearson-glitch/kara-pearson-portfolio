@@ -546,3 +546,20 @@ a.thumb{display:block;cursor:pointer}
 @media(max-width:800px){.mb-canvas{grid-template-columns:1fr 1fr;padding-left:3.6rem}}
 
 .fr{padding-top:1rem}
+
+.mb-tabs{display:flex;align-items:flex-end;gap:2px;background:#0a5fd6;padding:.45rem .7rem 0;height:38px}
+.mb-tabs .dots{display:flex;gap:6px;align-self:center;margin-right:.8rem;padding-bottom:.4rem}.mb-tabs .dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.55)}
+.mb-tabs .tab{font-size:.74rem;color:#dbe8ff;padding:.4rem .9rem;border-radius:7px 7px 0 0;background:rgba(255,255,255,.15)}.mb-tabs .tab.on{background:#f1f2f5;color:#222;font-weight:600}
+.mb-top{top:52px}.mb-tool{top:108px}
+.mb-right{position:absolute;right:14px;top:52px;z-index:2;display:flex;align-items:center;gap:.5rem;background:#fff;border-radius:10px;padding:.4rem .5rem .4rem .8rem;box-shadow:0 2px 8px rgba(20,30,60,.15)}
+.mb-right .av{width:24px;height:24px;border-radius:50%;border:2px solid #fff;margin-left:-8px}.mb-right .av:first-child{margin-left:0}
+.a1{background:#ff5d8f}.a2{background:#2fb36d}.a3{background:#ff6a00}
+.mb-right .share{background:#4262ff;color:#fff;font-size:.78rem;font-weight:600;padding:.4rem .9rem;border-radius:8px;margin-left:.3rem}
+.mb-zoom{position:absolute;right:14px;bottom:14px;z-index:2;background:#fff;border-radius:10px;padding:.35rem .5rem;box-shadow:0 2px 8px rgba(20,30,60,.15);display:flex;gap:.8rem;font-size:.8rem;color:#444;font-weight:600}
+.mb-canvas{padding-top:6.2rem;padding-bottom:3.4rem}
+.cur{position:absolute;z-index:3;pointer-events:none}.cur svg{display:block}.cur em{position:absolute;left:14px;top:14px;font-style:normal;font-size:.7rem;font-weight:600;color:#fff;padding:.12rem .5rem;border-radius:999px;white-space:nowrap}
+.c1 em{background:#ff5d8f}.c2 em{background:#2fb36d}.c3 em{background:#ff6a00}
+.st{position:relative}.vote{position:absolute;right:-8px;top:-9px;min-width:24px;height:24px;border-radius:999px;background:#4262ff;color:#fff;font-size:.72rem;font-weight:700;display:grid;place-items:center;text-decoration:none;box-shadow:0 2px 5px rgba(0,0,0,.25);border:2px solid #fff}
+.st:before{content:"";position:absolute;left:50%;top:-8px;width:44px;height:16px;margin-left:-22px;background:rgba(255,255,255,.45);transform:rotate(-2deg);display:none}
+.fr{border-radius:4px;box-shadow:0 1px 0 rgba(20,30,60,.06)}
+@media(max-width:800px){.mb-right .share{display:none}}
