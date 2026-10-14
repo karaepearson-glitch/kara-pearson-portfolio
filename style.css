@@ -329,15 +329,3 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .toc .links a:hover,.toc-toggle:hover,.pane-back:hover{background:#f6efe8;color:var(--fg)}
 ::selection{background:#fde3d0;color:var(--fg)}
 @media (forced-colors:active){.btn{border:2px solid ButtonText}}
-
-/* Case-study layout: meta cards, numbered sections */
-.cs{counter-reset:sec}
-.meta{gap:0;padding:0;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
-.meta>div{padding:1.25rem 1.5rem;border-right:1px solid var(--line)}
-.meta>div:last-child{border-right:0}
-.meta dd{font-weight:700;color:var(--fg);font-size:var(--fs-body)}
-.cs>h2{counter-increment:sec;margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line);font-size:clamp(1.75rem,3.2vw,2.4rem);letter-spacing:-.02em}
-.cs>h2::before{content:"0" counter(sec);display:block;margin-bottom:.6rem;font-size:var(--fs-label);font-weight:700;letter-spacing:.12em;color:var(--accent-text)}
-.cs>.label+h2{margin-top:.3rem;padding-top:0;border-top:0}
-.cs>.label{margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)}
-@media(max-width:600px){.meta>div{border-right:0;border-bottom:1px solid var(--line)}.meta>div:last-child{border-bottom:0}}
