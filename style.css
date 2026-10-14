@@ -340,3 +340,5 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .cs>ul li{background:#fbf6f0;border-radius:var(--r-md);padding:1.1rem 1.3rem;margin:0}
 .cs.toc-closed>:not(.shot):not(.meta):not(.next):not(.toc):not(.screens){max-width:1400px}
 @media(max-width:1100px){.cs>ul{grid-template-columns:1fr}}
+
+.phone .card .btns{flex-direction:column;gap:var(--g)}.phone .card .btns>span{flex:none;width:100%}
