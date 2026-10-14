@@ -471,3 +471,5 @@ a.thumb{display:block;cursor:pointer}
 .cs>h3+p+h4{margin-top:2rem}
 .cs>ul.plain{font-size:1.1rem}
 .cs>ul.plain li{padding:.15rem 0}
+
+.stats{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0}.stats div{flex:1 1 180px;background:#fbf6f0;border-radius:16px;padding:1.1rem 1.3rem}.stats b{display:block;font-size:2.6rem;line-height:1;color:var(--accent-text);font-weight:600}.stats span{display:block;margin-top:.5rem;font-size:.95rem;color:#5a4a3f;line-height:1.4}
