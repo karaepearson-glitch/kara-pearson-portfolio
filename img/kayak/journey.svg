@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 640" font-family="Poppins,Inter,Helvetica,Arial,sans-serif">
+<rect width="1800" height="640" rx="32" fill="#130e0b"/>
+
+<rect x="210" y="110" width="800" height="410" rx="36" fill="#ff6a00" fill-opacity=".1" stroke="#ff6a00" stroke-width="2.5"/>
+<rect x="244" y="94" width="196" height="32" rx="16" fill="#ff6a00"/>
+<text x="342" y="116" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="3" fill="#130e0b">AREA OF FOCUS</text>
+
+<g font-size="15" font-weight="600" letter-spacing="4" fill="#8f7868">
+<text x="40" y="62">DISCOVERY</text><text x="210" y="62" fill="#ff6a00">PLANNING</text><text x="1030" y="62">BOOKING</text><text x="1190" y="62">TRAVELING</text><text x="1430" y="62">EXIT</text>
+</g>
+<g stroke-width="3" stroke-linecap="round">
+<path d="M40 82H190" stroke="#3a2c24"/><path d="M210 82H1010" stroke="#ff6a00" stroke-width="5"/><path d="M1030 82H1150" stroke="#3a2c24"/><path d="M1190 82H1390" stroke="#3a2c24"/><path d="M1430 82H1760" stroke="#3a2c24"/>
+</g>
+
+<g fill="none" stroke-width="3" stroke-linecap="round">
+<path stroke="#4a382d" d="M170 300H290M990 300H1050M1130 300C1170 300 1170 220 1250 220M1130 300C1170 300 1170 380 1250 380M1330 220C1380 220 1380 300 1460 300M1330 380C1380 380 1380 300 1460 300M1540 300H1620"/>
+<path stroke="#ff6a00" d="M370 300H430M430 300C475 300 475 170 520 170M430 300H520M430 300C475 300 475 430 520 430M600 170C645 170 645 300 690 300M600 300H690M600 430C645 430 645 300 690 300M690 300H750M830 300H910"/>
+</g>
+
+<g fill="#ff6a00">
+<rect x="290" y="260" width="80" height="80" rx="24"/>
+<rect x="520" y="130" width="80" height="80" rx="24"/><rect x="520" y="260" width="80" height="80" rx="24"/><rect x="520" y="390" width="80" height="80" rx="24"/>
+<rect x="750" y="260" width="80" height="80" rx="24"/><rect x="910" y="260" width="80" height="80" rx="24"/>
+</g>
+<g fill="#241a15">
+<rect x="90" y="260" width="80" height="80" rx="24"/><rect x="1050" y="260" width="80" height="80" rx="24"/>
+<rect x="1250" y="180" width="80" height="80" rx="24"/><rect x="1250" y="340" width="80" height="80" rx="24"/>
+<rect x="1460" y="260" width="80" height="80" rx="24"/><rect x="1620" y="260" width="80" height="80" rx="24"/>
+</g>
+
+<g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#8f7868">
+<g transform="translate(1090 300)"><path d="M-16 6L18 -10L8 18L2 6Z"/></g>
+<g transform="translate(1290 220)"><rect x="-17" y="-8" width="34" height="24" rx="5"/><path d="M-8 -8V-15H8V-8"/></g>
+<g transform="translate(1290 380)"><circle cx="-8" cy="0" r="12"/><circle cx="8" cy="0" r="12"/></g>
+<g transform="translate(1500 300)"><path d="M-14 12V-4L0 -16L14 -4V12Z"/></g>
+<g transform="translate(1660 300)"><path d="M-16 -12H16V8H4L-6 18V8H-16Z"/></g>
+</g>
+<g stroke="#fff">
+<g transform="translate(330 300)"><circle cx="-3" cy="-3" r="12"/><path d="M6 6L16 16"/></g>
+<g transform="translate(560 300)"><rect x="-16" y="-12" width="32" height="28" rx="5"/><path d="M-16 -2H16M-8 -18V-8M8 -18V-8"/></g>
+<g transform="translate(560 430)"><path d="M0 18C-14 2 -17 -3 -17 -8A17 17 0 0 1 17 -8C17 -3 14 2 0 18Z"/><circle cx="0" cy="-8" r="5"/></g>
+<g transform="translate(790 300)"><path d="M-12 14V2M0 14V-12M12 14V-4"/></g>
+<g transform="translate(950 300)"><path d="M-14 0L-4 10L14 -10"/></g>
+</g>
+</g>
+<text x="130" y="316" text-anchor="middle" font-size="40" font-weight="700" fill="#8f7868">!</text>
+<text x="560" y="182" text-anchor="middle" font-size="38" font-weight="700" fill="#fff">$</text>
+
+<g font-size="18" font-weight="500" text-anchor="middle">
+<g fill="#fff">
+<text x="330" y="372">Search trips</text>
+<text x="560" y="236">Budget</text><text x="560" y="366">Dates</text><text x="560" y="496">Location</text>
+<text x="790" y="372">Vote</text><text x="950" y="372">Decide</text>
+</g>
+<g fill="#8f7868">
+<text x="130" y="372">Decide to go</text>
+<text x="1090" y="372">Book</text>
+<text x="1290" y="286">Go on trip</text><text x="1290" y="446">Split costs</text>
+<text x="1500" y="372">Return home</text><text x="1660" y="372">Reflect</text>
+</g>
+</g>
+
+<rect x="40" y="556" width="1720" height="3" rx="1.5" fill="#ff6a00"/>
+<text x="900" y="598" text-anchor="middle" font-size="16" font-weight="600" letter-spacing="4" fill="#ff9a5c">CONSTANT COMMUNICATION THROUGHOUT THE JOURNEY</text>
+</svg>
