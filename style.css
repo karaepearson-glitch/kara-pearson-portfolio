@@ -421,6 +421,9 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .private-work{background:none;margin:0;padding:1rem 6vw 4rem;border:0;border-radius:0}
 .private-work h2{font-size:clamp(1.6rem,2.6vw,2.2rem)}
 .private-work .pw-lead{font-size:1.05rem}
+.case{position:relative;cursor:pointer}
+.case .info a::after{content:"";position:absolute;inset:0;z-index:2}
+.case .info a:focus-visible::after{outline:2px solid var(--accent);outline-offset:6px;border-radius:20px}
 .private-work .pw{background:#fff;border-color:rgba(194,65,12,.12);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
 .private-work .pw:hover{transform:translateY(-3px);border-color:rgba(255,106,0,.55);box-shadow:0 14px 30px -18px rgba(194,65,12,.35)}
 @media(prefers-reduced-motion:reduce){.private-work .pw{transition:none}.private-work .pw:hover{transform:none}}
