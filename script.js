@@ -139,7 +139,7 @@ document.querySelectorAll('.snap').forEach(function(snap){
     timer=setInterval(function(){
       i++; tp.textContent=full.slice(0,i);
       if(i>=full.length) clearInterval(timer);
-    },55);
+    },28);
   }
   function reset(){ clearInterval(timer); tp.textContent=''; }
   snap.addEventListener('mouseenter',type);
