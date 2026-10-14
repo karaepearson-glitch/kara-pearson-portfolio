@@ -399,3 +399,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .hero-cta .btn{margin-top:0;padding:.8rem 1.6rem}
 .hero-cta .btn.ghost{background:transparent;color:var(--accent-text);border:1.5px solid var(--accent-text)}
 .hero-cta .btn.ghost:hover{background:var(--accent-text);color:#fff;box-shadow:none}
+.hero-cta{margin-top:.25rem}
+.cta-link{color:var(--accent-text);font-weight:600;font-size:1.15rem;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat;padding-bottom:.25rem;transition:background-size .3s ease,color .2s}
+.cta-link:hover{color:var(--accent-strong);background-size:0 2px;background-position:100% 100%}
+.cta-link:focus-visible{outline:2px solid var(--accent-text);outline-offset:4px;border-radius:2px}
