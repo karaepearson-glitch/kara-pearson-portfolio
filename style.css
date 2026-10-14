@@ -663,3 +663,13 @@ a.thumb{display:block;cursor:pointer}
 .cs .logos img:hover{transform:translateY(-3px);box-shadow:0 12px 22px -14px rgba(120,60,0,.35)}
 @media(max-width:700px){.cs .logos{grid-template-columns:repeat(2,1fr)}}
 .cs .logos img,.cs .logos img:nth-child(n){height:90px;padding:1.5rem 2.2rem}.cs .logos img[alt='MakeMyTrip'],.cs .logos img[alt='Goibibo']{padding:1.2rem 1.4rem}
+
+.tested{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin:2rem 0}
+.tested figure{margin:0}
+.tested .img{border:1px solid #eadfd3;border-radius:16px;overflow:hidden;background:#fff}
+.tested img{display:block;width:100%;height:auto}
+.tested .tag{display:inline-block;margin-bottom:.8rem;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .8rem;border-radius:99px}
+.tested .like{background:#e8f6ec;color:#1f7a3d}.tested .fix{background:#fff1e6;color:#c2410c}
+.tested figcaption{margin-top:1rem;color:#5a4d43;font-size:1rem;line-height:1.5;text-align:left}
+.tested figcaption b{display:block;color:#1a1a1a;font-size:1.1rem;margin-bottom:.2rem}
+@media(max-width:700px){.tested{grid-template-columns:1fr}}
