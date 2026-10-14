@@ -383,3 +383,4 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .now-chips li::before{width:.4rem;height:.4rem}
 .now-chips li:first-child::before{animation:none;box-shadow:none}
 .now-chips b{background:none;padding:0;margin:0 .1rem 0 0;font-size:.88rem;text-transform:none;letter-spacing:0;color:var(--accent-text)}
+.now-chips{margin:1.5rem 0 1.75rem}
