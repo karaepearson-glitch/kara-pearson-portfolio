@@ -155,7 +155,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .screens figure{margin:0}
 .screens figcaption{text-align:center;margin-top:1rem;font-size:.9rem;color:#5b6270;max-width:270px}
 .screens.dark figcaption{color:#c9ced8}
-.phone{--red:#ee0000;--ai:#4a5cf0;--aib:#eef1ff;--bg:#f6f5f3;width:270px;height:585px;background:var(--bg);border-radius:38px;border:7px solid #111;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 24px 50px rgba(0,0,0,.35);font:400 11px/1.35 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#000;text-align:left}
+.phone{--red:#ee0000;--ai:#4a5cf0;--aib:#eef1ff;--bg:#f6f5f3;width:270px;height:640px;background:var(--bg);border-radius:38px;border:7px solid #111;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 24px 50px rgba(0,0,0,.35);font:400 11px/1.35 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#000;text-align:left}
 .phone *{box-sizing:border-box}
 .phone b,.phone .h{font-weight:800;letter-spacing:-.03em}
 .phone .hd{background:var(--red);color:#fff;padding:11px 14px 12px;flex:none}
