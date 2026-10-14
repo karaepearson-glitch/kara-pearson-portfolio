@@ -410,3 +410,5 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .snap svg{display:none}
 .snap figcaption.sr{position:absolute;left:50%;top:calc(100% + .9rem);width:max-content;max-width:240px;height:auto;margin:0;clip:auto;overflow:visible;white-space:normal;transform:translate(-50%,-4px) rotate(calc(var(--r,0deg)*-1));text-align:center;font-size:.85rem;color:var(--muted);opacity:0;transition:opacity .35s ease,transform .35s ease;pointer-events:none}
 .snap:hover figcaption.sr,.snap:focus-within figcaption.sr{opacity:1;transform:translate(-50%,0) rotate(calc(var(--r,0deg)*-1))}
+.snap svg{display:block}
+.snap figcaption.sr,.snap:hover figcaption.sr,.snap:focus-within figcaption.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);opacity:1;transform:none;top:auto;left:auto;margin:-1px}
