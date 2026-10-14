@@ -384,3 +384,12 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .now-chips li:first-child::before{animation:none;box-shadow:none}
 .now-chips b{background:none;padding:0;margin:0 .1rem 0 0;font-size:.88rem;text-transform:none;letter-spacing:0;color:var(--accent-text)}
 .now-chips{margin:1.5rem 0 1.75rem}
+
+.now-chips{margin:1.1rem 0 2rem;gap:.25rem 1.6rem}
+.now-chips li,.now-chips li:hover{border:0;padding:0;border-radius:0;background:none;font-size:.95rem;color:var(--muted);transform:none}
+.now-chips li::before{content:none}
+.now-chips li+li::before{content:"";display:inline-block;width:1px;height:1em;background:var(--line);margin-right:1.6rem;vertical-align:-.15em}
+.now-chips b::after{content:":"}
+.now-chips b{margin-right:.35rem}
+.now-chips li{gap:.3rem}
+.now-chips b{margin-right:0}
