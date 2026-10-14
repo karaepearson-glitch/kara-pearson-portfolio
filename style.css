@@ -365,3 +365,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .now h2{margin-bottom:1.25rem}
 .now .steps{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.now .steps{grid-template-columns:1fr}}
+
+.now-chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:.6rem;margin:2rem 0 0;padding:0}
+.now-chips li{background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;font-size:.95rem;color:var(--ink,#1a1a1a)}
+.now-chips b{color:var(--accent-text);margin-right:.4rem;font-weight:700}
