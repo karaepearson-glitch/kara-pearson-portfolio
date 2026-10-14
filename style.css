@@ -595,3 +595,19 @@ a.thumb{display:block;cursor:pointer}
 .dv-nav button.on:before{background:#ff6a00;box-shadow:0 0 0 6px rgba(255,106,0,.18)}
 .dv-nav button:focus-visible{outline:2px solid #ff6a00;outline-offset:4px}
 @media(max-width:700px){.dv-nav{grid-template-columns:1fr}.dv-nav button{padding-left:1.4rem;border-top:0;border-left:3px solid #eadfd3}.dv-nav button:before{left:-8px;top:1.3rem}.dv-nav button.on,.dv-nav button.past{border-left-color:#ff6a00}}
+
+.dv-nav button{border-top:3px dashed #d9c9b8}
+.dv-nav button.on,.dv-nav button.past{border-top-style:solid}
+.dv-nav button .n:before{content:"Stop "}
+.dv-nav button:before{width:15px;height:15px;top:-9px}
+.dv-nav button.on:before{box-shadow:0 0 0 7px rgba(255,106,0,.16)}
+.plane{position:absolute;top:-17px;left:0;width:34px;height:34px;z-index:3;pointer-events:none;transition:left .8s cubic-bezier(.45,.05,.25,1);transform:translateX(-9px)}
+.plane svg{display:block;width:100%;height:100%;filter:drop-shadow(0 6px 5px rgba(255,106,0,.35));transform:rotate(0)}
+.plane.fly svg{animation:pbob .8s ease-in-out}
+@keyframes pbob{0%{transform:translateY(0) rotate(-8deg)}35%{transform:translateY(-10px) rotate(-14deg)}100%{transform:translateY(0) rotate(0)}}
+.dv-nav button.on b{color:var(--accent-text)}
+.dv-nav button.on em{color:#3a2f28}
+.dive.tabbed .st-body{animation:dvin .55s cubic-bezier(.2,.8,.2,1)}
+@media(max-width:700px){.plane{display:none}}
+
+.dv-nav button.on:before{opacity:0}.plane{width:42px;height:42px;top:-21px;transform:translateX(-12px)}
