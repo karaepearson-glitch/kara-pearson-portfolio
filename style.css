@@ -490,3 +490,5 @@ a.thumb{display:block;cursor:pointer}
 
 
 .cs .logos img{filter:none!important;opacity:1!important;mix-blend-mode:normal!important}
+
+.finds.four{grid-template-columns:repeat(4,1fr)}.finds b{font-size:1.05rem;letter-spacing:.02em}@media(max-width:700px){.finds.four{grid-template-columns:1fr 1fr}}
