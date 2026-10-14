@@ -60,6 +60,9 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:3rem}
 .steps div:hover{border-color:var(--accent);transform:translateY(-4px)}
 .steps b{display:block;font-size:1.1rem}
 .steps span{color:var(--muted);font-size:.95rem}
+.ai-lead{font-size:clamp(1.3rem,2.6vw,2rem);font-weight:700;max-width:30ch;line-height:1.25;margin:1rem 0 0}
+.ai-steps{margin-top:2rem}
+.ai-proof{margin-top:1.5rem;padding:1.2rem 1.4rem;border-left:3px solid var(--accent);background:#fff6ee;border-radius:0 12px 12px 0;max-width:70ch}
 @media(max-width:800px){.about-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
 .philo-title{font-size:1.6rem;margin:3rem 0 1rem}
 .about .quote-line{color:var(--fg);border-left:4px solid var(--accent);padding-left:1.5rem}
