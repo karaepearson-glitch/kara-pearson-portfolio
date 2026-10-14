@@ -157,5 +157,5 @@ var nav=document.createElement('div');nav.className='dv-nav';var pl=document.cre
 function go(i){pl.style.left=(i<0?2:((i+.5)*100/ds.length))+'%';pl.classList.remove('fly');void pl.offsetWidth;pl.classList.add('fly');ds.forEach(function(x,j){x.classList.toggle('act',j===i);x.open=j===i;});[].slice.call(nav.children).forEach(function(b,j){b.classList.toggle('on',j===i);b.classList.toggle('past',j<i);b.setAttribute('aria-selected',j===i);});}
 ds.forEach(function(x,i){var s=x.querySelector('summary'),b=document.createElement('button');b.setAttribute('role','tab');
 b.innerHTML='<span class="n">'+s.querySelector('.st-n').textContent+'</span><b>'+s.querySelector('.st-t b').textContent+'</b><em>'+s.querySelector('.st-t em').textContent+'</em>';
-b.addEventListener('click',function(){go(i)});nav.appendChild(b);});
+b.addEventListener('click',function(){go(b.classList.contains('on')?-1:i)});nav.appendChild(b);});
 nav.appendChild(pl);d.insertBefore(nav,d.firstChild);d.classList.add('tabbed');go(-1);});})();
