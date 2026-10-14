@@ -148,3 +148,83 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
   *{animation:none!important;transition:none!important;scroll-behavior:auto}
   .reveal,h1 .w{opacity:1;transform:none}
 }
+
+/* app screens: neutral stage, Verizon-style UI inside */
+.screens{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:2.2rem;margin:2rem 0;padding:3rem 1rem 2.2rem;border-radius:var(--r-lg);background:#e9ecf2}
+.screens.hero{background:#14161b}
+.screens figure{margin:0}
+.screens figcaption{text-align:center;margin-top:1rem;font-size:.9rem;color:#5b6270;max-width:270px}
+.screens.hero figcaption{color:#c9ced8}
+.phone{--red:#ee0000;--ai:#4a5cf0;--aib:#eef1ff;--bg:#f6f5f3;width:270px;height:585px;background:var(--bg);border-radius:38px;border:7px solid #111;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 24px 50px rgba(0,0,0,.35);font:400 11px/1.35 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#000;text-align:left}
+.phone *{box-sizing:border-box}
+.phone b,.phone .h{font-weight:800;letter-spacing:-.03em}
+.phone .hd{background:var(--red);color:#fff;padding:11px 14px 12px;flex:none}
+.phone .st{display:flex;justify-content:space-between;font-size:10px;font-weight:700;margin:0 6px 9px}
+.phone .brand{font:800 21px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.06em;display:flex;justify-content:space-between;align-items:center}
+.phone .brand span{font:400 14px system-ui;letter-spacing:0}
+.phone .hi{font:800 23px/1.05 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.05em;color:#fff12e;margin-top:14px}
+.phone .hi+small{display:block;margin-top:8px;font-size:10.5px}
+.phone .nav{position:static;width:auto;padding:0;background:none;backdrop-filter:none;justify-content:flex-start;display:flex;align-items:center;gap:12px;font-weight:800;font-size:12px;letter-spacing:-.03em}
+.phone .nav em{margin-left:auto;font:400 14px system-ui;font-style:normal;letter-spacing:0}
+.phone .body{flex:1;overflow:hidden;padding:10px 10px 0;display:flex;flex-direction:column;gap:9px}
+.phone .chips{display:flex;gap:5px;white-space:nowrap;overflow:hidden;align-items:center}
+.phone .chip{border:1.5px solid #000;border-radius:99px;padding:5px 9px;font-weight:800;font-size:9.5px;letter-spacing:-.02em}
+.phone .chip.ai{border:0;background:#fff;color:var(--ai);width:26px;height:26px;padding:0;display:grid;place-items:center;font-size:13px;box-shadow:0 1px 3px rgba(0,0,0,.15);flex:none}
+.phone .card{background:#fff;border-radius:14px;padding:12px}
+.phone .card .lg{font-size:17px;letter-spacing:-.04em;margin:5px 0 3px}
+.phone .sub{color:#555;font-size:10px}
+.phone .sub.up{color:var(--red);font-weight:700}
+.phone .btns{display:flex;gap:6px;margin-top:9px}
+.phone .obtn,.phone .pbtn{flex:1;text-align:center;padding:7px 4px;border-radius:99px;font-weight:800;font-size:9.5px;letter-spacing:-.02em;border:1.5px solid #000;background:#fff;color:#000;white-space:nowrap}
+.phone .pbtn{background:#000;color:#fff}
+.phone .obtn.ai{border-color:var(--ai);color:var(--ai);background:var(--aib)}
+.phone .save{background:#00873d;color:#fff;display:flex;gap:9px}
+.phone .save b{display:block;font-size:13px}
+.phone .offer{background:#f6f2e8}
+.phone .dark{background:#1c1c1c;color:#fff;border-radius:14px;padding:12px}
+.phone .dark b{color:#fff12e;font-size:14px;display:block;margin-bottom:3px}
+.phone .tabs{display:flex;justify-content:space-around;background:#fff;padding:8px 0 14px;font-size:8.5px;font-weight:800;border-top:1px solid #ddd;flex:none}
+.phone .tabs span:first-child{color:var(--red)}
+.phone .tabs i{display:block;width:13px;height:13px;margin:0 auto 3px;border:1.5px solid currentColor;border-radius:4px}
+.phone .whitetop{background:#fff;margin:-10px -10px 0;padding:14px 12px 14px}
+.phone .whitetop .big{font:800 24px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.05em;margin:5px 0 12px}
+.phone .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.phone .row b{font-size:12px}
+.phone .row small{display:block;color:#666;font-size:9.5px;margin-top:2px}
+.phone .arr{font:300 15px system-ui}
+.phone .hist{display:flex;align-items:flex-end;justify-content:space-around;height:62px;border-bottom:1px solid #ddd;margin:10px 8px 0}
+.phone .hist i{width:24px;background:#40b8ff}
+.phone .hist i.cur{background:#00305f}
+.phone .hl{display:flex;justify-content:space-around;text-align:center;font-size:8.5px;margin-top:5px}
+.phone .hl b{display:block;font-weight:500;letter-spacing:0}
+.phone .hl .cur,.phone .hl .cur b{color:#00305f;font-weight:800}
+.phone .aicard{background:var(--aib);border-radius:14px;padding:11px;border:1px solid #d8defc}
+.phone .aicard .t{color:var(--ai);font-weight:800;font-size:11px;display:flex;gap:5px;align-items:center;letter-spacing:-.02em}
+.phone .aicard p{margin:5px 0 0;font-size:10.5px}
+.phone .aicard a{color:var(--ai);font-weight:800;display:block;margin-top:6px;font-size:10px;text-decoration:underline}
+.phone .sel{border:1.5px solid #000;border-radius:8px;padding:7px 9px;display:flex;justify-content:space-between;font-size:10.5px}
+.phone .h2{font:800 19px/1.05 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.05em;margin:4px 0}
+.phone .mem{display:flex;align-items:center;gap:14px;padding:4px 6px}
+.phone .donut{width:92px;height:92px;border-radius:50%;background:conic-gradient(#00305f 0 66%,#40b8ff 66% 92%,#bfe6ff 92%);position:relative;flex:none}
+.phone .donut:after{content:"";position:absolute;inset:25px;background:var(--bg);border-radius:50%}
+.phone .mem ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-weight:800;letter-spacing:-.02em}
+.phone .mem li:before{content:"";display:inline-block;width:8px;height:8px;margin-right:6px;background:var(--c)}
+.phone .mem li{font-size:11px;color:#000;margin:0}
+.phone .line{display:flex;gap:9px;align-items:center;padding:9px 0;border-top:1.5px solid #000}
+.phone .av{width:28px;height:28px;border-radius:50%;background:#dfe6ee;display:grid;place-items:center;font-weight:800;flex:none}
+.phone .paper{background:#fff;border-radius:3px;padding:11px;margin:0 3px;box-shadow:0 1px 5px rgba(0,0,0,.25);font-size:8px}
+.phone .paper .v{font:800 15px Arial,sans-serif;letter-spacing:-.06em}
+.phone .gl{height:5px;background:#e3e3e3;border-radius:3px;margin:5px 0}
+.phone .snap{width:auto;height:auto;transform:none;transition:none;z-index:auto;margin-top:10px;border:1.5px solid #000;border-radius:7px;padding:7px}
+.phone .snap div{display:flex;justify-content:space-between;padding:2px 0}
+.phone .pill{position:absolute;right:10px;bottom:62px;display:flex;align-items:center;gap:8px;background:#fff;border-radius:99px;padding:6px 6px 6px 14px;box-shadow:0 6px 18px rgba(0,0,0,.3);font-weight:800;font-size:10px;line-height:1.1;letter-spacing:-.02em}
+.phone .pill small{position:absolute;top:-8px;left:14px;background:var(--red);color:#fff;font-size:7px;padding:1px 5px;border-radius:4px}
+.phone .pill i{width:28px;height:28px;border-radius:50%;background:var(--aib);color:var(--ai);display:grid;place-items:center;font-style:normal;font-size:15px}
+.phone .dim{position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.phone .sheet{position:absolute;left:0;right:0;bottom:0;top:170px;background:var(--aib);border-radius:22px 22px 0 0;padding:15px;display:flex;flex-direction:column;gap:8px;font-size:10.5px;box-shadow:0 -8px 24px rgba(0,0,0,.3)}
+.phone .sheet h4{margin:0;font:800 12.5px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.03em;display:flex;justify-content:space-between;align-items:center}
+.phone .sheet h4 i{font-style:normal;width:20px;height:20px;background:#fff;border-radius:50%;display:grid;place-items:center;font-size:10px}
+.phone .sheet h5{margin:0;color:var(--ai);font:800 11px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.02em}
+.phone .sheet ul{margin:0;padding-left:14px}
+.phone .sheet li{font-size:10.5px;color:#000;margin:0 0 3px}
+.phone .ask{margin-top:auto;margin-bottom:12px;background:#fff;border-radius:99px;padding:9px 13px;color:#888}
