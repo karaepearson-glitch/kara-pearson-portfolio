@@ -417,3 +417,4 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .snap img{box-shadow:none;outline:2px solid var(--accent);outline-offset:4px;transition:outline-offset .3s ease}
 .snap:hover img{box-shadow:none;outline-color:var(--accent);outline-offset:7px}
 .snap svg text{font-size:11.5px;font-weight:300;font-style:normal;letter-spacing:.01em;text-transform:none;fill:var(--fg)}
+.snap img{animation:wobble 5s ease-in-out infinite}.snap:nth-child(2) img{animation-delay:-2.5s}.snap:nth-child(2){margin-left:4rem}@media(prefers-reduced-motion:reduce){.snap img{animation:none}}
