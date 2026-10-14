@@ -147,3 +147,9 @@ document.querySelectorAll('.snap').forEach(function(snap){
   snap.addEventListener('focusin',type);
   snap.addEventListener('focusout',reset);
 });
+
+(function(){var cv=document.querySelector('.mb-canvas');if(!cv)return;var k=cv.querySelector('.c3');var drift=[['21%','62%'],['30%','45%'],['58%','70%'],['40%','28%']];
+var c1=cv.querySelector('.c1'),c2=cv.querySelector('.c2');var s1=[['21%','62%'],['35%','38%'],['50%','74%']],s2=[['68%','80%'],['80%','40%'],['62%','55%']];var i=0;
+var t=setInterval(function(){i=(i+1)%3;c1.style.left=s1[i][0];c1.style.top=s1[i][1];c2.style.left=s2[i][0];c2.style.top=s2[i][1];},2600);
+cv.addEventListener('mousemove',function(e){var r=cv.getBoundingClientRect();cv.classList.add('live');k.style.left=((e.clientX-r.left)/r.width*100)+'%';k.style.top=((e.clientY-r.top)/r.height*100)+'%';});
+cv.addEventListener('mouseleave',function(){cv.classList.remove('live');});})();

@@ -563,3 +563,15 @@ a.thumb{display:block;cursor:pointer}
 .st:before{content:"";position:absolute;left:50%;top:-8px;width:44px;height:16px;margin-left:-22px;background:rgba(255,255,255,.45);transform:rotate(-2deg);display:none}
 .fr{border-radius:4px;box-shadow:0 1px 0 rgba(20,30,60,.06)}
 @media(max-width:800px){.mb-right .share{display:none}}
+
+.st{transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;cursor:grab}
+.st:hover{transform:rotate(0) translateY(-6px) scale(1.06)!important;box-shadow:0 18px 24px -10px rgba(20,30,60,.4);z-index:5}
+.fr{transition:outline-color .2s,box-shadow .2s;outline:2px solid transparent;outline-offset:3px}
+.fr:hover{outline-color:#4262ff;box-shadow:0 0 0 6px rgba(66,98,255,.08)}
+.fr:hover .ft{color:#4262ff}
+.fr:before,.fr:after{content:"";position:absolute;width:9px;height:9px;background:#fff;border:2px solid #4262ff;border-radius:2px;opacity:0;transition:opacity .2s}
+.fr:before{left:-6px;top:-6px}.fr:after{right:-6px;bottom:-6px}.fr:hover:before,.fr:hover:after{opacity:1}
+.vote{transition:transform .2s}.st:hover .vote{transform:scale(1.25)}
+.cur{transition:left .9s cubic-bezier(.2,.8,.2,1),top .9s cubic-bezier(.2,.8,.2,1)}
+.mb-canvas.live .c3{transition:left .12s linear,top .12s linear}
+.mb-canvas{cursor:default}
