@@ -519,3 +519,5 @@ a.thumb{display:block;cursor:pointer}
 .heu li{background:none;box-shadow:none;backdrop-filter:none;border-radius:0;padding:0 0 0 .8rem;border-left:2px solid #ff6a00;font-size:1.05rem;font-weight:500;color:#2a2018}
 .heu li:before{content:none}
 .heu li b{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-text);font-weight:600;margin-bottom:.3rem}
+
+.finds.four.three{grid-template-columns:repeat(3,1fr);margin-top:1.4rem}.dive .sketches img{border:1px solid #eadfd3;border-radius:12px}
