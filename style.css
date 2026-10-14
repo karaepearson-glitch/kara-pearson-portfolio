@@ -360,3 +360,8 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .now-block{margin-top:3rem}
 .now-block .steps{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.now-block .steps{grid-template-columns:1fr}}
+
+.now{padding:3rem 6vw 0}
+.now h2{margin-bottom:1.25rem}
+.now .steps{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.now .steps{grid-template-columns:1fr}}
