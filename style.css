@@ -436,5 +436,7 @@ a.thumb{display:block;cursor:pointer}
 .chat .b.reveal{transform:scale(.6) translateY(24px);transition:opacity .5s ease,transform .5s cubic-bezier(.34,1.56,.64,1)}
 .chat .b.reveal.in{transform:none}
 @media (prefers-reduced-motion:reduce){.chat .b.reveal{transform:none;transition:none}}
-.chat .who{display:none}
 
+.chat .who{align-self:flex-start;margin:.4rem 0 -.5rem 1rem;font-size:.8rem;font-weight:500;color:var(--muted)}
+.chat .who.you{align-self:flex-end;margin:.4rem 1rem -.5rem 0}
+.chat .them.maya{background:#fde3d0;color:#7a2e0b}
