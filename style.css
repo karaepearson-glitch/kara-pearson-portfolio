@@ -627,3 +627,15 @@ a.thumb{display:block;cursor:pointer}
 .dv-nav button.past b{color:#1a1a1a}
 .plane{top:-6px;transform:translateX(-50%);width:36px;height:36px}
 @media(max-width:700px){.dv-nav:before{display:none}.dv-nav{padding-top:0}}
+
+/* simplified tabs */
+.plane,.dv-nav:before,.dv-nav button:before,.dv-nav button:after{display:none!important}
+.dv-nav{padding-top:0;gap:0;border-bottom:1px solid #eadfd3;margin-bottom:2rem}
+.dv-nav button,.dv-nav button.on{border:0!important;border-radius:0;background:none;box-shadow:none;transform:none;padding:.4rem 1.2rem 1.1rem 0;margin-bottom:-1px;border-bottom:3px solid transparent!important;text-align:left}
+.dv-nav button .n{border:0;padding:0;margin:0 0 .35rem;color:#9a8c80}
+.dv-nav button.on{border-bottom-color:#ff6a00!important}
+.dv-nav button.on .n{color:#ff6a00}
+.dv-nav button b,.dv-nav button.on b,.dv-nav button.past b{color:#9a8c80;font-size:1.05rem}
+.dv-nav button.on b{color:#1a1a1a}
+.dv-nav button em{display:none}
+.dv-nav button:hover{transform:none;box-shadow:none}.dv-nav button:hover b{color:#1a1a1a}
