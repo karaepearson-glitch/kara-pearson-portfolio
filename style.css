@@ -60,6 +60,8 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:3rem}
 .steps div:hover{border-color:var(--accent);transform:translateY(-4px)}
 .steps b{display:block;font-size:1.1rem}
 .steps span{color:var(--muted);font-size:.95rem}
+.ai-block{margin-top:5rem;padding-top:3rem;border-top:1px solid var(--line)}
+.ai-block h3{font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
 .ai-lead{font-size:clamp(1.3rem,2.6vw,2rem);font-weight:700;max-width:30ch;line-height:1.25;margin:1rem 0 0}
 .ai-steps{margin-top:2rem}
 .ai-proof{margin-top:1.5rem;padding:1.2rem 1.4rem;border-left:3px solid var(--accent);background:#fff6ee;border-radius:0 12px 12px 0;max-width:70ch}
