@@ -1,72 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 640" font-family="Poppins,Inter,Helvetica,Arial,sans-serif">
-<defs>
-<radialGradient id="glow" cx="45%" cy="48%" r="45%"><stop offset="0" stop-color="#ff6a00" stop-opacity=".28"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
-<linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="1700" y2="0"><stop offset="0" stop-color="#ffb347"/><stop offset=".5" stop-color="#ff6a00"/><stop offset="1" stop-color="#ffb347"/></linearGradient>
-<linearGradient id="hot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9a3c"/><stop offset="1" stop-color="#ff4d00"/></linearGradient>
-<linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity=".04"/></linearGradient>
-<filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
-</defs>
-<rect width="1800" height="640" rx="32" fill="#130e0b"/>
-<ellipse cx="660" cy="320" rx="560" ry="300" fill="url(#glow)"/>
-
-<g font-size="15" font-weight="600" letter-spacing="4" fill="#ffb27a">
-<text x="40" y="62">DISCOVERY</text><text x="250" y="62" fill="#ff6a00">PLANNING · AREA OF FOCUS</text><text x="1030" y="62">BOOKING</text><text x="1190" y="62">TRAVELING</text><text x="1430" y="62">EXIT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 680" font-family="Poppins,Inter,Helvetica,Arial,sans-serif">
+<rect width="1800" height="680" rx="28" fill="#fffaf5"/>
+<rect x="215" y="24" width="835" height="470" rx="26" fill="#fff1e3" stroke="#ff6a00" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="632" y="64" text-anchor="middle" font-size="24" font-weight="700" fill="#c2410c">AREA OF FOCUS</text>
+<g fill="none" stroke="#e4cdb8" stroke-width="3" stroke-linecap="round">
+<path d="M176 270H236"/><path d="M366 270H430"/>
+<path d="M430 270C470 270 470 135 520 135"/><path d="M430 270H520"/><path d="M430 270C470 270 470 405 520 405"/>
+<path d="M650 135C700 135 700 270 740 270"/><path d="M650 270H740"/><path d="M650 405C700 405 700 270 740 270"/>
+<path d="M870 270H910"/><path d="M1040 270H1060"/><path d="M1170 270H1210"/>
+<path d="M1210 270C1240 270 1240 190 1270 190"/><path d="M1210 270C1240 270 1240 350 1270 350"/>
+<path d="M1370 190C1400 190 1400 270 1440 270"/><path d="M1370 350C1400 350 1400 270 1440 270"/><path d="M1540 270H1590"/>
 </g>
-<g stroke-width="3" stroke-linecap="round">
-<path d="M40 82H200" stroke="#5a3a28"/><path d="M250 82H1000" stroke="#ff6a00"/><path d="M1030 82H1150" stroke="#5a3a28"/><path d="M1190 82H1390" stroke="#5a3a28"/><path d="M1430 82H1760" stroke="#5a3a28"/>
+<g>
+<rect x="46" y="210" width="130" height="120" rx="24" fill="#c2410c"/><text x="111" y="285" text-anchor="middle" font-size="64" font-weight="700" fill="#fff">!</text>
+<rect x="236" y="210" width="130" height="120" rx="24" fill="#ff6a00"/><circle cx="293" cy="260" r="22" fill="none" stroke="#fff" stroke-width="8"/><path d="M310 278L335 303" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+<rect x="520" y="95" width="130" height="80" rx="24" fill="#ff6a00"/><text x="585" y="153" text-anchor="middle" font-size="46" font-weight="700" fill="#fff">$</text>
+<rect x="520" y="230" width="130" height="80" rx="24" fill="#ff6a00"/><rect x="556" y="250" width="58" height="42" rx="8" fill="none" stroke="#fff" stroke-width="6"/><path d="M556 266H614" stroke="#fff" stroke-width="6"/>
+<rect x="520" y="365" width="130" height="80" rx="24" fill="#ff6a00"/><path d="M585 428C560 402 553 394 553 385A32 32 0 0 1 617 385C617 394 610 402 585 428Z" fill="#fff"/><circle cx="585" cy="384" r="10" fill="#ff6a00"/>
+<rect x="740" y="210" width="130" height="120" rx="24" fill="#ff6a00"/><path d="M776 272L797 296L836 246" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="910" y="210" width="130" height="120" rx="24" fill="#ff6a00"/><path d="M946 272L967 296L1006 246" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0"/><text x="975" y="288" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">GO</text>
+<rect x="1060" y="210" width="110" height="120" rx="24" fill="#ff8a3d"/><path d="M1085 262L1145 238L1118 302L1105 276Z" fill="#fff"/>
+<rect x="1270" y="140" width="100" height="100" rx="24" fill="#ffa24d"/><rect x="1295" y="175" width="50" height="38" rx="8" fill="#fff"/><path d="M1308 175V166H1332V175" fill="none" stroke="#fff" stroke-width="6"/>
+<rect x="1270" y="300" width="100" height="100" rx="24" fill="#ffa24d"/><text x="1320" y="368" text-anchor="middle" font-size="48" font-weight="700" fill="#fff">$</text>
+<rect x="1440" y="210" width="100" height="120" rx="24" fill="#e8590c"/><path d="M1465 285L1490 255L1515 285V305H1465Z" fill="#fff"/>
+<rect x="1590" y="210" width="100" height="120" rx="24" fill="#c2410c"/><circle cx="1640" cy="270" r="22" fill="none" stroke="#fff" stroke-width="7"/>
 </g>
-
-<g fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round">
-<path id="p" d="M170 300H290M370 300H430M430 300C475 300 475 170 520 170M430 300H520M430 300C475 300 475 430 520 430M600 170C645 170 645 300 690 300M600 300H690M600 430C645 430 645 300 690 300M690 300H750M830 300H910M990 300H1050M1130 300C1170 300 1170 220 1250 220M1130 300C1170 300 1170 380 1250 380M1330 220C1380 220 1380 300 1460 300M1330 380C1380 380 1380 300 1460 300M1540 300H1620"/>
+<g font-size="22" font-weight="600" fill="#1a1410" text-anchor="middle">
+<text x="111" y="368">Decide to</text><text x="111" y="396">go on trip</text>
+<text x="301" y="368">Search</text><text x="301" y="396">for trips</text>
+<text x="585" y="203">Budget</text><text x="585" y="338">Dates</text><text x="585" y="473">Location</text>
+<text x="805" y="368">Vote</text><text x="975" y="368">Decide</text><text x="975" y="396">on trip</text>
+<text x="1115" y="368">Book</text><text x="1115" y="396">trip</text>
+<text x="1320" y="272">Go on trip</text><text x="1320" y="432">Split costs</text>
+<text x="1490" y="368">Return home</text><text x="1640" y="368">Reflect</text>
 </g>
-<use href="#p" fill="none" stroke="url(#flow)" stroke-width="10" opacity=".35" filter="url(#blur)"/>
-
-<g stroke-width="1.5" stroke="#fff" stroke-opacity=".18" fill="url(#glass)">
-<rect x="90" y="260" width="80" height="80" rx="24"/><rect x="290" y="260" width="80" height="80" rx="24" fill="url(#hot)" stroke="none"/>
-<rect x="520" y="130" width="80" height="80" rx="24" fill="url(#hot)" stroke="none"/><rect x="520" y="260" width="80" height="80" rx="24" fill="url(#hot)" stroke="none"/><rect x="520" y="390" width="80" height="80" rx="24" fill="url(#hot)" stroke="none"/>
-<rect x="750" y="260" width="80" height="80" rx="24" fill="url(#hot)" stroke="none"/><rect x="910" y="260" width="80" height="80" rx="24" fill="url(#hot)" stroke="none"/>
-<rect x="1050" y="260" width="80" height="80" rx="24"/>
-<rect x="1250" y="180" width="80" height="80" rx="24"/><rect x="1250" y="340" width="80" height="80" rx="24"/>
-<rect x="1460" y="260" width="80" height="80" rx="24"/><rect x="1620" y="260" width="80" height="80" rx="24"/>
+<rect x="0" y="500" width="1800" height="52" rx="26" fill="#ff8a3d"/>
+<text x="900" y="535" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">Constant communication throughout the journey</text>
+<g font-size="26" font-weight="700" fill="#fff" text-anchor="middle">
+<rect x="0" y="574" width="215" height="76" rx="38" fill="#c2410c"/><text x="107" y="621">Discovery</text>
+<rect x="225" y="574" width="825" height="76" rx="38" fill="#ff6a00"/><text x="637" y="621">Planning</text>
+<rect x="1060" y="574" width="210" height="76" rx="38" fill="#ff8a3d"/><text x="1165" y="621">Booking</text>
+<rect x="1280" y="574" width="280" height="76" rx="38" fill="#ffa24d"/><text x="1420" y="621">Traveling</text>
+<rect x="1570" y="574" width="210" height="76" rx="38" fill="#c2410c"/><text x="1675" y="621">Exit</text>
 </g>
-<g fill="#ff6a00" opacity=".45" filter="url(#blur)">
-<rect x="290" y="268" width="80" height="80" rx="24"/><rect x="520" y="138" width="80" height="80" rx="24"/><rect x="520" y="268" width="80" height="80" rx="24"/><rect x="520" y="398" width="80" height="80" rx="24"/><rect x="750" y="268" width="80" height="80" rx="24"/><rect x="910" y="268" width="80" height="80" rx="24"/>
-</g>
-<g stroke-width="1.5" stroke="#fff" stroke-opacity=".18">
-<rect x="290" y="260" width="80" height="80" rx="24" fill="url(#hot)"/><rect x="520" y="130" width="80" height="80" rx="24" fill="url(#hot)"/><rect x="520" y="260" width="80" height="80" rx="24" fill="url(#hot)"/><rect x="520" y="390" width="80" height="80" rx="24" fill="url(#hot)"/><rect x="750" y="260" width="80" height="80" rx="24" fill="url(#hot)"/><rect x="910" y="260" width="80" height="80" rx="24" fill="url(#hot)"/>
-</g>
-
-<g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#ffb27a">
-<g transform="translate(130 300)"><path d="M0 -14V4" /><circle cx="0" cy="14" r="1" /></g>
-<g transform="translate(1090 300)"><path d="M-16 6L18 -10L8 18L2 6Z"/></g>
-<g transform="translate(1290 220)"><rect x="-17" y="-8" width="34" height="24" rx="5"/><path d="M-8 -8V-15H8V-8"/></g>
-<g transform="translate(1290 380)"><circle cx="-8" cy="0" r="12"/><circle cx="8" cy="0" r="12"/></g>
-<g transform="translate(1500 300)"><path d="M-14 12V-4L0 -16L14 -4V12Z"/></g>
-<g transform="translate(1660 300)"><path d="M-16 -12H16V8H4L-6 18V8H-16Z"/></g>
-</g>
-<g stroke="#fff">
-<g transform="translate(330 300)"><circle cx="-3" cy="-3" r="12"/><path d="M6 6L16 16"/></g>
-<g transform="translate(560 300)"><rect x="-16" y="-12" width="32" height="28" rx="5"/><path d="M-16 -2H16M-8 -18V-8M8 -18V-8"/></g>
-<g transform="translate(560 430)"><path d="M0 18C-14 2 -17 -3 -17 -8A17 17 0 0 1 17 -8C17 -3 14 2 0 18Z"/><circle cx="0" cy="-8" r="5"/></g>
-<g transform="translate(790 300)"><path d="M-12 14V2M0 14V-12M12 14V-4"/></g>
-<g transform="translate(950 300)"><path d="M-14 0L-4 10L14 -10"/></g>
-</g>
-</g>
-<g fill="#ffb27a" font-weight="700" text-anchor="middle"><text x="130" y="316" font-size="40" fill="#ffb27a" stroke="none">!</text></g>
-<text x="560" y="182" text-anchor="middle" font-size="38" font-weight="700" fill="#fff">$</text>
-
-<g font-size="18" font-weight="500" fill="#f3e6dc" text-anchor="middle">
-<text x="130" y="372">Decide to go</text>
-<text x="330" y="372">Search trips</text>
-<text x="560" y="236">Budget</text><text x="560" y="366">Dates</text><text x="560" y="496">Location</text>
-<text x="790" y="372">Vote</text><text x="950" y="372">Decide</text>
-<text x="1090" y="372">Book</text>
-<text x="1290" y="286">Go on trip</text><text x="1290" y="446">Split costs</text>
-<text x="1500" y="372">Return home</text><text x="1660" y="372">Reflect</text>
-</g>
-
-<rect x="40" y="556" width="1720" height="2" fill="url(#flow)" opacity=".7"/>
-<rect x="40" y="552" width="1720" height="10" fill="url(#flow)" opacity=".25" filter="url(#blur)"/>
-<text x="900" y="596" text-anchor="middle" font-size="16" font-weight="600" letter-spacing="4" fill="#ffb27a">CONSTANT COMMUNICATION THROUGHOUT THE JOURNEY</text>
 </svg>
