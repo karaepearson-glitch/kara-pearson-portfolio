@@ -575,3 +575,5 @@ a.thumb{display:block;cursor:pointer}
 .cur{transition:left .9s cubic-bezier(.2,.8,.2,1),top .9s cubic-bezier(.2,.8,.2,1)}
 .mb-canvas.live .c3{transition:left .12s linear,top .12s linear}
 .mb-canvas{cursor:default}
+
+.mb-top,.mb-right{top:14px}.mb-tool{top:70px}.mb-canvas{padding-top:5rem}
