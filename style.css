@@ -492,3 +492,5 @@ a.thumb{display:block;cursor:pointer}
 .cs .logos img{filter:none!important;opacity:1!important;mix-blend-mode:normal!important}
 
 .finds.four{grid-template-columns:repeat(4,1fr)}.finds b{font-size:1.05rem;letter-spacing:.02em}@media(max-width:700px){.finds.four{grid-template-columns:1fr 1fr}}
+
+.finds.four{border:0}.finds.four div{border-top:0;padding:0;border-left:2px solid #ff6a00;padding-left:.8rem}.finds.four b{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-text);margin-bottom:.3rem}.finds.four span{font-size:1.05rem;font-weight:500}.dive .logos{margin-bottom:1.6rem}
