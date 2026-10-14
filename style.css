@@ -649,19 +649,3 @@ a.thumb{display:block;cursor:pointer}
 .cs .label{margin-top:5.5rem}
 .cs .meta{margin:2.5rem 0}
 .cs .hero-img,.cs .shot{border-radius:16px}
-
-/* whitespace */
-.cs{padding-top:9rem;padding-bottom:8rem}
-.cs h2{margin:7rem 0 1.6rem}
-.cs .label{margin-top:9rem}
-.cs>h3{margin:5.5rem 0 1.2rem}
-.cs>p,.cs>ul{line-height:1.75;margin-bottom:1.6rem}
-.cs .summary{line-height:1.6;margin-bottom:3rem}
-.cs .meta{margin:4rem 0;padding:2rem 0;border-color:#f0e8df}
-.cs .hero-img,.cs .shot{margin-top:5rem;margin-bottom:5rem}
-.cs .quote{margin:5rem 0}
-.cs .problem-split{gap:5rem}
-.cs .logos{margin:3rem 0 2.5rem}
-.cs .finds{margin:2.5rem 0 3rem;gap:2rem}
-.cs .dive{margin:3rem 0 4rem}
-.cs>h4{margin:4.5rem 0 1rem}
