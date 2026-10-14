@@ -521,3 +521,11 @@ a.thumb{display:block;cursor:pointer}
 .heu li b{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-text);font-weight:600;margin-bottom:.3rem}
 
 .finds.four.three{grid-template-columns:repeat(3,1fr);margin-top:1.4rem}.dive .sketches img{border:1px solid #eadfd3;border-radius:12px}
+
+.cs .board{margin:1.6rem 0 2rem;max-width:none}
+.board-g{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;padding:1.6rem;border-radius:20px;border:1px solid #eadfd3;background-color:#fffaf5;background-image:radial-gradient(#ecd9c6 1.2px,transparent 1.2px);background-size:22px 22px;align-items:start}
+.board h5{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-text);font-weight:600;margin:0 0 .8rem;padding-bottom:.5rem;border-bottom:2px solid #ff6a00}
+.board .n{display:block;font-style:normal;font-size:.98rem;line-height:1.35;font-weight:500;color:#2a2018;background:#fff;border:1px solid #eadfd3;border-radius:10px;padding:.8rem .9rem;margin-bottom:.7rem;box-shadow:0 6px 14px -10px rgba(120,60,0,.35)}
+.board .n.y{background:#ffe9d6;border-color:#ffd2ab}
+.board figcaption{text-align:center;font-size:.85rem;color:#8a6a55;margin-top:.7rem}
+@media(max-width:800px){.board-g{grid-template-columns:1fr 1fr}}
