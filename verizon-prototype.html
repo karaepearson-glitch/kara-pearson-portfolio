@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verizon AI Bill Summary — clickable prototype</title>
+<link rel="stylesheet" href="style.css">
+<style>
+html,body{margin:0;height:100%;background:#0e0f12;color:#e8eaf0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;overflow:hidden}
+.wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.stage{position:relative;width:calc(280px*var(--s,1));height:calc(595px*var(--s,1));flex:none}
+.stage .phone{position:absolute;left:0;top:0;transform:scale(var(--s,1));transform-origin:0 0}
+.phone .scr{position:absolute;inset:0;padding:0;margin:0;max-width:none;display:flex;flex-direction:column;background:var(--bg);opacity:0;transform:translateX(28px);transition:opacity .45s ease,transform .45s ease;pointer-events:none}
+.phone .scr.on{opacity:1;transform:none;pointer-events:auto}
+.phone .scr.off{transform:translateX(-28px)}
+.phone .tap{position:absolute;z-index:20;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:rgba(255,255,255,.55);border:2px solid rgba(0,0,0,.55);box-shadow:0 2px 8px rgba(0,0,0,.35);left:200px;top:640px;opacity:0;transition:left .8s cubic-bezier(.4,0,.2,1),top .8s cubic-bezier(.4,0,.2,1),opacity .3s,transform .15s;pointer-events:none}
+.phone .tap.show{opacity:1}
+.phone .tap.press{transform:scale(.68);background:rgba(255,255,255,.9)}
+[data-go]{cursor:pointer}
+.phone .scr .body{scroll-behavior:smooth}
+.phone .scr.pdf .dim{opacity:0;transition:opacity .35s;pointer-events:none}
+.phone .scr.pdf .sheet{transform:translateY(105%);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.phone .scr.pdf .pill{transition:opacity .25s}
+.phone .scr.pdf[data-sheet=ai] .dim,.phone .scr.pdf[data-sheet=chat] .dim{opacity:1}
+.phone .scr.pdf[data-sheet=ai] .sheet.ai,.phone .scr.pdf[data-sheet=chat] .sheet.chat{transform:none}
+.phone .scr.pdf[data-sheet=ai] .pill,.phone .scr.pdf[data-sheet=chat] .pill{opacity:0}
+.phone .sheet.ai{top:316px}
+.phone .sheet.chat{top:196px}
+.phone .bub{padding:8px 12px;border-radius:16px;max-width:88%;font-size:10.5px;line-height:14px}
+.phone .bub.me{align-self:flex-end;background:#000;color:#fff;border-bottom-right-radius:4px}
+.phone .bub.bot{align-self:flex-start;background:#fff;border-bottom-left-radius:4px}
+.phone .gen{font-size:8.5px;color:#666;margin-top:-2px}
+.phone .help{display:flex;align-items:center;gap:8px;font-size:9.5px;font-weight:700;margin-top:4px}
+.phone .help i{font-style:normal;border:1.5px solid #000;border-radius:99px;padding:3px 10px;font-weight:800}
+.phone .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.phone .tile{background:#f6f5f3;border-radius:16px;padding:12px 4px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-weight:800;font-size:9px;line-height:11px;letter-spacing:-.02em}
+.phone .tile u{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;text-decoration:none}
+.phone .tile svg{width:20px;height:20px;fill:none;stroke:#000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.phone .vtabs{display:flex;gap:16px;border-bottom:1px solid #ddd;font-weight:800;font-size:11px;letter-spacing:-.02em;padding-top:4px}
+.phone .vtabs span{padding:0 0 8px}
+.phone .vtabs .on{color:var(--red);border-bottom:3px solid var(--red)}
+.phone .vrow{display:flex;justify-content:space-between;align-items:center;font:800 14px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.04em;padding:12px 0;border-bottom:1.5px solid #000}
+.phone .vrow span:last-child{display:flex;gap:8px;align-items:center}
+.phone .acc{font-size:9.5px;color:#333;margin:0}
+.phone .h1{font:800 22px/26px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.05em;margin:0}
+.phone .wt{background:#fff;margin:-12px -12px 0;padding:16px 12px;display:flex;flex-direction:column;gap:8px}
+.phone .mrow{display:flex;gap:8px;align-items:flex-start}
+.phone .mrow .av{flex:none}
+.phone .mrow b{display:block;font-size:11px}
+.phone .cta{height:36px;border-radius:99px;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:10.5px;letter-spacing:-.02em;margin-top:auto;margin-bottom:12px}
+.ctl{display:flex;gap:8px;align-items:center}
+.ctl button{background:#1c1f26;color:#e8eaf0;border:1px solid #2c303a;border-radius:99px;height:32px;padding:0 14px;font:700 12px "Helvetica Neue",Arial,sans-serif;cursor:pointer}
+.ctl button:hover{background:#262a34}
+.dots{display:flex;gap:6px}
+.dots i{width:8px;height:8px;border-radius:50%;background:#353a46;cursor:pointer;transition:background .2s,transform .2s}
+.dots i.on{background:#ee0022;transform:scale(1.3)}
+.cap{min-height:34px;text-align:center;font-size:13px;color:#c9ced8;max-width:340px;line-height:17px}
+.cap b{color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="stage" id="stage">
+    <div class="phone" id="phone">
+
+      <!-- 1 Home -->
+      <section class="scr" data-n="1">
+        <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="brand">verizon<span>⌕</span></div><div class="hi">Welcome back, Sarah.</div><small>Thank you for being a loyal customer.</small></div>
+        <div class="body"><div class="chips"><span class="chip ai">✦</span><span class="chip">Profile &amp; settings</span><span class="chip">My offers</span><span class="chip">Bill overview</span></div>
+          <div class="card"><b>Auto Pay is on</b><div class="lg">Your bill is $262.82</div><div class="sub up">↗ $30.01 more than last month</div><div class="sub">Payment will process on 2/6/26</div><div class="btns"><span class="obtn">Manage Auto Pay</span><span class="obtn ai" id="g1" data-go="2">✦ Bill Breakdown</span></div></div>
+          <div class="card save"><div><b>$18.05 total savings</b>Review savings on your bill from Dec 6 - Jan 5.</div></div>
+          <div class="card offer"><b>My Offers</b><div class="sub">Save on new lines, upgrades, and more.</div></div></div>
+        <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
+      </section>
+
+      <!-- 2 Bill overview -->
+      <section class="scr" data-n="2">
+        <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="nav" data-back><span>Bill overview</span><em>⌕</em></div></div>
+        <div class="body"><div class="whitetop"><div class="big">Your current balance<br>$262.82</div><div class="btns"><span class="pbtn">Pay bill</span><span class="obtn">Manage Auto Pay</span></div></div>
+          <div class="card"><div class="row"><b>Your bill went up by $30.01.</b><span class="arr">→</span></div><div class="aicard" style="margin-top:4px"><div class="t">✦ AI Bill Summary</div><p>Your bill went up because Kara made an international call and Ava upgraded her phone.</p><a id="g2" data-go="3">View full AI breakdown →</a></div></div>
+          <div class="card"><div class="row"><b>Bill history</b><small style="text-decoration:underline;color:#000">Review history</small></div><div class="hist"><i style="height:20px"></i><i style="height:20px"></i><i style="height:26px"></i><i class="cur" style="height:32px"></i></div><div class="hl"><span>Nov<b>$230.81</b></span><span>Dec<b>$230.81</b></span><span>Jan<b>$262.82</b></span><span class="cur">Feb<b>$270.50</b></span></div></div></div>
+        <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
+      </section>
+
+      <!-- 3 Bill changes -->
+      <section class="scr" data-n="3">
+        <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="nav" data-back><span>Bill changes</span><em>⌕</em></div></div>
+        <div class="body"><div class="card"><b>Your bill went up by $30.01.</b><div class="sub">Review your plan usage: you used well below your data allowance, so a lower-tier plan may still fit.</div></div>
+          <div class="card"><b>By Member</b><div class="mem" style="margin-top:8px"><div class="donut"></div><ul><li style="--c:#bfe6ff">Kara</li><li style="--c:#00305f">Ava</li><li style="--c:#40b8ff">Lizzy</li></ul></div></div>
+          <div class="aicard"><div class="t">✦ Ava's Bill Summary</div><p>Ava's bill took up 66% of the family total this month. Key reason: an international phone call on 3/2/26.</p><a id="g3" data-go="4">View full AI breakdown →</a></div></div>
+        <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
+      </section>
+
+      <!-- 4 Full AI breakdown -->
+      <section class="scr" data-n="4">
+        <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="nav" data-back><span>AI Bill Summary</span><em>⌕</em></div></div>
+        <div class="body"><div class="wt"><p class="acc">✦ Generated by AI. Review details to verify.</p><div class="h1">Why your bill went up by $30.01</div></div>
+          <div class="card"><div class="mrow"><div class="av" style="background:#bfe6ff">K</div><div><b>Kara</b><div class="sub">Made an international phone call on 3/2/26.</div></div></div></div>
+          <div class="card"><div class="mrow"><div class="av" style="background:#40b8ff">A</div><div><b>Ava</b><div class="sub">Upgraded her phone, which added a new device payment.</div></div></div></div>
+          <div class="aicard"><div class="t">✦ How can I lower my bill?</div><p>Your usage was well below your plan's data allowance. A lower-tier plan may still be enough.</p></div>
+          <div class="help">Is this helpful? <i>Yes</i><i>No</i></div>
+          <div class="cta" id="g4" data-go="5">See bill details</div></div>
+      </section>
+
+      <!-- 5 Bill details -->
+      <section class="scr" data-n="5">
+        <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="nav" data-back><span>Bill details</span><em>⌕</em></div></div>
+        <div class="body"><p class="acc">Account #0480757777-00001</p><div class="h1">Bill details for Dec 29 - Jan 28</div>
+          <div class="btns"><span class="pbtn">Pay bill</span><span class="obtn">Manage Auto Pay</span></div>
+          <div class="tiles"><div class="tile"><u><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M8.5 9h7M8.5 13h7M8.5 17h4"/></svg></u>Bill<br>overview</div><div class="tile" id="g5" data-go="6"><u><svg viewBox="0 0 24 24"><rect x="4" y="6" width="12" height="15" rx="1.5"/><path d="M8 3h11v14M7 11h6M7 15h6"/></svg></u>Review<br>Bill PDF</div><div class="tile"><u><svg viewBox="0 0 24 24"><rect x="4" y="13" width="4" height="7"/><rect x="10" y="9" width="4" height="11"/><rect x="16" y="4" width="4" height="16"/></svg></u>Usage<br>details</div></div>
+          <div class="vtabs"><span>View by line</span><span class="on">View by plans &amp; devices</span></div>
+          <div class="vrow"><span>Plans</span><span>$184.00 ⌄</span></div><div class="vrow"><span>Devices</span><span>$64.16 ⌄</span></div><div class="vrow"><span>Products &amp; plan perks</span><span>$14.66 ⌄</span></div></div>
+        <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
+      </section>
+
+      <!-- 6/7/8 Bill PDF + AI sheet states -->
+      <section class="scr pdf" data-n="6" data-sheet="">
+        <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="nav" data-back><span>Bill PDF</span><em>⌕</em></div></div>
+        <div class="body" id="pdfbody" style="background:#868686"><div class="paper"><div class="meta"><div><div class="v">verizon</div><div class="addr">SARAH M. LEE<br>2191 W 166TH ST<br>WESTFIELD, IN 46074</div></div><div><div class="acct"><b>Account:</b> 480757777-00001<br><b>Invoice:</b> 4906680735<br><b>Billing period:</b> Dec 29 - Jan 28</div><div class="q"><b>Questions about your bill?</b><br>verizon.com/support<br>800-922-0204</div></div></div>
+          <div class="snap"><span class="ttl">Snapshot of your bill</span><div><span>Balance from last bill</span><span>$0.00</span></div><div><span>This month's charges</span><span>$262.82</span></div><div><b>Total due on Mar 11</b><b>$262.82</b></div></div>
+          <div class="snap"><span class="ttl">Bill summary by line</span><div><span>Melissa's Phone 2417</span><span>$28.34</span></div><div><span>Drew's Phone 5833</span><span>$34.18</span></div><div id="lizzy"><span>Lizzy's Phone 4036</span><span>$58.34</span></div></div></div></div>
+        <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
+        <div class="pill" id="g6" data-go="7"><small>NEW</small>AI Bill Summary<i>✦</i></div>
+        <div class="dim"></div>
+        <div class="sheet ai"><h4>✦ AI Bill Summary <i>✕</i></h4><h5>Lizzy's Phone (4036) — $58.34</h5><div>This line is higher because it includes <b>an extra charge only on this phone</b>, most often a device payment or add-on.</div><ul><li>The shared base plan cost, plus</li><li>An extra cost assigned only to this line</li></ul><div class="ask" id="g7" data-go="8">Ask me anything about your bill…</div></div>
+        <div class="sheet chat"><h4>✦ AI Bill Summary <i>✕</i></h4><div class="bub me">Why is Lizzy's line higher?</div><div class="bub bot">Lizzy's line includes a device payment on top of the shared plan cost, so it's higher than Melissa's and Drew's.</div><div class="gen">Generated by AI. Review details to verify.</div><div class="ask">Ask me anything about your bill…</div></div>
+      </section>
+
+      <div class="tap" id="tap"></div>
+    </div>
+  </div>
+  <div class="cap" id="cap"></div>
+  <div class="dots" id="dots"></div>
+  <div class="ctl"><button id="prev">← Back</button><button id="play">Pause</button><button id="next">Next →</button><button id="restart">Restart</button></div>
+</div>
+<script>
+const phone=document.getElementById('phone'),tap=document.getElementById('tap'),cap=document.getElementById('cap'),dots=document.getElementById('dots');
+const pdf=document.querySelector('.scr.pdf'),pdfBody=document.getElementById('pdfbody');
+// each step: which screen is shown, PDF sheet state, optional scroll, tap target, caption
+const steps=[
+ {s:1,t:'g1',c:'<b>Home</b> shows the balance, the due date and one tap into the AI breakdown.'},
+ {s:2,t:'g2',c:'<b>Bill overview</b> explains the change in plain language, right under the balance.'},
+ {s:3,t:'g3',c:'<b>Bill changes</b> shows who drove the change, member by member.'},
+ {s:4,t:'g4',c:'<b>Full AI breakdown</b> says why the bill moved and how to lower it.'},
+ {s:5,t:'g5',c:'<b>Bill details</b> keeps the familiar tiles and the plans &amp; devices view.'},
+ {s:6,sheet:'',scroll:200,t:'g6',c:'<b>Bill PDF</b> stays familiar, with AI one tap away.'},
+ {s:6,sheet:'ai',t:'g7',c:'<b>AI Bill Summary</b> explains the line you care about.'},
+ {s:6,sheet:'chat',c:'<b>Ask me anything</b> turns the bill into a conversation.'}
+];
+let i=0,playing=true,timer=null,token=0;
+steps.forEach((_,k)=>{const d=document.createElement('i');d.onclick=()=>{go(k,true)};dots.appendChild(d)});
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+function pos(el){let x=el.offsetWidth/2,y=el.offsetHeight/2,e=el;while(e&&!e.classList.contains('scr')){x+=e.offsetLeft;y+=e.offsetTop;e=e.offsetParent}const b=el.closest('.body');if(b)y-=b.scrollTop;return[x,y]}
+function show(k){
+  const st=steps[k];
+  document.querySelectorAll('.scr').forEach(s=>{const on=+s.dataset.n===st.s;s.classList.toggle('on',on);s.classList.toggle('off',!on&&+s.dataset.n<st.s)});
+  if(st.s===6){pdf.dataset.sheet=st.sheet;if(st.scroll===undefined)pdfBody.scrollTop=0}
+  else pdfBody.scrollTop=0;
+  [...dots.children].forEach((d,n)=>d.classList.toggle('on',n===k));
+  cap.innerHTML=st.c;
+}
+async function run(k,my){
+  show(k);const st=steps[k];
+  tap.classList.remove('show');
+  await wait(1300);if(my!==token)return;
+  if(st.scroll!==undefined){pdfBody.scrollTop=st.scroll;await wait(900);if(my!==token)return}
+  if(st.t){
+    const el=document.getElementById(st.t),[x,y]=pos(el);
+    tap.style.transition='none';tap.style.left=(x+36)+'px';tap.style.top=(y+70)+'px';void tap.offsetWidth;tap.style.transition='';
+    tap.classList.add('show');await wait(80);tap.style.left=x+'px';tap.style.top=y+'px';
+    await wait(1000);if(my!==token)return;
+    tap.classList.add('press');await wait(220);tap.classList.remove('press');await wait(250);if(my!==token)return;
+  }else{await wait(2200);if(my!==token)return}
+  if(!playing)return;
+  go(k+1<steps.length?k+1:0);
+}
+function go(k,manual){token++;i=k;if(manual){playing=false;document.getElementById('play').textContent='Play'}run(k,token)}
+document.getElementById('prev').onclick=()=>go((i+steps.length-1)%steps.length,true);
+document.getElementById('next').onclick=()=>go((i+1)%steps.length,true);
+document.getElementById('restart').onclick=()=>{playing=true;document.getElementById('play').textContent='Pause';go(0)};
+document.getElementById('play').onclick=e=>{playing=!playing;e.target.textContent=playing?'Pause':'Play';if(playing)go(i)};
+// clicking the real controls in the phone also works
+phone.addEventListener('click',e=>{
+  const g=e.target.closest('[data-go]');
+  if(g){const n=+g.dataset.go;const sheet=n===7?'ai':n===8?'chat':'';const k=steps.findIndex(s=>s.s===(n>=6?6:n)&&(n<6||s.sheet===(n===6?'':sheet)));if(k>=0)go(k,true);return}
+  if(e.target.closest('[data-back]')&&i>0)go(i-(steps[i].s===6&&steps[i].sheet?1:1),true);
+});
+function fit(){const s=Math.min(1.7,Math.max(.6,(innerHeight-170)/595));document.getElementById('stage').style.setProperty('--s',s)}
+fit();addEventListener('resize',fit);
+go(0);
+</script>
+</body>
+</html>
