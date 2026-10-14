@@ -125,3 +125,25 @@ document.querySelectorAll('.tilt').forEach(card => {
   });
   card.addEventListener('mouseleave', () => thumb.style.transform = '');
 });
+
+// Typed-in captions on the About photo circles
+document.querySelectorAll('.snap').forEach(function(snap){
+  var tp=snap.querySelector('textPath'); if(!tp) return;
+  var full=tp.textContent, timer;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+  function center(){ var p=snap.querySelector('path'); tp.textContent=full; tp.setAttribute('text-anchor','start'); tp.setAttribute('startOffset',Math.max(0,(p.getTotalLength()-tp.getComputedTextLength())/2)); tp.textContent=''; }
+  (document.fonts?document.fonts.ready:Promise.resolve()).then(center);
+  function type(){
+    clearInterval(timer); var i=0; tp.textContent='';
+    timer=setInterval(function(){
+      i++; tp.textContent=full.slice(0,i);
+      if(i>=full.length) clearInterval(timer);
+    },55);
+  }
+  function reset(){ clearInterval(timer); tp.textContent=''; }
+  snap.addEventListener('mouseenter',type);
+  snap.addEventListener('mouseleave',reset);
+  snap.addEventListener('focusin',type);
+  snap.addEventListener('focusout',reset);
+});
