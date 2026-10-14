@@ -329,3 +329,5 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .toc .links a:hover,.toc-toggle:hover,.pane-back:hover{background:#f6efe8;color:var(--fg)}
 ::selection{background:#fde3d0;color:var(--fg)}
 @media (forced-colors:active){.btn{border:2px solid ButtonText}}
+
+.cs>h3{font-size:var(--fs-lead);margin:2.5rem 0 .75rem}.cs>h3 small{display:block;color:var(--accent-text);font-size:var(--fs-label);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.2rem}
