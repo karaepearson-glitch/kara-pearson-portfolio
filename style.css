@@ -636,3 +636,5 @@ a.thumb{display:block;cursor:pointer}
 .dv-nav button.on{transform:none;box-shadow:0 14px 28px -16px rgba(255,90,0,.5)}
 .dv-nav{align-items:stretch}
 .dv-nav button{align-self:stretch}
+
+.dive.tabbed .st-body{margin-top:.5rem}
