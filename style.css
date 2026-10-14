@@ -636,14 +636,3 @@ a.thumb{display:block;cursor:pointer}
 .dv-nav button.on{transform:none;box-shadow:0 14px 28px -16px rgba(255,90,0,.5)}
 .dv-nav{align-items:stretch}
 .dv-nav button{align-self:stretch}
-
-/* all stops visible; cards act as jump links */
-.dive.tabbed details:not(.act) .st-body{display:block}
-.dive.tabbed .st-body{animation:none;padding:1rem .2rem 0}
-.dive.tabbed details{scroll-margin-top:90px;padding-top:2.4rem;border-top:1px solid #eadfd3;margin-top:2.4rem}
-.dive.tabbed details:first-of-type{margin-top:1.4rem}
-.dive.tabbed summary{display:flex!important;align-items:baseline;gap:.9rem;list-style:none;cursor:default;pointer-events:none}
-.dive.tabbed summary::-webkit-details-marker,.dive.tabbed summary:after,.dive.tabbed summary:before{display:none!important}
-.dive.tabbed summary .st-t em{display:none}
-.dive.tabbed summary .st-n{color:#ff6a00}
-.dive.tabbed summary .st-n:before{content:"Stop "}
