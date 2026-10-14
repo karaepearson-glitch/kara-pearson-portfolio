@@ -507,3 +507,6 @@ a.thumb{display:block;cursor:pointer}
 .heu li{padding:1rem 1.1rem 1rem 3.6rem;background:rgba(255,255,255,.85);border-radius:16px;box-shadow:0 6px 18px -10px rgba(120,60,0,.3);backdrop-filter:blur(6px)}
 .heu li:before{left:.9rem;top:50%;transform:translateY(-50%);width:2rem;height:2rem;font-size:.95rem;box-shadow:0 4px 10px -3px rgba(255,106,0,.7)}
 .heu li b{font-size:1.05rem}
+
+.heu li{padding:1.05rem 1.2rem;counter-increment:h}
+.heu li:before{content:"0" counter(h);position:static;transform:none;display:block;width:auto;height:auto;background:none;box-shadow:none;border-radius:0;color:#ff6a00;font-size:.72rem;font-weight:600;letter-spacing:.16em;margin-bottom:.35rem}
