@@ -403,3 +403,10 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .cta-link{color:var(--accent-text);font-weight:600;font-size:1.15rem;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat;padding-bottom:.25rem;transition:background-size .3s ease,color .2s}
 .cta-link:hover{color:var(--accent-strong);background-size:0 2px;background-position:100% 100%}
 .cta-link:focus-visible{outline:2px solid var(--accent-text);outline-offset:4px;border-radius:2px}
+.snap{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.snap img{animation:none;transition:box-shadow .4s ease,filter .4s ease}
+.snap:hover{transform:rotate(var(--r,0deg)) scale(1.03)}
+.snap:hover img{box-shadow:0 0 0 3px var(--accent),0 22px 40px -14px rgba(194,65,12,.45)}
+.snap svg{display:none}
+.snap figcaption.sr{position:absolute;left:50%;top:calc(100% + .9rem);width:max-content;max-width:240px;height:auto;margin:0;clip:auto;overflow:visible;white-space:normal;transform:translate(-50%,-4px) rotate(calc(var(--r,0deg)*-1));text-align:center;font-size:.85rem;color:var(--muted);opacity:0;transition:opacity .35s ease,transform .35s ease;pointer-events:none}
+.snap:hover figcaption.sr,.snap:focus-within figcaption.sr{opacity:1;transform:translate(-50%,0) rotate(calc(var(--r,0deg)*-1))}
