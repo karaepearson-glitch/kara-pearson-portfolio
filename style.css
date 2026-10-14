@@ -466,3 +466,8 @@ a.thumb{display:block;cursor:pointer}
 
 .shot-row.sketches img{aspect-ratio:4/3;object-fit:cover}
 .logos img:nth-child(1){height:44px}.logos img:nth-child(5){height:56px}.logos img:nth-child(6){height:42px}.logos img:nth-child(7){height:40px}
+
+.cs>h4{font-size:1.4rem;font-weight:600;letter-spacing:-.01em;text-transform:none;color:var(--ink,#1a1a1a);margin:3rem 0 .6rem;padding-top:1.6rem;border-top:1px solid #eadfd3}
+.cs>h3+p+h4{margin-top:2rem}
+.cs>ul.plain{font-size:1.1rem}
+.cs>ul.plain li{padding:.15rem 0}
