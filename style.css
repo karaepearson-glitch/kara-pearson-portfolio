@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 :root{--bg:#ffffff;--fg:#1a1410;--muted:#6f655d;--accent:#ff6a00;--accent2:#ffb347;--line:#f0e6dc}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,Segoe UI,sans-serif;line-height:1.6;overflow-x:hidden}
+body{background:var(--bg);color:var(--fg);font-family:'Plus Jakarta Sans',system-ui,Segoe UI,sans-serif;line-height:1.6;overflow-x:hidden}
 a{color:inherit}
 section{padding:7rem 6vw;max-width:none;margin:auto}
 
