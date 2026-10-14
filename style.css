@@ -318,3 +318,4 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .phone .pill{right:var(--m);bottom:72px}
 .phone .paper{padding:12px}
 .phone .mem{padding:4px 0;gap:16px}
+.phone .donut{width:76px;height:76px}.phone .donut:after{inset:21px}.phone .mem{gap:20px}.phone .mem ul{gap:4px}
