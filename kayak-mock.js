@@ -54,10 +54,10 @@
       lab.innerHTML = '<b>' + String(n + 1).padStart(2, '0') + '</b> ' + steps[n][0];
       var b = bar.firstChild;
       b.style.transition = 'none';
-      b.style.width = '0%';
+      b.style.width = (n / steps.length * 100) + '%';
       void b.offsetWidth;
       b.style.transition = 'width ' + (DUR - 300) + 'ms linear';
-      b.style.width = '100%';
+      b.style.width = ((n + 1) / steps.length * 100) + '%';
       cur.classList.remove('click');
       setTimeout(function () { pos(steps[n][1], steps[n][2]); }, 250);
       setTimeout(function () { cur.classList.add('click'); }, 2100);
