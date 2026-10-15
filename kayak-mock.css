@@ -292,3 +292,6 @@
 .kx .x-sb i.x-cal{width:13px;height:13px;min-width:13px;flex:none;margin:0;background:none;box-shadow:none;border:1.5px solid #ff690f;border-top-width:4px;border-radius:3px}
 
 .x-cic{width:13px;height:13px;box-sizing:border-box;border:1.5px solid #ff690f;border-top-width:4px;border-radius:3px;display:inline-block;flex:none}
+
+.x-th .x-sync{margin-left:auto;padding:0;align-self:center}
+.x-sync+.x-day.it .x-dh{padding-top:14px}
