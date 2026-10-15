@@ -324,3 +324,5 @@
 .sk summary{left:6.6rem;top:-5.35rem}
 
 .sk{position:static;height:auto;margin:.4rem 0 0}.sk[open]{margin:.4rem 0 1.5rem}.sk summary{position:static;padding:.3rem 0}.sk-g{padding-top:.5rem}
+
+.sk summary{opacity:.7}.sk-l{max-width:22rem}
