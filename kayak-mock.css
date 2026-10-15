@@ -264,3 +264,15 @@
 .x-time{flex:none;font-size:11px;font-weight:500;color:#192024;background:#eef1f4;border-radius:99px;padding:4px 10px}
 .kx .x-pin.np{width:28px;height:28px;border-radius:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700;border:2px solid #fff}
 .kx .x-pin.np::after{display:none}
+
+.x-evs{gap:0;padding:0 0 16px}
+.x-ev2{background:none;border:0;box-shadow:none;padding:0 0 10px;gap:12px;position:relative}
+.x-tm{flex:none;width:54px;padding-top:12px;text-align:right;display:flex;flex-direction:column;gap:2px}
+.x-tm b{font-size:12px;font-weight:700;color:#192024}
+.x-tm small{font-size:11px;color:#8a949c}
+.x-card{flex:1;display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid #e6e9ec;border-left:3px solid #ff690f;border-radius:10px;padding:11px 14px;box-shadow:0 1px 3px rgba(25,32,36,.06)}
+.x-card b{font-size:13px;font-weight:700;color:#192024}
+.x-card small{font-size:11px;color:#5b6670}
+.x-tag{align-self:flex-start;font-size:10px;font-weight:500;color:#c24e00;background:#fff1e6;border-radius:99px;padding:2px 8px;margin-bottom:3px}
+.x-tag.food{color:#1f7a45;background:#e7f6ee}
+.x-card:has(.x-tag.food){border-left-color:#22a05a}
