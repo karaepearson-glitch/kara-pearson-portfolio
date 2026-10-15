@@ -221,3 +221,20 @@
 
 .kx .x-sc.inc{margin:6px -14px}
 .kx .x-sc.inc .x-pen{transform:translateX(-14px)}
+
+.cmp{margin:3rem 0 1rem}
+.cmp h3{margin-bottom:.4rem}
+.cmp>p:not(.cmp-note){color:#5b6670;margin:0 0 1.2rem}
+.cmp-bar{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.cmp-tg{display:inline-flex;background:#f3ede6;border-radius:99px;padding:4px}
+.cmp-tg button,.cmp-st button{font:inherit;border:0;cursor:pointer;background:transparent;color:#5b4a3a}
+.cmp-tg button{padding:.5rem 1.1rem;border-radius:99px;font-size:.85rem;font-weight:500}
+.cmp-tg button.on{background:#ff690f;color:#fff}
+.cmp-st{display:flex;gap:6px}
+.cmp-st button{width:34px;height:34px;border-radius:50%;border:1px solid #e4d9cd;font-size:.8rem;background:#fff}
+.cmp-st button.on{border-color:#ff690f;color:#ff690f;font-weight:600}
+.cmp-tg button:focus-visible,.cmp-st button:focus-visible{outline:2px solid #192024;outline-offset:2px}
+.cmp-view{position:relative;aspect-ratio:1000/640;background:#fff;overflow:hidden}
+.cmp-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.cmp-view .kx{opacity:1}
+.cmp-note{font-size:.85rem;color:#8a7d70;margin:.8rem 0 0}
