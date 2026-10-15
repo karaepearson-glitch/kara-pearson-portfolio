@@ -188,3 +188,16 @@
 .kx .x-pin{width:24px;height:24px;border-radius:50% 50% 50% 0;transform:translate(-50%,-100%) rotate(-45deg);background:#ff690f;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)}
 .kx .x-pin::after{left:6px;top:6px;width:8px;height:8px;border-radius:50%;background:#fff}
 .kx .x-sg .x-ph{height:84px}
+.kxw.tour .tl{opacity:0;transition:opacity .45s ease}
+.kxw.tour .tl.on{opacity:1}
+.tcur{position:absolute;z-index:5;left:6%;top:87%;width:26px;height:26px;margin:-2px 0 0 -6px;pointer-events:none;transition:left 1.5s cubic-bezier(.45,0,.2,1),top 1.5s cubic-bezier(.45,0,.2,1);filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
+.tcur svg{display:block;transition:transform .15s}
+.tcur i{position:absolute;left:-14px;top:-12px;width:36px;height:36px;border-radius:50%;background:rgba(255,105,15,.45);transform:scale(0);opacity:0}
+.tcur.click svg{animation:tpress .35s}
+.tcur.click i{animation:tripple .6s ease-out}
+@keyframes tpress{40%{transform:scale(.8)}}
+@keyframes tripple{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+.tlab{position:absolute;z-index:5;left:14px;bottom:14px;background:rgba(25,32,36,.86);color:#fff;font:500 12px/1 Roboto,"Segoe UI",Arial,sans-serif;padding:8px 12px;border-radius:99px;backdrop-filter:blur(4px)}
+.tlab b{color:#ff9a57;margin-right:6px;font-weight:500}
+.tbar{position:absolute;z-index:5;left:0;right:0;bottom:0;height:3px;background:rgba(25,32,36,.08)}
+.tbar span{display:block;height:100%;width:0;background:#ff690f}
