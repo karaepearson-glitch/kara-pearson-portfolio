@@ -10,14 +10,14 @@
   var hero = document.querySelector('.hero-pf .kxw');
   var src = document.querySelectorAll('.walk .wfr .kx');
   var steps = [
-    ['Start a trip', 413, 286],
-    ['Invite', 703, 376],
-    ['Overview', 150, 156],
-    ['Location', 929, 284],
-    ['Dates', 939, 233],
-    ['Budget', 143, 442],
-    ['Itinerary', 277, 382],
-    ['Add activity', 388, 286]
+    ['Start a trip', 380, 263],
+    ['Invite', 692, 451],
+    ['Overview', 149, 159],
+    ['Location', 929, 286],
+    ['Dates', 940, 234],
+    ['Budget', 142, 452],
+    ['Itinerary', 467, 197],
+    ['Add activity', 380, 283]
   ];
 
   if (hero && src.length === steps.length) {
