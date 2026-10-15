@@ -346,3 +346,4 @@
 
 .ln-r>p{margin:0!important;max-width:none!important}.ln-hd h5{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;color:#c24e00;font-weight:700}.ln-hd{max-width:none!important}
 .cs .ov-split{align-items:start!important;margin-top:1.5rem}@media(max-width:1120px){.cs .ov-split{grid-template-columns:1fr!important;gap:1.75rem!important}}
+.dv-nav button{display:flex!important;flex-direction:column;justify-content:flex-start}.sk-w{margin:.2rem 0 0!important}@media(max-width:1120px){.wstep,.wstep:nth-child(even){grid-template-columns:1fr!important;gap:1.1rem!important}.wstep:nth-child(even) .wtxt{order:0}.wtxt p{max-width:34rem}.cs .problem-split{grid-template-columns:1fr!important;gap:1.75rem!important}.walk{gap:3.5rem}}
