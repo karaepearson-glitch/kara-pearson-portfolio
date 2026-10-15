@@ -276,3 +276,10 @@
 .x-tag{align-self:flex-start;font-size:10px;font-weight:500;color:#c24e00;background:#fff1e6;border-radius:99px;padding:2px 8px;margin-bottom:3px}
 .x-tag.food{color:#1f7a45;background:#e7f6ee}
 .x-card:has(.x-tag.food){border-left-color:#22a05a}
+
+.x-ev2.cp{padding-bottom:8px}
+.x-ev2.cp .x-tm{padding-top:6px;gap:0;width:54px}
+.x-ev2.cp .x-card{padding:8px 12px;gap:1px}
+.x-cl{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.x-ev2.cp .x-tag{margin:0;align-self:auto;flex:none}
+.x-evs{padding-bottom:10px}
