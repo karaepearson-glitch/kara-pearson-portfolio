@@ -318,3 +318,4 @@
 
 .sk{position:relative;height:0;margin:0}.sk[open]{height:auto;margin:0 0 1.5rem}.sk summary{position:absolute;right:0;top:-3rem}.sk-g{padding-top:3.2rem}
 .sk summary{flex-direction:row-reverse}
+.sk-n{grid-column:1/-1;margin:0;font-size:.9rem;color:#5a4a3f}.sk-g{padding-top:3.2rem}.sk-l{transition:max-width .5s}.sk summary:hover .sk-l,.sk summary:focus-visible .sk-l,.sk[open] .sk-l{max-width:22rem}
