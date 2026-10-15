@@ -231,3 +231,19 @@
 .wfr .wimg{display:none;width:100%;aspect-ratio:1000/640;object-fit:contain;background:#fff}
 .walk.mine .wfr .wimg{display:block}
 .walk.mine .wfr .kxw{display:none}
+
+.x-pick{padding:24px 28px}
+.x-pick .x-mt{font-size:18px;font-weight:700}
+.x-sub{font-size:12px;color:#5b6670;margin:4px 0 18px}
+.x-two2{display:flex;gap:14px}
+.x-opt{position:relative;flex:1;box-sizing:border-box;border:1.5px solid #dfe3e7;border-radius:14px;padding:18px 16px 16px;display:flex;flex-direction:column;align-items:flex-start;gap:4px;background:#fff}
+.x-opt.on{border-color:#ff690f;background:#fff6ef;box-shadow:0 0 0 3px rgba(255,105,15,.12)}
+.x-opt .x-ic{width:44px;height:44px;border-radius:12px;background:#eef1f4;color:#192024;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.x-opt.on .x-ic{background:#ff690f;color:#fff}
+.x-opt b{font-size:14px;font-weight:700;color:#192024}
+.x-opt small{font-size:11px;line-height:1.4;color:#5b6670}
+.x-rad{position:absolute;top:14px;right:14px;width:18px;height:18px;border-radius:50%;border:1.5px solid #c3c9cf;box-sizing:border-box;background:#fff}
+.x-opt.on .x-rad{border-color:#ff690f;background:#ff690f;box-shadow:inset 0 0 0 3.5px #fff;outline:1.5px solid #ff690f;outline-offset:-1.5px}
+
+.x-go{position:absolute;top:12px;right:16px;font-style:normal;font-size:22px;line-height:1;color:#8a949c}
+.x-pick .x-two2:last-child{margin-bottom:4px}
