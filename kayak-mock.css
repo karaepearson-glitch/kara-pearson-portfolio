@@ -299,16 +299,13 @@
 .x-leg{width:160px}
 
 .jm{position:relative;width:100%}.jm img{display:block;width:100%}
-.jh{position:absolute;width:5.556%;height:15.625%;border-radius:26%;cursor:pointer;outline:0;transition:transform .25s cubic-bezier(.2,.8,.3,1),box-shadow .25s,background .25s;z-index:1}
-.jh:hover,.jh:focus-visible{transform:scale(1.14);background:rgba(255,106,0,.14);box-shadow:0 0 0 2px #ff6a00,0 0 26px rgba(255,106,0,.55);z-index:5}
-.jt{position:absolute;left:50%;bottom:calc(100% + 12px);width:230px;transform:translate(-50%,6px);opacity:0;pointer-events:none;background:#fff;color:#4a382d;border:1px solid #f0e2d6;border-radius:12px;padding:.7rem .85rem;font-size:.8rem;line-height:1.45;font-weight:400;box-shadow:0 12px 30px -10px rgba(25,16,8,.35);transition:opacity .2s,transform .2s;text-align:left;white-space:normal}
-.jt small{display:block;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:#ff6a00;font-weight:600}
-.jt b{display:block;font-size:.9rem;color:#192024;margin:.1rem 0 .25rem}
+.jh{position:absolute;width:5.556%;height:15.625%;cursor:default;outline:0;z-index:1}
+.jh:hover,.jh:focus-visible{z-index:5}
+.jt{position:absolute;left:50%;bottom:calc(50% + 34px);width:210px;transform:translate(-50%,4px);opacity:0;pointer-events:none;background:#1c1410;color:#e9dccf;border:1px solid rgba(255,106,0,.45);border-radius:10px;padding:.55rem .7rem;font-size:.76rem;line-height:1.4;font-weight:400;box-shadow:0 8px 20px -8px rgba(0,0,0,.5);transition:opacity .18s,transform .18s;text-align:left;white-space:normal}
+.jt small{display:none}
+.jt b{display:block;font-size:.8rem;color:#ff8a3d;margin:0 0 .15rem}
 .jh:hover .jt,.jh:focus-visible .jt{opacity:1;transform:translate(-50%,0)}
-.jh.b .jt{bottom:auto;top:calc(100% + 12px)}
-.jh.r .jt{left:auto;right:0;transform:translate(0,6px)}
-.jh.r:hover .jt,.jh.r:focus-visible .jt{transform:translate(0,0)}
-@media (hover:none){.jh{display:none}}
-
-.jh.l .jt{left:0;transform:translate(0,6px)}
+.jh.b .jt{bottom:auto;top:calc(50% + 34px)}
+.jh.l .jt{left:0;transform:translate(0,4px)}
 .jh.l:hover .jt,.jh.l:focus-visible .jt{transform:translate(0,0)}
+@media (hover:none){.jh{display:none}}
