@@ -719,3 +719,4 @@ a.thumb{display:block;cursor:pointer}
 .figma-link{margin-top:0}
 @media(max-width:800px){.wstep,.wstep:nth-child(even){grid-template-columns:1fr;gap:1rem}.wstep:nth-child(even) .wtxt{order:0}}
 .wtxt h4{text-transform:none;color:#1a1612;font-weight:600;letter-spacing:-.02em}
+.thumb.shot{position:relative;overflow:hidden}.thumb.shot img{position:absolute;left:11%;top:15%;width:112%;height:auto;border-radius:12px 0 0 0;box-shadow:0 18px 40px -10px rgba(90,40,0,.45);transition:transform .5s}.case:hover .thumb.shot img{transform:translate(-1.5%,-2%)}
