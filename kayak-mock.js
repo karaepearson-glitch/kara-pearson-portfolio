@@ -97,50 +97,26 @@
 })();
 
 (function () {
-  var box = document.querySelector('.cmp');
-  var src = document.querySelectorAll('.walk .wfr .kx');
-  if (!box || !src.length) return;
-  var view = box.querySelector('.cmp-view');
-  var note = box.querySelector('.cmp-note');
-  var v = 'mine', n = 1;
-  var notes = {
-    mine: 'My original Figma design.',
-    ai: 'AI-edited: restyled with AI to match kayak.com more closely.'
-  };
-  function fit() {
-    var k = view.querySelector('.kx');
-    if (k) k.style.transform = 'scale(' + view.clientWidth / 1000 + ')';
-  }
-  function render() {
-    view.innerHTML = '';
-    if (v === 'mine') {
-      var im = document.createElement('img');
-      im.src = 'img/kayak/flow/g' + n + '.png';
-      im.alt = 'Original Figma design, screen ' + n;
-      view.appendChild(im);
-    } else {
-      view.appendChild(src[n - 1].cloneNode(true));
-      fit();
-    }
-    note.textContent = notes[v];
-    box.querySelectorAll('.cmp-tg button').forEach(function (b) {
-      var on = b.getAttribute('data-v') === v;
-      b.classList.toggle('on', on);
-      b.setAttribute('aria-pressed', on);
-    });
-    box.querySelectorAll('.cmp-st button').forEach(function (b) {
-      var on = +b.getAttribute('data-n') === n;
-      b.classList.toggle('on', on);
-      b.setAttribute('aria-pressed', on);
-    });
-  }
-  box.addEventListener('click', function (e) {
+  var tog = document.querySelector('.vtog');
+  var walk = document.querySelector('.walk');
+  if (!tog || !walk) return;
+  walk.querySelectorAll('.wfr').forEach(function (f, i) {
+    var im = document.createElement('img');
+    im.className = 'wimg';
+    im.src = 'img/kayak/flow/g' + (i + 1) + '.png';
+    im.alt = 'Original Figma design, screen ' + (i + 1);
+    im.loading = 'lazy';
+    f.appendChild(im);
+  });
+  tog.addEventListener('click', function (e) {
     var b = e.target.closest('button');
     if (!b) return;
-    if (b.hasAttribute('data-v')) v = b.getAttribute('data-v');
-    if (b.hasAttribute('data-n')) n = +b.getAttribute('data-n');
-    render();
+    walk.classList.toggle('mine', b.getAttribute('data-v') === 'mine');
+    tog.querySelectorAll('button').forEach(function (x) {
+      var on = x === b;
+      x.classList.toggle('on', on);
+      x.setAttribute('aria-pressed', on);
+    });
+    window.dispatchEvent(new Event('resize'));
   });
-  window.addEventListener('resize', fit);
-  render();
 })();
