@@ -182,3 +182,9 @@
 .kx .x-cg .g,.kx .x-cg .p,.kx .x-cg .r,.kx .x-cg .sel{font-weight:500}
 
 .kx .x-search{left:10px;top:10px;width:46%;border:1px solid #d5dbe0;border-radius:8px;padding:8px 12px 8px 34px;font-size:10.5px;color:#7a858e;box-shadow:0 2px 8px rgba(0,0,0,.18);background-position:left 11px center;background-color:#fff}
+.kxw{aspect-ratio:1000/640}
+.kx{height:640px}
+.kx .x-tabs{gap:15px}
+.kx .x-pin{width:24px;height:24px;border-radius:50% 50% 50% 0;transform:translate(-50%,-100%) rotate(-45deg);background:#ff690f;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+.kx .x-pin::after{left:6px;top:6px;width:8px;height:8px;border-radius:50%;background:#fff}
+.kx .x-sg .x-ph{height:84px}
