@@ -283,3 +283,12 @@
 .x-cl{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .x-ev2.cp .x-tag{margin:0;align-self:auto;flex:none}
 .x-evs{padding-bottom:10px}
+
+.x-sync{display:flex;justify-content:flex-end;padding:12px 0 0}
+.x-sb{display:inline-flex;align-items:center;gap:8px;height:30px;box-sizing:border-box;padding:0 14px;border:1px solid #dfe3e7;border-radius:99px;font-size:11px;font-weight:500;color:#192024;background:#fff}
+.x-cal{width:13px;height:13px;box-sizing:border-box;border:1.5px solid #ff690f;border-top-width:4px;border-radius:3px;display:inline-block}
+.x-sync+.x-day.it .x-dh{padding-top:8px}
+
+.kx .x-sb i.x-cal{width:13px;height:13px;min-width:13px;flex:none;margin:0;background:none;box-shadow:none;border:1.5px solid #ff690f;border-top-width:4px;border-radius:3px}
+
+.x-cic{width:13px;height:13px;box-sizing:border-box;border:1.5px solid #ff690f;border-top-width:4px;border-radius:3px;display:inline-block;flex:none}
