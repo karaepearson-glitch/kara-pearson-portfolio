@@ -719,15 +719,3 @@ a.thumb{display:block;cursor:pointer}
 .figma-link{margin-top:0}
 @media(max-width:800px){.wstep,.wstep:nth-child(even){grid-template-columns:1fr;gap:1rem}.wstep:nth-child(even) .wtxt{order:0}}
 .wtxt h4{text-transform:none;color:#1a1612;font-weight:600;letter-spacing:-.02em}
-
-/* walkthrough v2 */
-.walk{gap:5rem}
-.wstep,.wstep:nth-child(even){display:block}
-.wstep .wtxt,.wstep:nth-child(even) .wtxt{order:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);column-gap:2.5rem;align-items:baseline;margin-bottom:1.5rem;padding-top:1.25rem;border-top:1px solid #e4d9cd}
-.wtxt span{grid-column:1;grid-row:1;font-size:.8rem;font-weight:600}
-.wtxt h4{grid-column:1;grid-row:2;font-size:2rem;margin:.2rem 0 0}
-.wtxt p{grid-column:2;grid-row:1/3;align-self:center;font-size:1.05rem;max-width:34rem}
-.wstep>.wfr{background:#fff;border-radius:16px;box-shadow:0 30px 60px -30px rgba(120,60,10,.3),0 0 0 8px #fbf3ea}
-.wfr .pbar{padding:.7rem 1rem}
-.wfr .pbar span:first-child{background:#f0a37a}
-@media(max-width:800px){.wstep .wtxt,.wstep:nth-child(even) .wtxt{display:block}.wtxt p{margin-top:.5rem}}
