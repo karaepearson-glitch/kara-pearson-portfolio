@@ -201,3 +201,23 @@
 .tlab b{color:#ff9a57;margin-right:6px;font-weight:500}
 .tbar{position:absolute;z-index:5;left:0;right:0;bottom:0;height:3px;background:rgba(25,32,36,.08)}
 .tbar span{display:block;height:100%;width:0;background:#ff690f}
+
+/* invite modal: one button family */
+.kx .x-md .x-btn,.kx .x-md .x-sel,.kx .x-md .x-skip{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;height:32px;min-width:84px;padding:0 16px;border-radius:99px;font-size:12px;font-weight:500;line-height:1;white-space:nowrap}
+.kx .x-md .x-btn{background:#ff690f;color:#fff}
+.kx .x-md .x-sel{background:#eef1f4;color:#192024}
+.kx .x-md .x-sel.link{color:#ff690f}
+.kx .x-md .x-skip{background:transparent;color:#ff690f;padding:0 8px;min-width:0}
+.kx .x-md .x-inv{gap:12px;margin-bottom:22px}
+.kx .x-md .x-inv .x-in{height:40px;box-sizing:border-box;display:flex;align-items:center;padding:0 18px}
+.kx .x-md .x-inv .x-btn{height:40px;min-width:84px}
+.kx .x-md .x-sec{margin:0 0 10px;font-size:13px}
+.kx .x-md .x-row{min-height:40px;margin-bottom:6px;gap:12px}
+.kx .x-md .x-row div{line-height:1.3}
+.kx .x-md .x-row div .x-sel.sm{height:26px;min-width:0;padding:0 12px;margin-bottom:3px;font-size:11px}
+.kx .x-md .x-sec+.x-row{margin-top:0}
+.kx .x-md .x-sec[style]{margin-top:18px!important}
+.kx .x-md .x-foot{gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid #e6e9ec}
+
+.kx .x-sc.inc{margin:6px -14px}
+.kx .x-sc.inc .x-pen{transform:translateX(-14px)}
