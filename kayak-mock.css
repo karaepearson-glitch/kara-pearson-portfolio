@@ -305,7 +305,6 @@
 .jt small{display:none}
 .jt b{display:block;font-size:.8rem;color:#ff8a3d;margin:0 0 .15rem}
 .jh:hover .jt,.jh:focus-visible .jt{opacity:1;transform:translate(-50%,0)}
-.jh.b .jt{bottom:auto;top:calc(50% + 34px)}
 .jh.l .jt{left:0;transform:translate(0,4px)}
 .jh.l:hover .jt,.jh.l:focus-visible .jt{transform:translate(0,0)}
 @media (hover:none){.jh{display:none}}
