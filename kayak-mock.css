@@ -326,3 +326,5 @@
 .sk{position:static;height:auto;margin:.4rem 0 0}.sk[open]{margin:.4rem 0 1.5rem}.sk summary{position:static;padding:.3rem 0}.sk-g{padding-top:.5rem}
 
 .sk summary{opacity:.7}.sk-l{max-width:22rem}
+
+.sk summary{opacity:1;display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .9rem;border:1.5px dashed #ffb27a;border-radius:999px;background:#fffaf5;color:#c24e00;font-size:.82rem;font-weight:600}.sk summary:hover,.sk[open] summary{background:#fff0e2;border-color:#ff8a3d}.sk-i{display:inline-flex}.sk summary:hover .sk-i{transform:rotate(-18deg)}
