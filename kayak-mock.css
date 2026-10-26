@@ -603,3 +603,9 @@
 .xf .fn1 .fd>div{background:#fff7f0;border:1px solid #f3dcc6;border-radius:12px;padding:.9rem 1rem;margin-top:.9rem;text-align:left}
 .cs .xf .fn1 .fd>div>p{text-align:left;font-size:.95rem;line-height:1.5;margin:0}.xf .fn1 .fd .oc{margin-top:.8rem}.xf .fn1 .fd .oc img{background:#fff}
 .xf .fn1 .fd>div{overflow:hidden;min-height:0}.xf .fn1:not(.open) .fd>div{padding:0;margin:0;border-width:0;background:transparent}
+.xf .fn3 .fd>div,.xf .fn4 .fd>div{border-radius:12px;padding:.9rem 1rem;margin-top:.9rem;text-align:left;overflow:hidden;min-height:0;border:1px solid}
+.xf .fn3 .fd>div{background:rgba(255,255,255,.65);border-color:#f3dcc6}
+.xf .fn4 .fd>div{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4)}
+.cs .xf .fn3 .fd>div>p,.cs .xf .fn4 .fd>div>p{text-align:left;font-size:.95rem;line-height:1.5;margin:0}
+.cs .xf .fn3 .fd>div>p+p{margin-top:.6rem}
+.xf .fn3:not(.open) .fd>div,.xf .fn4:not(.open) .fd>div{padding:0;margin:0;border-width:0;background:transparent}
