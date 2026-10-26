@@ -735,3 +735,4 @@ a.thumb{display:block;cursor:pointer}
 .thumb.shot img{box-shadow:0 30px 60px -12px rgba(0,0,0,.6)!important;border:0!important}.thumb.shot .fc1{left:6%;bottom:10%}
 .thumb.shot{background:radial-gradient(75% 65% at 90% 0%,#ffb27a,transparent 70%),radial-gradient(60% 55% at 0% 100%,#ffe3c8,transparent 70%),#fff1e3!important}.thumb.shot img{left:10%;top:16%;width:104%;border-radius:14px 0 0 0;box-shadow:0 30px 50px -18px rgba(150,70,0,.45)!important;transform:rotateY(-10deg) rotateX(4deg);}.case:hover .thumb.shot img{transform:rotateY(-4deg) rotateX(2deg) translateY(-2%)}.thumb.shot .fc{background:#fff}
 .thumb.shot .fc1{bottom:5%!important;left:4%!important}
+.phone .st{padding:0;min-height:0;border-radius:0;box-shadow:none;background:none;color:inherit;font-weight:700;line-height:1;cursor:default;position:static;transition:none}.phone .st:hover{transform:none!important;box-shadow:none;z-index:auto}.phone .st:before{display:none}
