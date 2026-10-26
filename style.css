@@ -758,3 +758,7 @@ a.thumb{display:block;cursor:pointer}
 .thumb.vz img.p2{left:50%;top:6%}
 .case:hover .thumb.vz img.p1{transform:translateY(-2%)!important}
 .case:hover .thumb.vz img.p2{transform:translateY(-4%)!important}
+
+/* Verizon thumbnail: single centered screen */
+.thumb.vz img.p2{left:50%;top:9%;width:31%;transform:translateX(-50%)!important}
+.case:hover .thumb.vz img.p2{transform:translateX(-50%) translateY(-3%)!important}
