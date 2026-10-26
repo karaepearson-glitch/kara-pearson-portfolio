@@ -610,8 +610,3 @@
 .cs .xf .fn3 .fd>div>p+p{margin-top:.6rem}
 .xf .fn3:not(.open) .fd>div,.xf .fn4:not(.open) .fd>div{padding:0;margin:0;border-width:0;background:transparent}
 .xf .fn3{background:#fff4ea!important;border:1.5px solid #ffd9b8}.xf .fn3 .fd>div{background:#fff}.cs .xf .fn3>p{color:#2a2018}
-.xf .hx .wide{grid-column:1/-1}.cs .xf .fn3 .rm-t{margin-top:.8rem!important;text-align:left}
-.xf .fn3 .hx>div{background:#fff7f0}
-.xf .fn4 .hx{grid-template-columns:1fr 1fr;gap:.6rem;margin-top:.7rem}
-.xf .fn4 .hx>div{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4)}
-.cs .xf .fn4 .hx b{color:#fff}.cs .xf .fn4 .hx span{color:#fff}
