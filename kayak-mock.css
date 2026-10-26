@@ -609,3 +609,9 @@
 .xf .fn3 .fd>div,.xf .fn4 .fd>div{overflow:hidden;min-height:0;background:#fff;border:1px solid #f3dcc6;border-radius:12px;padding:.9rem 1rem;margin-top:.9rem;text-align:left}
 .cs .xf .fn3 .fd>div>p,.cs .xf .fn4 .fd>div>p{color:#2a2018;text-align:left;font-size:.95rem;line-height:1.5;font-weight:400;margin:0}.cs .xf .fn3 .fd>div>p+p{margin-top:.6rem}
 .xf .fn3:not(.open) .fd>div,.xf .fn4:not(.open) .fd>div{padding:0;margin:0;border-width:0;background:transparent}
+.xf .fn3{background:#ffe0c2!important;border-color:#ffc79c}
+.xf .fn4{background:#ff6a00!important;border-color:#ff6a00}
+.xf .fn4>span,.xf .fn4::after,.cs .xf .fn4>p{color:#fff}
+.xf .fn3>span,.xf .fn3::after{color:#c2410c}
+.xf .fn3 .fd>div,.xf .fn4 .fd>div{border-color:transparent}
+.xf .fn3:not(.open) .fd>div,.xf .fn4:not(.open) .fd>div{border-width:0}
