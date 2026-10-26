@@ -351,3 +351,4 @@
 .kx .x-st{display:inline-block;min-width:124px;margin-right:0;vertical-align:middle}.kx .x-sc .x-chip{vertical-align:middle}.kx .x-sc .x-pen{right:6px;top:50%;margin-top:-17px}.kx .x-sc.inc .x-pen{transform:none;right:20px}.kx .x-sc .x-v{margin-top:6px}
 .kx .x-st{min-width:0;margin-right:10px}
 .wph{border-radius:14px;background:linear-gradient(135deg,#fff3e8,#ffe2cc);padding:2.2rem 1rem;display:flex;justify-content:center}.wph .screens{background:none;margin:0;padding:0;border-radius:0}.wph .screens figcaption{color:#8a6a55}.wph .phone{box-shadow:0 0 0 2px #cfd1d6,0 24px 50px -18px rgba(120,60,0,.45)}.cs .im mark,.cs .lr mark{background:#fff1a8}
+.protoh{margin:2rem 0}.protoh iframe{display:block;width:100%;height:min(780px,88vh);border:0;border-radius:16px;background:#0e0f12}.protoh p{margin:.8rem 0 0;text-align:right}

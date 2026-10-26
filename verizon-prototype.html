@@ -8,7 +8,7 @@
 <style>
 html,body{margin:0;height:100%;background:#0e0f12;color:#e8eaf0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;overflow:hidden}
 .wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
-.stage{position:relative;width:calc(280px*var(--s,1));height:calc(595px*var(--s,1));flex:none}
+.stage{position:relative;width:calc(284px*var(--s,1));height:calc(654px*var(--s,1));flex:none}
 .stage .phone{position:absolute;left:0;top:0;transform:scale(var(--s,1));transform-origin:0 0}
 .phone .scr{position:absolute;inset:0;padding:0;margin:0;max-width:none;display:flex;flex-direction:column;background:var(--bg);opacity:0;transform:translateX(28px);transition:opacity .45s ease,transform .45s ease;pointer-events:none}
 .phone .scr.on{opacity:1;transform:none;pointer-events:auto}
@@ -185,7 +185,7 @@ phone.addEventListener('click',e=>{
   if(g){const n=+g.dataset.go;const sheet=n===7?'ai':n===8?'chat':'';const k=steps.findIndex(s=>s.s===(n>=6?6:n)&&(n<6||s.sheet===(n===6?'':sheet)));if(k>=0)go(k,true);return}
   if(e.target.closest('[data-back]')&&i>0)go(i-(steps[i].s===6&&steps[i].sheet?1:1),true);
 });
-function fit(){const s=Math.min(1.7,Math.max(.6,(innerHeight-170)/595));document.getElementById('stage').style.setProperty('--s',s)}
+function fit(){const s=Math.min(1.7,Math.max(.6,(innerHeight-170)/654));document.getElementById('stage').style.setProperty('--s',s)}
 fit();addEventListener('resize',fit);
 go(0);
 </script>
