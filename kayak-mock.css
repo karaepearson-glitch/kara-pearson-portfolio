@@ -510,3 +510,20 @@
 
 .xf .fn4{clip-path:polygon(30% 0,70% 0,63% 100%,37% 100%);padding:1.4rem 31% 2.4rem}.cs .xf .fn4 p{font-size:.82rem}
 .xf .fn4{clip-path:polygon(28% 0,72% 0,64% 100%,36% 100%);padding:1.2rem 33% 2.6rem}.cs .xf .fn4 p{font-size:.8rem}
+
+/* funnel v3: rounded, narrowing cards */
+.cs>.xf{filter:none;max-width:56rem!important;display:flex;flex-direction:column;align-items:center;gap:0;margin:2.5rem auto 3.5rem}
+.xf .fn{clip-path:none!important;border-radius:18px;margin:0!important;padding:1.4rem 2rem 1.5rem!important;position:relative}
+.xf .fn+.fn{margin-top:1.6rem!important}
+.xf .fn+.fn::before{content:"";position:absolute;top:-1.15rem;left:50%;width:.7rem;height:.7rem;border-right:2px solid #ff6a00;border-bottom:2px solid #ff6a00;transform:translateX(-50%) rotate(45deg)}
+.xf .fn1{width:100%!important;background:#fff;border:1.5px solid #f0d9c4}
+.xf .fn2{width:86%!important;background:#fff4ea;border:1.5px solid #ffd9b8}
+.xf .fn3{width:62%!important;background:#ffe0c2}
+.xf .fn4{width:44%!important;min-width:19rem;background:#ff6a00}
+.xf .fn>span{margin-bottom:.45rem}
+.cs .xf .fn p{font-size:var(--fs-body);line-height:1.45}
+.cs .xf .fn3 p{font-size:1.15rem!important;font-weight:600;color:#7c2d0a}
+.cs .xf .fn4 p{font-size:1rem;color:#fff;font-weight:600}
+.fnr{max-width:none;gap:1.5rem}.fnr b{font-size:.95rem}.cs .xf .fnr p{font-size:.95rem}
+@media(max-width:900px){.xf .fn{width:100%!important;min-width:0}}
+
