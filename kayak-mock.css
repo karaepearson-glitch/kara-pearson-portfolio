@@ -615,3 +615,5 @@
 .xf .fn3>span,.xf .fn3::after{color:#c2410c}
 .xf .fn3 .fd>div,.xf .fn4 .fd>div{border-color:transparent}
 .xf .fn3:not(.open) .fd>div,.xf .fn4:not(.open) .fd>div{border-width:0}
+.xf .fn4{background:#ffc590!important;border-color:#ffb27a}
+.xf .fn4>span,.xf .fn4::after{color:#9a3412}.cs .xf .fn4>p{color:#2a2018}
