@@ -762,3 +762,8 @@ a.thumb{display:block;cursor:pointer}
 /* Verizon thumbnail: single centered screen */
 .thumb.vz img.p2{left:50%;top:9%;width:31%;transform:translateX(-50%)!important}
 .case:hover .thumb.vz img.p2{transform:translateX(-50%) translateY(-3%)!important}
+
+/* Verizon thumbnail: large phone bleeding off the bottom, like Kayak */
+.thumb.vz img.p2{left:34%;top:11%;width:40%;transform:none!important;filter:drop-shadow(0 30px 40px rgba(150,0,20,.35))}
+.case:hover .thumb.vz img.p2{transform:translateY(-3%)!important}
+.thumb.vz .fc2{right:5%;top:12%;left:auto}.thumb.vz .fc1{left:5%;bottom:14%;top:auto;right:auto}
