@@ -617,3 +617,6 @@
 .xf .fn3:not(.open) .fd>div,.xf .fn4:not(.open) .fd>div{border-width:0}
 .xf .fn4{background:#ffc590!important;border-color:#ffb27a}
 .xf .fn4>span,.xf .fn4::after{color:#9a3412}.cs .xf .fn4>p{color:#2a2018}
+.cs .xf .fn>p,.cs .xf .fn3>p,.cs .xf .fn4>p{font-size:1.1rem!important;font-weight:600;line-height:1.4;letter-spacing:0}
+.cs .xf .fn .fd p{font-size:.95rem!important;line-height:1.5;letter-spacing:0;font-weight:400}.cs .xf .fn .fd p b{font-weight:600}
+.cs .xf .fn2 .fnr p{font-size:.95rem!important}.cs .xf .fn2 .fnr b{font-size:1rem}
