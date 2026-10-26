@@ -334,7 +334,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 
 /* Wider content */
 .cs{padding-right:3vw}
-.cs>:not(.shot):not(.meta):not(.next):not(.toc):not(.screens){max-width:1040px}
+.cs>:not(.shot):not(.meta):not(.next):not(.toc):not(.screens){max-width:none}
 .cs>p,.cs>ul{font-size:1.2rem;line-height:1.65}
 .cs>ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 2rem;list-style:none;padding:0}
 .cs>ul li{background:#fbf6f0;border-radius:var(--r-md);padding:1.1rem 1.3rem;margin:0}
