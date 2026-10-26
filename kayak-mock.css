@@ -579,3 +579,4 @@
 .xf .fn2>.fnr{margin-top:1rem}.xf .fn2>span{margin-bottom:.9rem}
 .xf .fn2>.fnr{margin-bottom:.4rem}.xf .fn2 .fd>div>.sx-p{padding-top:.9rem}.xf .fn2 .fnr>div{margin-bottom:-.7rem}
 .xf .fn::after{content:"";font-size:0;background:linear-gradient(currentColor,currentColor) center/.7rem 1.5px no-repeat,linear-gradient(currentColor,currentColor) center/1.5px .7rem no-repeat;box-sizing:border-box}
+.xf .fn2:not(.open) .fnr>div.on{background:transparent;box-shadow:none}.xf .fn2:not(.open) .fnr>div:hover{background:#fff;box-shadow:0 0 0 1.5px #ffb980}
