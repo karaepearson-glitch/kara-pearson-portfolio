@@ -433,9 +433,9 @@
 .pz-p:not(.in) *,.pz-p:not(.in){animation-play-state:paused!important}.cv{position:relative}.cv-row{display:flex;gap:6px;align-items:flex-start;margin:0}.cv-av{flex:none;width:20px;height:20px;border-radius:50%;background:#ee0000;color:#fff;font-size:10px;display:grid;place-items:center}
 .cv-swap{display:grid;max-width:85%}.cv-swap>*{grid-area:1/1}.cv-ans{display:flex;flex-direction:column;gap:6px}
 .cv-dots{display:flex;gap:4px;align-self:start;width:fit-content;height:fit-content;padding:11px 12px!important}.cv-dots i{width:6px;height:6px;border-radius:50%;background:#999;animation:pzDot 1s infinite}.cv-dots i:nth-child(2){animation-delay:.15s}.cv-dots i:nth-child(3){animation-delay:.3s}
-.cv-input{margin-top:auto;display:flex;align-items:center;box-sizing:border-box;border:1px solid #ccc;border-radius:99px;padding:0 5px 0 14px;font-size:10.5px;line-height:1;position:relative;height:32px;flex:none}
-.cv-ph{color:#888}.cv-typed{position:absolute;left:14px;top:50%;transform:translateY(-50%);white-space:nowrap;color:#111;clip-path:inset(0 100% 0 0)}
-.cv-send{margin-left:auto;width:20px;height:20px;border-radius:50%;background:#ee0000;color:#fff;font-size:9px;display:grid;place-items:center}
+.cv-input{margin-top:auto;display:flex;align-items:center;box-sizing:border-box;background:#f2f2f2;border-radius:99px;padding:0 4px 0 14px;font-size:11px;line-height:1;position:relative;height:38px;flex:none;margin-bottom:4px}
+.cv-ph{color:#777}.cv-typed{position:absolute;left:14px;top:50%;transform:translateY(-50%);white-space:nowrap;color:#111;clip-path:inset(0 100% 0 0)}
+.cv-send{margin-left:auto;width:30px;height:30px;border-radius:50%;background:#ee0000;color:#fff;font-size:11px;display:grid;place-items:center}
 .pzB .cv-me,.pzB .cv-rep .cv-av{opacity:0}.pzB .cv-me{animation:cvMe 12s 1 both}.pzB .cv-rep{opacity:0;animation:cvRep 12s 1 both}
 .pzB .cv-dots{animation:cvDots 12s 1 both}.pzB .cv-ans{opacity:0;animation:cvAns 12s 1 both}.pzB .cv-ans .oc-faq span{opacity:0;animation:cvChip 12s 1 both}
 .pzB .cv-ans .oc-faq span:nth-child(2){animation-delay:.35s}.pzB .cv-ans .oc-faq span:nth-child(3){animation-delay:.7s}
