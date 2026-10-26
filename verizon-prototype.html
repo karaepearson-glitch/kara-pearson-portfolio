@@ -22,10 +22,10 @@ html,body{margin:0;height:100%;background:linear-gradient(135deg,#fff3e8,#ffe2cc
 .phone .scr.pdf .sheet{transform:translateY(105%);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .phone .scr.pdf .pill{transition:opacity .25s}
 .phone .scr.pdf[data-sheet=ai] .dim,.phone .scr.pdf[data-sheet=chat] .dim{opacity:1}
-.phone .scr.pdf[data-sheet=ai] .sheet.ai,.phone .scr.pdf[data-sheet=chat] .sheet.chat{transform:none}
+.phone .scr.pdf[data-sheet=ai] .sheet.ai,.phone .scr.pdf[data-sheet=chat] .sheet.ai{transform:none}.phone .chatx{display:none}.phone .scr.pdf[data-sheet=chat] .sheet.ai{top:96px;overflow-y:auto;scrollbar-width:none}.phone .scr.pdf[data-sheet=chat] .chatx{display:block;animation:bubin .4s ease both}.phone .scr.pdf[data-sheet=chat] .bub.bot{animation-delay:.5s}.phone .scr.pdf[data-sheet=chat] .gen{animation-delay:.5s}@keyframes bubin{from{opacity:0;transform:translateY(8px)}}
 .phone .scr.pdf[data-sheet=ai] .pill,.phone .scr.pdf[data-sheet=chat] .pill{opacity:0}
 .phone .sheet.ai{top:316px}
-.phone .sheet.chat{top:196px}
+
 .phone .bub{padding:8px 12px;border-radius:16px;max-width:88%;font-size:10.5px;line-height:14px}
 .phone .bub.me{align-self:flex-end;background:#000;color:#fff;border-bottom-right-radius:4px}
 .phone .bub.bot{align-self:flex-start;background:#fff;border-bottom-left-radius:4px}
@@ -143,8 +143,7 @@ html,body{margin:0;height:100%;background:linear-gradient(135deg,#fff3e8,#ffe2cc
         <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
         <div class="pill" id="g6" data-go="7" role="button" aria-label="AI Bill Summary"><small>NEW</small><i>✦</i></div>
         <div class="dim"></div>
-        <div class="sheet ai"><h4>&#10022; AI Bill Summary <i>&#10005;</i></h4><h5>Kara's Phone (2417) &mdash; $76.70</h5><div>This line is higher than the others because it includes <b>an additional line-specific charge</b> that the rest of the family does not have.</div><div>Unlike the other lines, Kara's total reflects:</div><ul><li>The base shared plan cost <b>plus</b></li><li>An <b>extra cost assigned only to this line</b>: an international call on 1/12/26 ($14.66)</li></ul><div>That's why this line is higher than the rest of the family.</div><div class="askin" id="g7" data-go="8">Ask why a change occurred&hellip;</div></div>
-        <div class="sheet chat"><h4>&#10022; AI Bill Summary <i>&#10005;</i></h4><div class="bub me">Why is Kara's line higher?</div><div class="bub bot">Kara's line includes a $14.66 international call on top of the plan and device payment, so it's higher than Sarah's, Ava's and Lizzy's.</div><div class="gen">Written by AI from your bill.</div><div class="askin">Ask why a change occurred&hellip;</div></div>
+        <div class="sheet ai"><h4>&#10022; AI Bill Summary <i>&#10005;</i></h4><h5>Kara's Phone (2417) &mdash; $76.70</h5><div>This line is higher than the others because it includes <b>an additional line-specific charge</b> that the rest of the family does not have.</div><div>Unlike the other lines, Kara's total reflects:</div><ul><li>The base shared plan cost <b>plus</b></li><li>An <b>extra cost assigned only to this line</b>: an international call on 1/12/26 ($14.66)</li></ul><div>That's why this line is higher than the rest of the family.</div><div class="bub me chatx">Why is Kara's line higher?</div><div class="bub bot chatx">Kara's line includes a $14.66 international call on top of the plan and device payment, so it's higher than Sarah's, Ava's and Lizzy's.</div><div class="gen chatx">Written by AI from your bill.</div><div class="askin" id="g7" data-go="8">Ask why a change occurred&hellip;</div></div>
       </section>
 
       <div class="tap" id="tap"></div>
@@ -162,7 +161,7 @@ const steps=[
  {s:3,scroll:9999,t:'g3',c:'<b>Bill Breakdown</b> scrolls from the trend to who drove the change.'},
  {s:6,sheet:'',scroll:9999,t:'g6',c:'<b>Bill PDF</b> stays familiar, with AI one tap away.'},
  {s:6,sheet:'ai',scroll:9999,t:'g7',c:'<b>AI Bill Summary</b> explains the line you care about.'},
- {s:6,sheet:'chat',scroll:9999,c:'<b>Ask me anything</b> turns the bill into a conversation.'}
+ {s:6,sheet:'chat',scroll:9999,c:'<b>Ask why a change occurred</b> and the answer appears right in the same chat.'}
 ];
 let i=0,playing=true,timer=null,token=0;
 steps.forEach((_,k)=>{const d=document.createElement('i');d.onclick=()=>{go(k,true)};dots.appendChild(d)});
