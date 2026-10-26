@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Verizon — Kara Pearson</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="kayak-mock.css">
 </head>
 <body>
 <div class="cursor" aria-hidden="true"></div>
@@ -35,14 +36,21 @@
   
 
   <h2 class="reveal">Overview</h2>
-  <p class="reveal">Verizon customers struggle to find billing details, make sense of the numbers, and get past the jargon. Our team of seven interdisciplinary designers (UX, UI and more) partnered with Verizon's Experience Design team to answer one question: <b>how can AI improve the way customers understand their bill?</b></p>
-  <p class="reveal">Over 16 weeks we researched the problem across four carriers, designed an AI-powered bill experience, and tested it with 16 people in a Figma prototype. We moved from open exploration to one focused bet: make the bill explain itself.</p>
+  <div class="ov-split">
+  <div><p class="reveal">Verizon customers struggle to find billing details, make sense of the numbers, and get past the jargon. A team of seven interdisciplinary designers (UX, UI and more) partnered with Verizon's Experience Design team to answer one question: <b>how can AI improve the way customers understand their bill?</b></p><p class="reveal">Over 16 weeks the team researched the problem across four carriers, designed an AI-powered bill experience, and tested it with 16 people in a Figma prototype. The work moved from open exploration to one focused bet: make the bill explain itself.</p></div>
+  <div class="ovs reveal" role="img" aria-label="Today the Verizon bill shows $262.82 with no explanation of the change. The goal is a bill that explains an increase of $30.01 in plain language."><div class="ovp"><div class="ovh"><div><small>Verizon today</small><h5>Your bill</h5></div></div><div class="ovl"><span>Total due<em>$262.82</em></span><span>Change from last month<em>Not explained</em></span><span class="no">Plain-language summary<em>Not available</em></span></div></div><div class="ovarr" aria-hidden="true"><i></i></div><div class="ovp on"><div class="ovh"><div><small>The goal</small><h5>A bill that explains itself</h5></div></div><div class="ovr"><span class="k">What changed</span><span class="v">+$30.01 from last month</span><span class="chip">Explained</span></div><div class="ovr"><span class="k">Why</span><span class="v">International call and a new device payment</span><span class="chip">Plain language</span></div><div class="ovr"><span class="k">Who</span><span class="v">Kara's line, +$14.66</span><span class="chip ok">Per member</span></div><div class="ovf">One tap from the home screen to the answer.</div></div></div>
+  </div>
 
-  <h2 class="reveal">The problem</h2>
+  <h2 class="reveal">The Problem</h2>
+  <div class="problem-split">
   <p class="reveal">Verizon bills mix taxes, device payments, and one-time fees, and customers can't tell what changed or why. Confusion leads to frustration and support calls. The AI help that exists today gives generic answers that aren't tied to the bill and sends people to broad FAQ pages, so the charges stay unexplained. Our persona Jason says it bluntly: <i>"If I can't understand my bill, I'll just switch providers."</i></p>
-  <div class="shot reveal">IMAGE → Current Verizon experience: screenshots of the generic AI reply and the FAQ redirect (problem / current-experience slide).</div>
+  <div class="chat" role="img" aria-label="Illustrative exchange. Customer: Why is this bill $40 more than last month? Verizon assistant: Here are some billing FAQs.">
+    <p class="b me reveal">Why is this bill $40 more than last month?</p>
+    <span class="who reveal">Verizon assistant</span><p class="b them reveal">Here are some billing FAQs.</p>
+  </div>
+  </div>
 
-  <h2 class="reveal">The solution</h2>
+  <h2 class="reveal">The Solution</h2>
   <p class="reveal">An AI-powered bill experience with four parts:</p>
   <ul class="reveal">
     <li><b>AI Bill Summary:</b> a personalized, plain-language explanation of why the bill changed and who or what caused it.</li>
@@ -50,57 +58,81 @@
     <li><b>Bill PDF with AI:</b> highlighted line items you can click, plus an "Ask me anything about your bill" input.</li>
     <li><b>Home shortcut:</b> a balance snapshot with one tap into the breakdown and the AI.</li>
   </ul>
-  <div class="screens reveal">
-    <figure><div class="phone"><div class="hd"><div class="st"><span>9:41</span><span>●●● ▮</span></div><div class="nav">←<span>Bill changes</span><em>⌕ &nbsp;◯</em></div></div><div class="body"><div class="card"><b>Your bill increased $30.01: an international call and a new device payment.</b><div class="sub">You used less data than your plan allows. A smaller plan could save you money.</div></div><div class="card"><b>By Member</b><div class="mem" style="margin-top:8px"><div class="donut" role="img" aria-label="Bill share: Kara 29%, Ava 24%, Sarah 24%, Lizzy 24%" style="background:conic-gradient(#00305f 0 28.4%,#fff 28.4% 29.2%,#1a6fbf 29.2% 52%,#fff 52% 52.8%,#00828f 52.8% 75.6%,#fff 75.6% 76.4%,#7a4fb5 76.4% 99.2%,#fff 99.2%)"></div><ul><li style="--c:#00305f">Kara 29%</li><li style="--c:#1a6fbf">Ava 24%</li><li style="--c:#00828f">Sarah 24%</li><li style="--c:#7a4fb5">Lizzy 24%</li></ul></div></div><div class="aicard"><div class="t">✦ Kara's Bill Summary</div><p>Kara's line is $14.66 higher than the others because of an international call on 1/12/26.</p><a>See why it increased →</a></div></div><div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div></div><figcaption>Who caused the change, in one glance</figcaption></figure>
-    <figure><div class="phone"><div class="hd"><div class="st"><span>9:41</span><span>●●● ▮</span></div><div class="nav">←<span>Bill PDF</span><em>⌕ &nbsp;◯</em></div></div><div class="body" style="background:#868686"><div class="paper"><div class="meta"><div><div class="v">verizon</div><div class="addr">SARAH M. LEE<br>123 MAPLE AVE<br>ANYTOWN, IN 46000</div></div><div><div class="acct"><b>Account:</b> 123456789-00001<br><b>Invoice:</b> 1234567890<br><b>Billing period:</b> Dec 29 - Jan 28</div><div class="q"><b>Questions about your bill?</b><br>verizon.com/support<br>800-922-0204</div></div></div><div class="snap"><span class="ttl">Snapshot of your bill</span><div><span>Balance from last bill</span><span>$0.00</span></div><div><span>This month's charges</span><span>$262.82</span></div><div><b>Total due on Feb 6</b><b>$262.82</b></div></div><div class="snap"><span class="ttl">Bill summary by line</span><div><span>Sarah's Phone 3390</span><span>$62.04</span></div><div><span>Kara's Phone 2417</span><span>$76.70</span></div><div><span>Ava's Phone 5833</span><span>$62.04</span></div><div><span>Lizzy's Phone 4036</span><span>$62.04</span></div></div></div></div><div class="pill"><small>NEW</small>Bill Summary<b>✦</b></div></div><figcaption>The familiar PDF, now with AI one tap away</figcaption></figure>
-  </div>
+  <div class="walk"><div class="wstep reveal"><div class="wtxt"><span>01</span><h4>See who caused the change</h4><p>The bill breakdown shows who or what drove the increase, with a per-member split and a short AI summary for the biggest change.</p></div><div class="wph"><div class="screens">
+    <figure><div class="phone"><div class="hd"><div class="st"><span>9:41</span><span>●●● ▮</span></div><div class="nav">←<span>Bill changes</span><em>⌕ &nbsp;◯</em></div></div><div class="body"><div class="card"><b>Your bill increased $30.01: an international call and a new device payment.</b><div class="sub">You used less data than your plan allows. A smaller plan could save you money.</div></div><div class="card"><b>By Member</b><div class="mem" style="margin-top:8px"><div class="donut" role="img" aria-label="Bill share: Kara 29%, Ava 24%, Sarah 24%, Lizzy 24%" style="background:conic-gradient(#00305f 0 28.4%,#fff 28.4% 29.2%,#1a6fbf 29.2% 52%,#fff 52% 52.8%,#00828f 52.8% 75.6%,#fff 75.6% 76.4%,#7a4fb5 76.4% 99.2%,#fff 99.2%)"></div><ul><li style="--c:#00305f">Kara 29%</li><li style="--c:#1a6fbf">Ava 24%</li><li style="--c:#00828f">Sarah 24%</li><li style="--c:#7a4fb5">Lizzy 24%</li></ul></div></div><div class="aicard"><div class="t">✦ Kara's Bill Summary</div><p>Kara's line is $14.66 higher than the others because of an international call on 1/12/26.</p><a>See why it increased →</a></div></div><div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div></div><figcaption>Who caused the change, in one glance</figcaption></figure></div></div></div><div class="wstep reveal"><div class="wtxt"><span>02</span><h4>Ask about any charge</h4><p>The familiar PDF stays, with highlighted line items. Tap one and the AI explains it, or ask a question about the bill.</p></div><div class="wph"><div class="screens">
+    <figure><div class="phone"><div class="hd"><div class="st"><span>9:41</span><span>●●● ▮</span></div><div class="nav">←<span>Bill PDF</span><em>⌕ &nbsp;◯</em></div></div><div class="body" style="background:#868686"><div class="paper"><div class="meta"><div><div class="v">verizon</div><div class="addr">SARAH M. LEE<br>123 MAPLE AVE<br>ANYTOWN, IN 46000</div></div><div><div class="acct"><b>Account:</b> 123456789-00001<br><b>Invoice:</b> 1234567890<br><b>Billing period:</b> Dec 29 - Jan 28</div><div class="q"><b>Questions about your bill?</b><br>verizon.com/support<br>800-922-0204</div></div></div><div class="snap"><span class="ttl">Snapshot of your bill</span><div><span>Balance from last bill</span><span>$0.00</span></div><div><span>This month's charges</span><span>$262.82</span></div><div><b>Total due on Feb 6</b><b>$262.82</b></div></div><div class="snap"><span class="ttl">Bill summary by line</span><div><span>Sarah's Phone 3390</span><span>$62.04</span></div><div><span>Kara's Phone 2417</span><span>$76.70</span></div><div><span>Ava's Phone 5833</span><span>$62.04</span></div><div><span>Lizzy's Phone 4036</span><span>$62.04</span></div></div></div></div><div class="pill"><small>NEW</small>Bill Summary<b>✦</b></div></div><figcaption>The familiar PDF, now with AI one tap away</figcaption></figure></div></div></div></div>
+  <p class="reveal"><a class="figma-link" href="verizon-prototype.html" target="_blank" rel="noopener">Try the interactive prototype &nearr;</a></p>
+
   <h2 class="reveal">Process</h2>
   <h3 class="reveal"><small>Milestone 1</small>Exploration</h3>
-  <p class="reveal">We began with 15+ sources of research, a heuristic evaluation against Nielsen's 10 heuristics, review mining across Verizon, T-Mobile, AT&amp;T, and Mint Mobile, and 7 customer interviews. The evaluation showed that Verizon gives customers almost no visibility into why their bill changes.</p>
+  <p class="reveal">The project began with 15+ sources of research, a heuristic evaluation against Nielsen's 10 heuristics, review mining across Verizon, T-Mobile, AT&amp;T, and Mint Mobile, and 7 customer interviews. The evaluation showed that Verizon gives customers almost no visibility into why their bill changes.</p>
+  <div class="stats reveal"><div><b>15+</b><span>research sources</span></div><div><b>4</b><span>carriers<br>reviews mined</span></div><div><b>10</b><span>Nielsen heuristics<br>evaluated</span></div><div><b>7</b><span>customer<br>interviews</span></div></div>
   <p class="quote reveal">Customers feel "surprised" by their bills, and contacting support feels like a hassle.</p>
-  <p class="reveal">Our interviews pointed to the same fix: customers want proactive automation and summaries they can trust. That narrowed our scope from "customer service" to billing transparency and trust.</p>
-  <div class="shot reveal">IMAGE → Research synthesis: review-mining pain points and needs, plus heuristic evaluation findings (M1 slides). Keep it to one clear takeaway visual.</div>
-
+  <div class="insight reveal"><span>Key insight</span><p><b>Customers want proactive automation and summaries they can trust.</b> So the scope narrowed from "customer service" to billing transparency and trust.</p></div>
   <h3 class="reveal"><small>Milestone 2</small>Research</h3>
-  <p class="reveal">We compared six apps (T-Mobile, AT&amp;T, Rocket Money, Xfinity, Mint Mobile, and Google Fi) and ran five cognitive walkthroughs to see where billing breaks down. Two personas anchored our decisions: <b>Sarah</b>, 42, an HR consultant managing a family plan at $265–310 a month, and <b>Jason</b>, 26, a marketing associate paying $85–110 a month.</p>
-  <p class="reveal">Sarah's hardest question is "which family member caused the increase?", while Jason just wants a fast answer. Journey mapping showed three problems to solve: billing details are hard to find, the numbers are hard to understand, and the explanations are full of jargon.</p>
-  <div class="shot reveal">IMAGE → Sarah and Jason persona slides (with the "Why is this bill $40 more than last month?" quote), then the journey map / walkthrough pain points.</div>
+  <p class="reveal">With the problem scoped, the next step was to see where billing breaks down for real customers. Three steps turned that into two personas and a clear set of problems to solve. Pick a stop to explore it.</p>
+  <div class="dive reveal">
+    <details>
+      <summary><span class="st-n">01</span><span class="st-t"><b>Competitive analysis</b><em>Six apps compared for how they explain a bill.</em></span><i></i></summary>
+      <div class="st-body">
+        <p class="ca-lead">T-Mobile, AT&amp;T, Rocket Money, Xfinity, Mint Mobile, and Google Fi were compared to see how each one helps customers understand what they owe.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="st-n">02</span><span class="st-t"><b>Cognitive walkthroughs</b><em>Five walkthroughs showed where billing breaks down.</em></span><i></i></summary>
+      <div class="st-body">
+        <div class="finds four three"><div><b>Find</b><span>Billing details are hard to find</span></div><div><b>Understand</b><span>The numbers are hard to make sense of</span></div><div><b>Decode</b><span>Explanations are full of jargon</span></div></div>
+      </div>
+    </details>
+    <details>
+      <summary><span class="st-n">03</span><span class="st-t"><b>Personas</b><em>Sarah and Jason anchored our decisions.</em></span><i></i></summary>
+      <div class="st-body">
+        <div class="finds four"><div><b>Sarah, 42</b><span>HR consultant managing a family plan at $265–310 a month. Her hardest question: "which family member caused the increase?"</span></div><div><b>Jason, 26</b><span>Marketing associate paying $85–110 a month. He just wants a fast answer.</span></div></div>
+      </div>
+    </details>
+  </div>
+  <div class="insight reveal"><span>Key insight</span><p><b>Customers need to know what changed and who caused it, in words they understand.</b> So the bill explains each change in plain language and breaks it down by member.</p></div>
 
   <h3 class="reveal"><small>Milestone 3</small>Design &amp; testing</h3>
-  <p class="reveal">Throughout the research phases, we sketched in short, iterative rounds, working agile-style. Each of us sketched ideas on our own, and then we consolidated the strongest ones into a single direction on a whiteboard before building mid-fidelity screens in Figma.</p>
-  <div class="shot reveal">IMAGE → Individual sketches, then the merged whiteboard (sketching slides). Caption: what we kept and why.</div>
-  <p class="reveal">We tested five screens with 16 participants, using A/B tests and 20–30 minute think-aloud walkthroughs.</p>
+  <p class="reveal">Throughout the research phases, the team sketched in short, iterative rounds, working agile-style. Each designer sketched ideas alone, and then the strongest ones were consolidated into a single direction on a whiteboard before building mid-fidelity screens in Figma.</p>
+  <p class="reveal">Five screens were tested with 16 participants, using A/B tests and 20–30 minute think-aloud walkthroughs.</p>
+  <div class="stats reveal"><div><b>5</b><span>screens tested</span></div><div><b>16</b><span>participants</span></div><div><b>20–30</b><span>minute think-aloud<br>sessions</span></div></div>
 
   <h2 class="reveal">Impact &amp; learnings</h2>
   <h3 class="reveal">Results</h3>
-  <p class="quote reveal">87.5% of participants (14 of 16) were satisfied, beating our 80% goal.</p>
+  <div class="stats reveal"><div><b>87.5%</b><span>satisfied<br>14 of 16 participants</span></div><div><b>80%</b><span>goal<br>beaten</span></div></div>
   <p class="reveal">The AI Bill Summary significantly improved how well people understood their bill, and testers consistently preferred simpler, more visual layouts. Navigation clarity and task flow are the next problems to solve.</p>
-  <p class="reveal"><b>What I'd do next:</b> fix the navigation issues, test with real bill data instead of sample numbers, and measure whether the summary reduces support contacts.</p>
-  <div class="shot reveal">IMAGE → Results: 87.5% satisfaction vs the 80% goal, plus the four-goal checklist (results slide).</div>
 
   <h3 class="reveal">My impact</h3>
-  <ul class="reveal">
-    <li><b>Led the team, faster with AI:</b> as project manager, I kept seven designers aligned through phase champions and weekly client check-ins. I used AI to draft plans and timelines, summarize meetings, and turn action items into tasks, which cut my planning and admin time by <mark>[X]%</mark>.</li>
-    <li><b>Drove the research:</b> I helped run customer interviews, a heuristic evaluation, and a competitive analysis. AI-assisted synthesis got us from raw interview notes to clear themes in <mark>[X hours instead of Y]</mark>.</li>
-    <li><b>Won client buy-in:</b> I pitched our direction to Verizon and turned their feedback into changes at each milestone.</li>
-    <li><b>Proved the concept:</b> I planned and ran usability testing with 16 participants.</li>
-  </ul>
+  <div class="im">
+    <div class="reveal"><span>Leadership</span><b>Led the team, faster with AI</b><p>As project manager, I kept seven designers aligned through phase champions and weekly client check-ins. I used AI to draft plans and timelines, summarize meetings, and turn action items into tasks, which cut my planning and admin time by <mark>[X]%</mark>.</p></div>
+    <div class="reveal"><span>Research</span><b>Drove the research</b><p>I helped run customer interviews, a heuristic evaluation, and a competitive analysis. AI-assisted synthesis got us from raw interview notes to clear themes in <mark>[X hours instead of Y]</mark>.</p></div>
+    <div class="reveal"><span>Stakeholders</span><b>Won client buy-in</b><p>I pitched our direction to Verizon and turned their feedback into changes at each milestone.</p></div>
+    <div class="reveal"><span>Testing</span><b>Proved the concept</b><p>I planned and ran usability testing with 16 participants.</p></div>
+  </div>
 
   <h3 class="reveal">How I worked faster with AI</h3>
-  <p class="reveal">The project was about AI, so I made it part of how our team worked too. As project manager, I built AI into our workflow in four places:</p>
-  <ul class="reveal">
-    <li><b>Planning:</b> AI drafted our project plan and milestone timelines, which I refined with the team. <mark>[X days saved]</mark></li>
-    <li><b>Meetings:</b> AI turned meeting notes into summaries and action items, so every member left each meeting knowing their next step. <mark>[X hours saved per week]</mark></li>
-    <li><b>Research synthesis:</b> AI helped cluster interview and review findings into themes, which we verified against the source quotes. <mark>[X% faster]</mark></li>
-    <li><b>Project tracking:</b> AI kept status updates and client check-in notes consistent, so reporting took minutes instead of an afternoon. <mark>[X]</mark></li>
-  </ul>
+  <p class="reveal">The project was about AI, so I made it part of how our team worked too. As project manager, I built AI into our workflow in four places.</p>
+  <div class="im">
+    <div class="reveal"><span>Planning</span><b>Plans and timelines</b><p>AI drafted our project plan and milestone timelines, which I refined with the team. <mark>[X days saved]</mark></p></div>
+    <div class="reveal"><span>Meetings</span><b>Summaries and action items</b><p>AI turned meeting notes into summaries and action items, so every member left each meeting knowing their next step. <mark>[X hours saved per week]</mark></p></div>
+    <div class="reveal"><span>Research synthesis</span><b>Themes from raw findings</b><p>AI helped cluster interview and review findings into themes, which we verified against the source quotes. <mark>[X% faster]</mark></p></div>
+    <div class="reveal"><span>Project tracking</span><b>Consistent status updates</b><p>AI kept status updates and client check-in notes consistent, so reporting took minutes instead of an afternoon. <mark>[X]</mark></p></div>
+  </div>
 
   <h3 class="reveal">What I learned</h3>
-  <ul class="reveal">
-    <li><b>Pitching to clients:</b> research lands when it's framed as a clear recommendation.</li>
-    <li><b>Teamwork:</b> naming a champion for each phase made ownership clear.</li>
-    <li><b>Cross-disciplinary work:</b> our BIM specialist's insights made our user testing sharper.</li>
-  </ul>
+  <div class="lr">
+    <div class="reveal"><b>Research lands as a recommendation.</b><p>Pitching to a client works best when the findings are framed as one clear direction.</p></div>
+    <div class="reveal"><b>Ownership needs a name.</b><p>Naming a champion for each phase made it clear who owned what.</p></div>
+    <div class="reveal"><b>Other disciplines sharpen the work.</b><p>Our BIM specialist's insights made our user testing sharper.</p></div>
+  </div>
+
+  <h3 class="reveal">Limitations &amp; next steps</h3>
+  <div class="ln"><div class="ln-hd reveal"><h5>Limitations</h5><h5>Next steps</h5></div>
+    <div class="ln-r reveal"><p class="ln-l"><b>Navigation was unclear.</b> Navigation clarity and task flow still need work.</p><span class="ln-a" aria-hidden="true">&rarr;</span><p class="ln-n"><i>1</i><span><b>Fix the navigation issues</b> found in testing.</span></p></div>
+    <div class="ln-r reveal"><p class="ln-l"><b>Testing used sample numbers.</b> Participants saw made-up bill data, not their own.</p><span class="ln-a" aria-hidden="true">&rarr;</span><p class="ln-n"><i>2</i><span><b>Test with real bill data</b> instead of sample numbers.</span></p></div>
+    <div class="ln-r reveal"><p class="ln-l"><b>Support impact wasn't measured.</b> Satisfaction improved, but support contacts weren't tracked.</p><span class="ln-a" aria-hidden="true">&rarr;</span><p class="ln-n"><i>3</i><span><b>Measure</b> whether the summary reduces support contacts.</span></p></div>
+  </div>
 
   <a class="next reveal" href="keylime.html"><span>Next project</span><h3>Keylime Interactive →</h3></a>
 </main>
