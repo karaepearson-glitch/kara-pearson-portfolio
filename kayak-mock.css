@@ -581,3 +581,4 @@
 .xf .fn::after{content:"";font-size:0;background:linear-gradient(currentColor,currentColor) center/.7rem 1.5px no-repeat,linear-gradient(currentColor,currentColor) center/1.5px .7rem no-repeat;box-sizing:border-box}
 .xf .fn2:not(.open) .fnr>div.on{background:transparent;box-shadow:none}.xf .fn2:not(.open) .fnr>div:hover{background:#fff;box-shadow:0 0 0 1.5px #ffb980}
 .xf .fn2:not(.open) .fnr>div:hover,.xf .fn2:not(.open) .fnr>div:focus-visible{background:transparent;box-shadow:none;outline:none}
+.rm-l .rq{display:block;font-style:normal;background:#fff;border:1px solid #f3dcc6;border-radius:10px;padding:.55rem .75rem;margin:.45rem 0;font-size:.85rem;line-height:1.45;color:#3b2a1e}.rm-l .rq small{display:block;margin-top:.25rem;font-size:.72rem;letter-spacing:.02em;color:#8a6a52}
