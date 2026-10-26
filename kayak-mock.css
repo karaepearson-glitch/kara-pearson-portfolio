@@ -567,3 +567,14 @@
 .lb{position:fixed;inset:0;z-index:9999;background:rgba(20,10,0,.85);overflow:auto;cursor:zoom-out;display:flex;padding:2vh 2vw}
 .lb img{margin:auto;max-width:none;width:auto;max-height:none;min-width:min(100%,1400px);border-radius:8px;background:#fff}
 
+
+.fnr>div{cursor:pointer;border-radius:12px;padding:.7rem .9rem;margin:-.7rem -.9rem;transition:background .2s ease}
+.fnr>div:hover{background:rgba(255,106,0,.08)}.fnr>div.on{background:#fff;box-shadow:0 0 0 1.5px #ffb980}
+.fnr>div:focus-visible{outline:2px solid #ff6a00}
+.rm-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 2rem;margin-top:.9rem}
+.rm-l>div{border-left:2px solid #ff6a00;padding-left:.8rem}.rm-l b{display:block;font-size:.95rem}.rm-l span{display:block;font-size:.9rem;line-height:1.45;margin:.2rem 0 .3rem}
+.rm-l a{font-size:.85rem;font-weight:600;color:#c2410c;margin-right:.9rem;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.rm-l{grid-template-columns:1fr}}
+
+.xf .fn2>.fnr{margin-top:1rem}.xf .fn2>span{margin-bottom:.9rem}
+.xf .fn2>.fnr{margin-bottom:.4rem}.xf .fn2 .fd>div>.sx-p{padding-top:.9rem}.xf .fn2 .fnr>div{margin-bottom:-.7rem}
