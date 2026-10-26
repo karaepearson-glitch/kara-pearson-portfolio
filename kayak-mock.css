@@ -381,3 +381,5 @@
 .phone.sp .sheet .askin{margin-top:auto;background:#fff;border-radius:99px;padding:10px 14px;font-size:10px;color:#8a8a8a;font-weight:400}
 .phone .hist i.vzmax{background:#00305f}.phone .hl .vzmax,.phone .hl .vzmax b{color:#00305f;font-weight:800}
 .wph .phone.sp .sheet h4{text-transform:none;color:#000;font:800 12.5px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.03em;margin:0}.wph .phone.sp .sheet h5{text-transform:none;color:var(--ai);letter-spacing:-.02em}
+
+.phone.sp .sheet.ln{top:auto;bottom:0;padding-bottom:18px}
