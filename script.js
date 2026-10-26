@@ -117,6 +117,7 @@ if (cursor) {
 // 3D tilt on project thumbnails
 document.querySelectorAll('.tilt').forEach(card => {
   const thumb = card.querySelector('.thumb');
+  if (thumb && (thumb.classList.contains('shot') || thumb.classList.contains('vz'))) return;
   card.addEventListener('mousemove', e => {
     const r = thumb.getBoundingClientRect();
     const x = (e.clientX - r.left) / r.width - 0.5;
