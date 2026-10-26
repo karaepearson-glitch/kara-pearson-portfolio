@@ -452,3 +452,10 @@
 @keyframes cvAns{0%,53%{opacity:0;transform:translateY(6px)}57%,100%{opacity:1;transform:none}}
 @keyframes cvChip{0%,58%{opacity:0;transform:translateY(6px)}63%,100%{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.pzB .cv-me,.pzB .cv-rep,.pzB .cv-ans,.pzB .cv-ans .oc-faq span{animation:none!important;opacity:1!important}.pzB .cv-dots,.pzB .cv-typed{display:none}}
+.pzB{position:relative}.kb{position:absolute;left:0;right:0;bottom:0;height:178px;background:#d2d4da;padding:8px 3px 14px;display:flex;flex-direction:column;gap:9px;transform:translateY(100%);z-index:6;border-radius:0 0 30px 30px}
+.kr{display:flex;gap:4px;justify-content:center}.kr b{flex:1;max-width:23px;height:30px;background:#fff;border-radius:5px;box-shadow:0 1px 0 #8b8d93;font:400 14px/30px -apple-system,"Helvetica Neue",Arial,sans-serif;text-align:center;color:#000}
+.kr.k2{padding:0 12px}.kr .kw{background:#adb0b8;max-width:34px;font-size:12px}.kr .kn{max-width:none;flex:none;width:62px;font-size:11px}.kr .ksp{max-width:none;flex:1;font-size:11px}
+.pzB .kb{animation:cvKb 12s 1 both}.pzB .cv-input{animation:cvLift 12s 1 both}
+@keyframes cvKb{0%,3%{transform:translateY(100%)}7%,31%{transform:none}36%,100%{transform:translateY(100%)}}
+@keyframes cvLift{0%,3%{margin-bottom:4px}7%,31%{margin-bottom:144px}36%,100%{margin-bottom:4px}}
+@media(prefers-reduced-motion:reduce){.kb{display:none}}
