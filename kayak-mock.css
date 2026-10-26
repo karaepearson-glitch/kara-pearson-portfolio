@@ -491,3 +491,22 @@
 .xf.js .fn{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}.xf.js .fn.on{opacity:1;transform:none}
 
 .cs .xf .fn p{color:#2a2018}.cs .xf .fn4 p{color:#fff}.cs .xf .fn3 p{color:#7c2d0a}.xf .fn4{width:50%}
+
+.cs .xf{max-width:62rem;margin:2.5rem auto 3.5rem;filter:drop-shadow(0 18px 22px rgba(194,65,12,.18))}
+.xf .fn{width:100%!important;margin:0 0 6px!important;min-width:0}
+.xf .fn1{clip-path:polygon(0 0,100% 0,92% 100%,8% 100%);padding:1.6rem 12% 1.8rem;background:#fff1e3}
+.xf .fn2{clip-path:polygon(8% 0,92% 0,80% 100%,20% 100%);padding:1.6rem 22% 2rem;background:#ffdcbf}
+.xf .fn3{clip-path:polygon(20% 0,80% 0,68% 100%,32% 100%);padding:1.4rem 32% 1.7rem;background:#ffb980}
+.xf .fn4{clip-path:polygon(32% 0,68% 0,58% 100%,42% 100%);padding:1.4rem 36% 2.2rem;background:#ff6a00;margin-bottom:0!important}
+.fnr{max-width:none;gap:1.4rem}
+.cs .xf .fn3 p{font-size:1.05rem!important}.cs .xf .fn4 p{font-size:.85rem}.fnr b{font-size:.85rem}.cs .fnr p{font-size:.85rem}
+@media(max-width:900px){.cs .xf{filter:none}.xf .fn{clip-path:none!important;padding:1.3rem!important;border-radius:14px}}
+
+
+.cs>.xf{max-width:60rem!important;margin-left:auto;margin-right:auto}
+.xf .fn4{clip-path:polygon(32% 0,68% 0,60% 100%,40% 100%);padding:1.4rem 34% 2.4rem}
+.cs .xf .fnr p{font-size:.85rem;line-height:1.4}
+.cs .xf .fn4 p{font-size:.88rem;line-height:1.4}
+
+.xf .fn4{clip-path:polygon(30% 0,70% 0,63% 100%,37% 100%);padding:1.4rem 31% 2.4rem}.cs .xf .fn4 p{font-size:.82rem}
+.xf .fn4{clip-path:polygon(28% 0,72% 0,64% 100%,36% 100%);padding:1.2rem 33% 2.6rem}.cs .xf .fn4 p{font-size:.8rem}
