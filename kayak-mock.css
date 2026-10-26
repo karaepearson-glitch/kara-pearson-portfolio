@@ -354,3 +354,30 @@
 .protoh{margin:2rem 0}.protoh iframe{display:block;width:100%;height:min(780px,88vh);border:0;border-radius:16px;background:#ffe9d8}.protoh p{margin:.8rem 0 0;text-align:right}
 .wph.old{margin-top:1.5rem}.wph.old .screens{gap:2rem;flex-wrap:wrap;justify-content:center}.phone .oc-me{align-self:flex-end;max-width:80%;background:#000;color:#fff;border-radius:14px 14px 3px 14px;padding:9px 11px;font-size:11.5px;line-height:15px}.phone .oc-bot{align-self:flex-start;max-width:85%;background:#f0f0f0;border-radius:14px 14px 14px 3px;padding:9px 11px;font-size:11.5px;line-height:15px}.phone .oc-faq{display:flex;flex-direction:column;gap:6px;margin-top:2px}.phone .oc-faq span{border:1px solid #000;border-radius:99px;padding:7px 12px;font-size:11px;font-weight:700}
 .cs .problem-split:has(.wph){display:block!important}.cs .problem-split:has(.wph)>p{max-width:46rem}
+
+/* Static Verizon phones that mirror the prototype */
+.phone.sp .body{overflow:hidden}
+.phone.sp .scrollup{display:flex;flex-direction:column;gap:inherit;margin-top:-400px}
+.phone.sp .card{background:#f1f1f1;flex:none}.phone.sp .aicard{flex:none}
+.phone.sp .card .up{color:#ee0022;font-size:12px;letter-spacing:-.02em;margin-left:4px}
+.phone.sp .brow{display:flex;gap:8px;margin-top:6px}.phone.sp .brow span{flex:1;text-align:center;background:#fff;border-radius:99px;padding:6px 0;font-size:9px;font-weight:700}
+.phone.sp .hist{height:70px;margin:12px 8px 0;gap:0}.phone.sp .hist i{background:#8d9094;border-radius:4px 4px 0 0;width:30px}.phone.sp .hist i.vzmax{background:#ee0022}
+.phone.sp .hl .vzmax,.phone.sp .hl .vzmax b{color:#000;font-weight:800}
+.phone.sp .faq{display:flex;justify-content:space-between;align-items:center;background:#f1f1f1;border-radius:12px;padding:11px 12px;font-size:10.5px;font-weight:700;flex:none}
+.phone.sp .pie{background:#fff!important}.phone.sp .pie .donut{background:conic-gradient(#ee0022 0 27.2%,#fff 27.2% 28.2%,#1a1a1a 28.2% 55.2%,#fff 55.2% 56.2%,#8d9094 56.2% 77.4%,#fff 77.4% 78.4%,#ffbc3d 78.4% 99.4%,#fff 99.4%)}.phone.sp .pie .mem li:before{border-radius:50%;width:10px;height:10px}.phone.sp .pie .donut:after{display:block;inset:24px;background:#fff}
+.phone.sp .aicard ul{margin:2px 0 0;padding-left:14px;font-size:10px}.phone.sp .aicard li{margin:0;font-size:10px;line-height:13px;color:#000}
+.phone.sp .paper{flex:none;aspect-ratio:8.5/11;overflow:hidden}.phone.sp .paper+.paper{margin-top:10px}
+.phone.sp .paper .due{margin-top:8px;font-size:8px}.phone.sp .paper .due b{display:block;font-size:13px}
+.phone.sp .paper .bars{margin-top:10px;font:700 9px/1 monospace;letter-spacing:1px;color:#444;overflow:hidden;white-space:nowrap}
+.phone.sp .paper .due2{margin:12px 0 4px;font-size:10px}.phone.sp .paper .due2 b{color:#4a5cf0;text-decoration:underline}
+.phone.sp .paper .snap.lines>div span{color:#4a5cf0;text-decoration:underline}
+.phone.sp .pill{padding:5px;gap:0}.phone.sp .pill small{left:50%;transform:translateX(-50%)}
+.phone.sp .sheet{top:96px;transform:none}.phone.sp .sheet div{line-height:14px}
+.phone.sp .chatx{display:block}
+.phone.sp .bub{padding:8px 12px;border-radius:16px;max-width:88%;font-size:10.5px;line-height:14px}
+.phone.sp .bub.me{align-self:flex-end;background:#000;color:#fff;border-bottom-right-radius:4px}
+.phone.sp .bub.bot{align-self:flex-start;background:#fff;border-bottom-left-radius:4px}
+.phone.sp .gen{font-size:8.5px;color:#666;margin-top:-2px}
+.phone.sp .sheet .askin{margin-top:auto;background:#fff;border-radius:99px;padding:10px 14px;font-size:10px;color:#8a8a8a;font-weight:400}
+.phone .hist i.vzmax{background:#00305f}.phone .hl .vzmax,.phone .hl .vzmax b{color:#00305f;font-weight:800}
+.wph .phone.sp .sheet h4{text-transform:none;color:#000;font:800 12.5px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.03em;margin:0}.wph .phone.sp .sheet h5{text-transform:none;color:var(--ai);letter-spacing:-.02em}

@@ -738,3 +738,13 @@ a.thumb{display:block;cursor:pointer}
 .phone .st{padding:0;min-height:0;border-radius:0;box-shadow:none;background:none;color:inherit;font-weight:700;line-height:1;cursor:default;position:static;transition:none}.phone .st:hover{transform:none!important;box-shadow:none;z-index:auto}.phone .st:before{display:none}
 .phone .snap:hover{transform:none;z-index:auto}.phone .snap{cursor:default}
 .phone .pill{padding:5px;gap:0}.phone .pill small{left:50%;transform:translateX(-50%)}.phone .pill>b{width:28px;height:28px;border-radius:50%;background:var(--aib);color:var(--ai);display:grid;place-items:center;font-size:15px}
+
+/* Verizon home-card thumbnail */
+.thumb.vz{position:relative;overflow:hidden;background:radial-gradient(70% 60% at 90% 0%,#ffb27a,transparent 70%),radial-gradient(60% 55% at 0% 100%,#ffd9c4,transparent 70%),#ffeee3!important}
+.thumb.vz img{position:absolute;left:50%;top:12%;width:36%;height:auto;transform:translateX(-50%) rotate(-4deg);transform-origin:50% 100%;filter:drop-shadow(0 24px 30px rgba(150,0,20,.35));transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.case:hover .thumb.vz img{transform:translateX(-50%) rotate(-1deg) translateY(-2%)}
+.thumb.vz .fc{position:absolute;display:flex;align-items:center;gap:.5rem;padding:.5rem .8rem;border-radius:12px;background:#fff;color:#1b1410;font-size:.78rem;font-weight:500;box-shadow:0 14px 30px -8px rgba(120,0,20,.35);transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.thumb.vz .fc b{font-weight:700;color:#ee0022}.thumb.vz .fc .dot{width:8px;height:8px;border-radius:50%;background:#ee0022;box-shadow:0 0 0 4px rgba(238,0,34,.18)}
+.thumb.vz .fc1{left:6%;bottom:14%}.thumb.vz .fc2{right:6%;top:12%;color:#4a5cf0;font-weight:600}
+.case:hover .thumb.vz .fc1{transform:translate(4px,-6px)}.case:hover .thumb.vz .fc2{transform:translate(-4px,6px)}
+@media(prefers-reduced-motion:reduce){.thumb.vz img,.thumb.vz .fc{transition:none}}
