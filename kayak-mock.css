@@ -469,3 +469,9 @@
 .xc s{background:#f3efea linear-gradient(#c2410c,#c2410c) no-repeat 0 55%/100% 2px;color:#8a7d72}.xc i{color:#ff6a00;font-style:normal}.xc em{background:#ffe9d6;color:#c2410c;font-weight:600}
 .xf.js .xc s{background-size:0 2px;transition:background-size .7s ease .6s}.xf.js .on .xc s{background-size:100% 2px}
 .xf.js .xc em,.xf.js .xc i{opacity:0;transform:translateX(-8px);transition:opacity .5s ease 1.2s,transform .5s ease 1.2s}.xf.js .on .xc em,.xf.js .on .xc i{opacity:1;transform:none}
+
+.xs{margin:0;padding:1.6rem 0;border-left:0;border-top:1px solid #f0e4d8}.xs:first-child{border-top:0}.xs::before,.xs::after{display:none!important}
+.xf.js .xs.on{opacity:1}
+.cs .xl{display:block;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#c2410c;margin-bottom:.8rem}
+.xs .finds{margin:0}
+
