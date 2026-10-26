@@ -413,3 +413,14 @@
 @keyframes pzDot{0%,100%{opacity:.3}50%{opacity:1}}
 @media(max-width:900px){.cs .problem-split.pz:has(.wph){grid-template-columns:1fr!important}}
 @media(prefers-reduced-motion:reduce){.pz-stack .pzA{display:none}.pz-stack .pzB,.pzB *{animation:none!important;opacity:1!important}.pzB .oc-typing{display:none}.pz-stack .pzB{position:static}}.pz-p.wph{background:none!important;padding:0!important}.pz-cap{color:#6b5d52}
+.pz-stack .pzB{position:static;opacity:1;animation:pzF 11s infinite}
+.pzB .oc-me,.pzB .oc-bot,.pzB .oc-faq span,.pzB .oc-typing{animation-duration:11s}
+.pzB .oc-typing{position:absolute}
+@keyframes pzF{0%{opacity:0}3%,90%{opacity:1}96%,100%{opacity:0}}
+@keyframes pzMe{0%,5%{opacity:0;transform:translateY(8px)}9%,100%{opacity:1;transform:none}}
+@keyframes pzTyping{0%,15%{opacity:0}17%,26%{opacity:1}28%,100%{opacity:0}}
+@keyframes pzBot{0%,27%{opacity:0;transform:translateY(8px)}31%,100%{opacity:1;transform:none}}
+@keyframes pzC1{0%,36%{opacity:0;transform:translateY(8px)}40%,100%{opacity:1;transform:none}}
+@keyframes pzC2{0%,41%{opacity:0;transform:translateY(8px)}45%,100%{opacity:1;transform:none}}
+@keyframes pzC3{0%,46%{opacity:0;transform:translateY(8px)}50%,100%{opacity:1;transform:none}}
+@keyframes pzC4{0%,51%{opacity:0;transform:translateY(8px)}55%,100%{opacity:1;transform:none}}
