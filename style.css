@@ -772,3 +772,4 @@ a.thumb{display:block;cursor:pointer}
 .phone .sheet .rsn{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:8px 10px;font-size:10.5px}
 .phone .sheet .rsn span{display:block;line-height:1.35}.phone .sheet .rsn small{display:block}.phone .sheet .rsn small{font-size:9px;color:#6b6b6b}.phone .sheet .rsn>b{font-size:12px}
 .phone .sheet .fine{font-size:9.5px;color:#5a5a5a}
+@media(min-width:701px){.dv-nav{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:1fr}}
