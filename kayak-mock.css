@@ -583,3 +583,4 @@
 .xf .fn2:not(.open) .fnr>div:hover,.xf .fn2:not(.open) .fnr>div:focus-visible{background:transparent;box-shadow:none;outline:none}
 .rm-l .rq{display:block;font-style:normal;background:#fff;border:1px solid #f3dcc6;border-radius:10px;padding:.55rem .75rem;margin:.45rem 0;font-size:.85rem;line-height:1.45;color:#3b2a1e}.rm-l .rq small{display:block;margin-top:.25rem;font-size:.72rem;letter-spacing:.02em;color:#8a6a52}
 .xf .fn2 .fnr{gap:2.4rem}.rm-l{gap:1.3rem 2.4rem}
+.rm-l{margin-top:.8rem}.rm-l>div{border-left:0;padding-left:0}.rm-l .rq{margin:0;height:100%;box-sizing:border-box}
