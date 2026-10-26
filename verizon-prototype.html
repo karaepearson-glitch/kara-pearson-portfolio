@@ -83,7 +83,7 @@ html,body{margin:0;height:100%;background:linear-gradient(135deg,#fff3e8,#ffe2cc
       <section class="scr" data-n="1">
         <div class="hd"><div class="st"><span>9:41</span><span>●</span></div><div class="brand">verizon<span>⌕</span></div><div class="vzmax">Welcome back, Sarah.</div><small>Thank you for being a loyal customer.</small></div>
         <div class="body"><div class="chips"><span class="chip ai">✦</span><span class="chip">Profile &amp; settings</span><span class="chip">My offers</span><span class="chip">Bill overview</span></div>
-          <div class="card"><b>Auto Pay is on</b><div class="lg">Your bill is $262.82</div><div class="sub up">↗ $30.01 more than last month</div><div class="sub">Payment will process on 2/6/26</div><div class="btns"><span class="obtn">Manage Auto Pay</span><span class="obtn ai" id="g1" data-go="2">✦ What changed</span></div></div>
+          <div class="card"><b>Auto Pay is on</b><div class="lg">Your bill is $262.82</div><div class="sub up">↗ $30.01 more than last month</div><div class="sub">Payment will process on 2/6/26</div><div class="btns"><span class="obtn">Manage Auto Pay</span><span class="obtn ai" id="g1" data-go="3">✦ What changed</span></div></div>
           <div class="card save"><div><b>$18.05 total savings</b>Review savings on your bill from Dec 29 - Jan 28.</div></div>
           <div class="card offer"><b>My Offers</b><div class="sub">Save on new lines, upgrades, and more.</div></div></div>
         <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
@@ -106,7 +106,7 @@ html,body{margin:0;height:100%;background:linear-gradient(135deg,#fff3e8,#ffe2cc
           <div class="aicard"><div class="t">&#10022; AI Bill Summary</div><p>Your bill went up because Kara made an international call and Ava upgraded her phone.</p><a>View full AI breakdown &rarr;</a></div>
           <div class="faq">How can I lower my bill?<span>&#8964;</span></div><div class="faq">Why did my bill change?<span>&#8964;</span></div><div class="faq">What are surcharges &amp; fees?<span>&#8964;</span></div>
           <div class="card pie"><b>By Member</b><div class="mem" style="margin-top:8px"><div class="donut" role="img" aria-label="Bill share: Kara 29%, Ava 24%, Sarah 24%, Lizzy 24%"></div><ul><li style="--c:#ee0022">Kara 29%</li><li style="--c:#1a1a1a">Ava 24%</li><li style="--c:#8d9094">Sarah 24%</li><li style="--c:#ffbc3d">Lizzy 24%</li></ul></div></div>
-          <div class="aicard"><div class="t">&#10022; Kara's Bill Summary</div><p>Kara's line is $14.66 higher than the others. A key reason may have been:</p><ul><li>an international phone call on 1/12/26</li></ul><a id="g3" data-go="4">View full AI breakdown &rarr;</a></div></div>
+          <div class="aicard"><div class="t">&#10022; Kara's Bill Summary</div><p>Kara's line is $14.66 higher than the others. A key reason may have been:</p><ul><li>an international phone call on 1/12/26</li></ul><a id="g3" data-go="6">View full AI breakdown &rarr;</a></div></div>
         <div class="tabs"><span><i></i>Me</span><span><i></i>Mobile</span><span><i></i>Home</span><span><i></i>Shop</span><span><i></i>Support</span></div>
       </section>
 
@@ -159,10 +159,7 @@ const pdf=document.querySelector('.scr.pdf'),pdfBody=document.getElementById('pd
 // each step: which screen is shown, PDF sheet state, optional scroll, tap target, caption
 const steps=[
  {s:1,t:'g1',c:'<b>Home</b> shows the balance, the due date and one tap into the AI breakdown.'},
- {s:2,t:'g2',c:'<b>Bill overview</b> explains the change in plain language, right under the balance.'},
  {s:3,scroll:9999,t:'g3',c:'<b>Bill Breakdown</b> scrolls from the trend to who drove the change.'},
- {s:4,t:'g4',c:'<b>Full AI breakdown</b> says why the bill moved and how to lower it.'},
- {s:5,t:'g5',c:'<b>Bill details</b> keeps the familiar tiles and the plans &amp; devices view.'},
  {s:6,sheet:'',scroll:9999,t:'g6',c:'<b>Bill PDF</b> stays familiar, with AI one tap away.'},
  {s:6,sheet:'ai',scroll:9999,t:'g7',c:'<b>AI Bill Summary</b> explains the line you care about.'},
  {s:6,sheet:'chat',scroll:9999,c:'<b>Ask me anything</b> turns the bill into a conversation.'}
