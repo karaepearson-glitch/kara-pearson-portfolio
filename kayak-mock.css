@@ -424,3 +424,8 @@
 @keyframes pzC2{0%,41%{opacity:0;transform:translateY(8px)}45%,100%{opacity:1;transform:none}}
 @keyframes pzC3{0%,46%{opacity:0;transform:translateY(8px)}50%,100%{opacity:1;transform:none}}
 @keyframes pzC4{0%,51%{opacity:0;transform:translateY(8px)}55%,100%{opacity:1;transform:none}}.cs .problem-split.pz:has(.wph){max-width:70rem!important;grid-template-columns:minmax(0,1fr) auto;gap:5rem}
+.cs .problem-split.pz:has(.wph){max-width:none!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4vw}
+.cs .problem-split.pz .pz-t>p{max-width:none;font-size:clamp(1.05rem,1.15vw,1.5rem);line-height:1.6}
+.cs .problem-split.pz .pz-t>.quote{font-size:clamp(1.6rem,2.6vw,3.4rem)}
+.pz-p{justify-self:center}
+@media(max-width:900px){.cs .problem-split.pz:has(.wph){grid-template-columns:1fr!important;gap:2rem}.cs .problem-split.pz .pz-t>p{font-size:1.05rem}}
