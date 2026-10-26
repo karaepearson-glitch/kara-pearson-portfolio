@@ -767,3 +767,8 @@ a.thumb{display:block;cursor:pointer}
 .thumb.vz img.p2{left:34%;top:11%;width:40%;transform:none!important;filter:drop-shadow(0 30px 40px rgba(150,0,20,.35))}
 .case:hover .thumb.vz img.p2{transform:translateY(-3%)!important}
 .thumb.vz .fc2{right:5%;top:12%;left:auto}.thumb.vz .fc1{left:5%;bottom:14%;top:auto;right:auto}
+
+/* AI Bill Summary reason rows */
+.phone .sheet .rsn{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:8px 10px;font-size:10.5px}
+.phone .sheet .rsn span{display:block;line-height:1.35}.phone .sheet .rsn small{display:block}.phone .sheet .rsn small{font-size:9px;color:#6b6b6b}.phone .sheet .rsn>b{font-size:12px}
+.phone .sheet .fine{font-size:9.5px;color:#5a5a5a}
