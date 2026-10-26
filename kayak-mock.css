@@ -452,3 +452,10 @@
 @keyframes cvAns{0%,53%{opacity:0;transform:translateY(6px)}57%,100%{opacity:1;transform:none}}
 @keyframes cvChip{0%,58%{opacity:0;transform:translateY(6px)}63%,100%{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.pzB .cv-me,.pzB .cv-rep,.pzB .cv-ans,.pzB .cv-ans .oc-faq span{animation:none!important;opacity:1!important}.pzB .cv-dots,.pzB .cv-typed{display:none}}
+.xf{margin:2rem 0 3rem}.xs{position:relative;margin-left:.5rem;padding:0 0 2.2rem 2.2rem;border-left:2px solid #ffd2b0}.xs:last-child{border-left-color:transparent;padding-bottom:0}
+.xs::before{content:"";position:absolute;left:-7px;top:.15rem;width:12px;height:12px;border-radius:50%;background:#ff6a00}
+.xl{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--accent-text);margin-bottom:.5rem}
+.cs .xs>p{margin:0;color:var(--fg);font-size:var(--fs-body)}.cs .xn>p{font-size:clamp(1.4rem,2.2vw,1.8rem);font-weight:600;letter-spacing:-.015em;line-height:1.3}.cs .xn>p b{font-weight:700;color:var(--accent-text)}.cs .xq>p{font-size:clamp(1.4rem,2.2vw,1.8rem);font-weight:600;letter-spacing:-.015em;line-height:1.3}
+.xe{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.xe>div{background:#fbf6f0;border-radius:14px;padding:1.2rem 1.3rem}
+.xe b{display:block;font-size:2.4rem;line-height:1;color:#c2410c;font-weight:500}.xe span{display:block;font-size:.85rem;color:var(--muted);margin:.35rem 0 .7rem}.cs .xe p{margin:0;font-size:1rem;line-height:1.5;color:var(--fg)}
+@media(max-width:800px){.xe{grid-template-columns:1fr}}
