@@ -423,4 +423,4 @@
 @keyframes pzC1{0%,36%{opacity:0;transform:translateY(8px)}40%,100%{opacity:1;transform:none}}
 @keyframes pzC2{0%,41%{opacity:0;transform:translateY(8px)}45%,100%{opacity:1;transform:none}}
 @keyframes pzC3{0%,46%{opacity:0;transform:translateY(8px)}50%,100%{opacity:1;transform:none}}
-@keyframes pzC4{0%,51%{opacity:0;transform:translateY(8px)}55%,100%{opacity:1;transform:none}}
+@keyframes pzC4{0%,51%{opacity:0;transform:translateY(8px)}55%,100%{opacity:1;transform:none}}.cs .problem-split.pz:has(.wph){max-width:70rem!important;grid-template-columns:minmax(0,1fr) auto;gap:5rem}
