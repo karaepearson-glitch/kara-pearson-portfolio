@@ -48,9 +48,9 @@ html,body{margin:0;height:100%;background:linear-gradient(135deg,#fff3e8,#ffe2cc
 .phone .mrow .av{flex:none}
 .phone .mrow b{display:block;font-size:11px}
 .phone .cta{height:36px;border-radius:99px;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:10.5px;letter-spacing:-.02em;margin-top:auto;margin-bottom:12px}
-.ctl{display:none;gap:8px;align-items:center}
-.ctl button{background:#1c1f26;color:#e8eaf0;border:1px solid #2c303a;border-radius:99px;height:32px;padding:0 14px;font:700 12px "Helvetica Neue",Arial,sans-serif;cursor:pointer}
-.ctl button:hover{background:#262a34}
+.ctl{display:flex;gap:8px;align-items:center}
+.ctl button{background:#fff;color:#3a2a20;border:1px solid #f0cdb5;border-radius:50%;width:36px;height:36px;padding:0;font:400 18px/1 "Helvetica Neue",Arial,sans-serif;cursor:pointer;box-shadow:0 2px 8px -2px rgba(120,60,0,.25)}
+.ctl button:hover{background:#fff}#play,#restart{display:none}
 .dots{display:flex;gap:6px}
 .dots i{width:8px;height:8px;border-radius:50%;background:#e8c9b3;cursor:pointer;transition:background .2s,transform .2s}
 .dots i.on{background:#ee0022;transform:scale(1.3)}
@@ -131,7 +131,7 @@ html,body{margin:0;height:100%;background:linear-gradient(135deg,#fff3e8,#ffe2cc
   </div>
   <div class="cap" id="cap"></div>
   <div class="dots" id="dots"></div>
-  <div class="ctl"><button id="prev">← Back</button><button id="play">Pause</button><button id="next">Next →</button><button id="restart">Restart</button></div>
+  <div class="ctl"><button id="prev" aria-label="Previous screen">&larr;</button><button id="play">Pause</button><button id="next" aria-label="Next screen">&rarr;</button><button id="restart">Restart</button></div>
 </div>
 <script>
 const phone=document.getElementById('phone'),tap=document.getElementById('tap'),cap=document.getElementById('cap'),dots=document.getElementById('dots');
