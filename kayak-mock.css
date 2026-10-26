@@ -424,8 +424,8 @@
 @keyframes pzC2{0%,41%{opacity:0;transform:translateY(8px)}45%,100%{opacity:1;transform:none}}
 @keyframes pzC3{0%,46%{opacity:0;transform:translateY(8px)}50%,100%{opacity:1;transform:none}}
 @keyframes pzC4{0%,51%{opacity:0;transform:translateY(8px)}55%,100%{opacity:1;transform:none}}.cs .problem-split.pz:has(.wph){max-width:70rem!important;grid-template-columns:minmax(0,1fr) auto;gap:5rem}
-.cs .problem-split.pz:has(.wph){max-width:none!important;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:4vw;align-items:start}
-.cs .problem-split.pz .pz-t>.quote{margin:.4rem 0 1.5rem!important}.cs .problem-split.pz .pz-t>p{margin-bottom:0}.pz-p.wph.old{margin-top:0}
+.cs .problem-split.pz:has(.wph){max-width:none!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4vw}
+.cs .problem-split.pz .pz-t>p{max-width:none}
 .cs .problem-split.pz .pz-t>p{max-width:none}
 .pz-p{justify-self:center}
 @media(max-width:900px){.cs .problem-split.pz:has(.wph){grid-template-columns:1fr!important;gap:2rem}}
@@ -440,7 +440,7 @@
 .pzB .cv-dots{animation:cvDots 12s infinite both}.pzB .cv-ans{opacity:0;animation:cvAns 12s infinite both}.pzB .cv-ans .oc-faq span{opacity:0;animation:cvChip 12s infinite both}
 .pzB .cv-ans .oc-faq span:nth-child(2){animation-delay:.35s}.pzB .cv-ans .oc-faq span:nth-child(3){animation-delay:.7s}
 .pzB .cv-typed{animation:cvType 12s infinite both}.pzB .cv-ph{animation:cvPh 12s infinite both}.pzB .cv-rep .cv-av{opacity:1}
-.pz-stack .pzB{animation:cvF 12s infinite}
+.cv-av{display:none!important}.cv-row{display:block}
 @keyframes cvF{0%{opacity:0}3%,92%{opacity:1}97%,100%{opacity:0}}
 @keyframes cvType{0%,8%{width:0;opacity:1}30%{width:12.5em;opacity:1}32%,100%{width:12.5em;opacity:0}}
 @keyframes cvPh{0%,7%{opacity:1}8%,31%{opacity:0}32%,100%{opacity:1}}
