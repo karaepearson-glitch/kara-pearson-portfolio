@@ -50,12 +50,17 @@
   <h3 class="reveal"><small>Milestone 1</small>Exploration</h3>
   <p class="reveal">We began with a broad question about AI in customer service. Interviews, reviews from other carriers, and a heuristic evaluation of Verizon showed the same thing: the biggest frustration was not understanding the bill. That narrowed our focus, and gave us a clear question to design for.</p>
   <div class="xf reveal">
-    <div class="fn fn1"><span>Started broad</span><p>How could AI improve Verizon's customer service?</p></div>
-    <div class="fn fn2"><span>What we looked at</span>
-      <div class="fnr"><div><b>7 customer interviews</b><p>Bills feel like a surprise, and support feels like a hassle.</p></div><div><b>4 carriers&rsquo; reviews</b><p>Long holds, pushback and generic chatbots.</p></div><div><b>Heuristic evaluation</b><p>No visibility into why a bill changes.</p></div></div>
-    </div>
-    <div class="fn fn3"><span>Narrowed to</span><p>Billing transparency and trust</p></div>
-    <div class="fn fn4"><span>How might we</span><p>Increase customer satisfaction for Verizon's current customers by increasing their knowledge through AI?</p></div>
+    <div class="fn fn1" tabindex="0" role="button" aria-expanded="false"><span>Started broad</span><p>How could AI improve Verizon's customer service?</p>
+      <div class="fd"><div><p>We began with an open goal, before any research narrowed it down: use AI to make customer service better without annoying customers.</p></div></div></div>
+    <div class="fn fn2" tabindex="0" role="button" aria-expanded="false"><span>What we looked at</span>
+      <div class="fnr"><div><b>7 customer interviews</b><p>Bills feel like a surprise, and support feels like a hassle.</p></div><div><b>4 carriers&rsquo; reviews</b><p>Mined for what frustrates customers most.</p></div><div><b>Heuristic evaluation</b><p>No visibility into why a bill changes.</p></div></div>
+      <div class="fd"><div><p class="fdh">Review mining</p><p>We mined public reviews for Verizon, T-Mobile, AT&amp;T and Mint Mobile and grouped them into themes. <mark>[Add how many reviews and where they came from]</mark></p>
+        <div class="fdg"><div><b>Verizon</b><span><mark>[Top theme]</mark></span></div><div><b>T-Mobile</b><span><mark>[Top theme]</mark></span></div><div><b>AT&amp;T</b><span><mark>[Top theme]</mark></span></div><div><b>Mint Mobile</b><span><mark>[Top theme]</mark></span></div></div></div></div></div>
+    <div class="fn fn3" tabindex="0" role="button" aria-expanded="false"><span>Narrowed to</span><p>Billing transparency and trust</p>
+      <div class="fd"><div><p>Across interviews, reviews and the heuristic evaluation, the same problem kept coming up: customers can&rsquo;t tell why their bill changes, and support often can&rsquo;t explain it either. Customers wanted proactive automation and summaries they could trust.</p></div></div></div>
+    <div class="fn fn4" tabindex="0" role="button" aria-expanded="false"><span>How might we</span><p>Increase customer satisfaction for Verizon's current customers by increasing their knowledge through AI?</p>
+      <div class="fd"><div><p>This question guided every design decision after it. We aimed for at least 80% positive feedback in testing, and for a bill experience customers trust.</p></div></div></div>
+    <p class="fnh">Click a layer to see more.</p>
   </div>  <h3 class="reveal"><small>Milestone 2</small>Research</h3>
   <p class="reveal">With the problem scoped, the next step was to see where billing breaks down for real customers. Four steps turned that into two personas and a clear set of problems to solve. Pick a stop to explore it.</p>
   <div class="dive reveal">
@@ -202,5 +207,5 @@ xf.classList.add('js');
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var s=e.target;s.classList.add('on');io.unobserve(s);
 s.querySelectorAll('b[data-n]').forEach(function(b){var n=+b.dataset.n,t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/900,1);b.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}b.textContent='0';requestAnimationFrame(f)})})},{threshold:.35});
 xf.querySelectorAll('.fn').forEach(function(s){io.observe(s)});})();
-</script></body>
+document.querySelectorAll('.xf .fn').forEach(function(f){function tg(){var o=f.classList.toggle('open');f.setAttribute('aria-expanded',o)}f.addEventListener('click',function(e){if(e.target.closest('a'))return;tg()});f.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tg()}})});\n</script></body>
 </html>

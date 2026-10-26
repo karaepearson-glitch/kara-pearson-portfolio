@@ -527,3 +527,23 @@
 .fnr{max-width:none;gap:1.5rem}.fnr b{font-size:.95rem}.cs .xf .fnr p{font-size:.95rem}
 @media(max-width:900px){.xf .fn{width:100%!important;min-width:0}}
 
+
+.xf .fn{cursor:pointer;transition:box-shadow .25s ease,transform .25s ease}
+.xf .fn:hover{box-shadow:0 10px 24px -14px rgba(255,106,0,.6)}
+.xf .fn:focus-visible{outline:2px solid #ff6a00;outline-offset:3px}
+.xf .fn::after{content:"+";position:absolute;top:.8rem;right:1rem;width:1.5rem;height:1.5rem;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-size:1rem;line-height:1;color:#c2410c;transition:transform .3s ease}
+.xf .fn4::after{color:#fff}
+.xf .fn.open::after{transform:rotate(45deg)}
+.xf .fd{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.xf .fn.open .fd{grid-template-rows:1fr}
+.xf .fd>div{overflow:hidden;min-height:0}
+.xf .fd>div>p:first-child{margin-top:1rem}
+.cs .xf .fd p{font-size:.95rem;line-height:1.5;font-weight:400;color:#2a2018}
+.cs .xf .fn3 .fd p{color:#7c2d0a}.cs .xf .fn4 .fd p{color:#fff}
+.cs .xf .fd .fdh{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#c2410c;margin-bottom:.3rem}
+.fdg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:.9rem;text-align:left}
+.fdg div{border-left:2px solid #ff6a00;padding-left:.7rem}.fdg b{display:block;font-size:.9rem}.fdg span{font-size:.9rem}
+.cs .xf .fnh{margin:1.4rem 0 0;font-size:.85rem;color:var(--muted)}
+@media(max-width:700px){.fdg{grid-template-columns:1fr 1fr}}
+
+.cs .xf .fn .fd p{font-size:.95rem!important;font-weight:400!important;line-height:1.5}.cs .xf .fn .fd p.fdh{font-weight:600!important;font-size:.8rem!important}
