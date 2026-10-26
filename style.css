@@ -748,3 +748,13 @@ a.thumb{display:block;cursor:pointer}
 .thumb.vz .fc1{left:6%;bottom:14%}.thumb.vz .fc2{right:6%;top:12%;color:#4a5cf0;font-weight:600}
 .case:hover .thumb.vz .fc1{transform:translate(4px,-6px)}.case:hover .thumb.vz .fc2{transform:translate(-4px,6px)}
 @media(prefers-reduced-motion:reduce){.thumb.vz img,.thumb.vz .fc{transition:none}}
+
+/* Sharp thumbnails: no 3D/rotate transforms (they resample and blur on hover) */
+.thumb.shot img,.case:hover .thumb.shot img{transform:none!important;perspective:none}
+.thumb.shot{perspective:none!important}
+.case:hover .thumb.shot img{transform:translateY(-2%)!important}
+.thumb.vz img{transform:none!important;filter:drop-shadow(0 20px 26px rgba(150,0,20,.3));width:30%;top:9%;left:auto}
+.thumb.vz img.p1{left:20%;top:14%}
+.thumb.vz img.p2{left:50%;top:6%}
+.case:hover .thumb.vz img.p1{transform:translateY(-2%)!important}
+.case:hover .thumb.vz img.p2{transform:translateY(-4%)!important}
