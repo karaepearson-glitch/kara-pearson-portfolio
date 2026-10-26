@@ -425,7 +425,27 @@
 @keyframes pzC3{0%,46%{opacity:0;transform:translateY(8px)}50%,100%{opacity:1;transform:none}}
 @keyframes pzC4{0%,51%{opacity:0;transform:translateY(8px)}55%,100%{opacity:1;transform:none}}.cs .problem-split.pz:has(.wph){max-width:70rem!important;grid-template-columns:minmax(0,1fr) auto;gap:5rem}
 .cs .problem-split.pz:has(.wph){max-width:none!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4vw}
-.cs .problem-split.pz .pz-t>p{max-width:none;font-size:clamp(1.05rem,1.15vw,1.5rem);line-height:1.6}
-.cs .problem-split.pz .pz-t>.quote{font-size:clamp(1.6rem,2.6vw,3.4rem)}
+.cs .problem-split.pz .pz-t>p{max-width:none}
 .pz-p{justify-self:center}
-@media(max-width:900px){.cs .problem-split.pz:has(.wph){grid-template-columns:1fr!important;gap:2rem}.cs .problem-split.pz .pz-t>p{font-size:1.05rem}}
+@media(max-width:900px){.cs .problem-split.pz:has(.wph){grid-template-columns:1fr!important;gap:2rem}}
+.cs .protoh{max-width:none!important;width:100%}.cs .protoh iframe{width:100%!important;max-width:none}
+.cv{position:relative}.cv-row{display:flex;gap:6px;align-items:flex-start}.cv-av{flex:none;width:20px;height:20px;border-radius:50%;background:#ee0000;color:#fff;font-size:10px;display:grid;place-items:center}
+.cv-swap{display:grid;max-width:85%}.cv-swap>*{grid-area:1/1}.cv-ans{display:flex;flex-direction:column;gap:6px}
+.cv-dots{display:flex;gap:4px;align-self:start;width:fit-content;height:fit-content;padding:11px 12px!important}.cv-dots i{width:6px;height:6px;border-radius:50%;background:#999;animation:pzDot 1s infinite}.cv-dots i:nth-child(2){animation-delay:.15s}.cv-dots i:nth-child(3){animation-delay:.3s}
+.cv-input{margin-top:auto;display:flex;align-items:center;gap:6px;border:1px solid #ccc;border-radius:99px;padding:6px 6px 6px 12px;font-size:10.5px;position:relative;height:30px}
+.cv-ph{color:#888}.cv-typed{position:absolute;left:12px;top:50%;transform:translateY(-50%);overflow:hidden;white-space:nowrap;width:0;color:#111}
+.cv-send{margin-left:auto;width:20px;height:20px;border-radius:50%;background:#ee0000;color:#fff;font-size:9px;display:grid;place-items:center}
+.pzB .cv-me,.pzB .cv-rep .cv-av{opacity:0}.pzB .cv-me{animation:cvMe 12s infinite both}.pzB .cv-rep{opacity:0;animation:cvRep 12s infinite both}
+.pzB .cv-dots{animation:cvDots 12s infinite both}.pzB .cv-ans{opacity:0;animation:cvAns 12s infinite both}.pzB .cv-ans .oc-faq span{opacity:0;animation:cvChip 12s infinite both}
+.pzB .cv-ans .oc-faq span:nth-child(2){animation-delay:.35s}.pzB .cv-ans .oc-faq span:nth-child(3){animation-delay:.7s}
+.pzB .cv-typed{animation:cvType 12s infinite both}.pzB .cv-ph{animation:cvPh 12s infinite both}.pzB .cv-rep .cv-av{opacity:1}
+.pz-stack .pzB{animation:cvF 12s infinite}
+@keyframes cvF{0%{opacity:0}3%,92%{opacity:1}97%,100%{opacity:0}}
+@keyframes cvType{0%,8%{width:0;opacity:1}30%{width:12.5em;opacity:1}32%,100%{width:12.5em;opacity:0}}
+@keyframes cvPh{0%,7%{opacity:1}8%,31%{opacity:0}32%,100%{opacity:1}}
+@keyframes cvMe{0%,32%{opacity:0;transform:translateY(8px)}36%,100%{opacity:1;transform:none}}
+@keyframes cvRep{0%,40%{opacity:0}41%,100%{opacity:1}}
+@keyframes cvDots{0%,52%{opacity:1}53%,100%{opacity:0}}
+@keyframes cvAns{0%,53%{opacity:0;transform:translateY(6px)}57%,100%{opacity:1;transform:none}}
+@keyframes cvChip{0%,58%{opacity:0;transform:translateY(6px)}63%,100%{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.pzB .cv-me,.pzB .cv-rep,.pzB .cv-ans,.pzB .cv-ans .oc-faq span{animation:none!important;opacity:1!important}.pzB .cv-dots,.pzB .cv-typed{display:none}}
