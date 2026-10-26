@@ -383,20 +383,5 @@
 .wph .phone.sp .sheet h4{text-transform:none;color:#000;font:800 12.5px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.03em;margin:0}.wph .phone.sp .sheet h5{text-transform:none;color:var(--ai);letter-spacing:-.02em}
 
 .phone.sp .sheet.ln{top:auto;bottom:0;padding-bottom:18px}
-
-.cs .pq{margin:1.6rem 0 2.2rem;padding:2rem 2.2rem;border-radius:20px;background:#1a1411;color:#fff;position:relative;overflow:hidden}
-.cs .pq:before{content:"\201C";position:absolute;right:1.4rem;top:-1.6rem;font:800 11rem/1 Georgia,serif;color:#ff6a00;opacity:.18}
-.cs .pq small{display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#ffb27a;font-weight:600;margin-bottom:.8rem}
-.cs .pq p{font-size:clamp(1.7rem,3.6vw,2.8rem);line-height:1.12;font-weight:700;letter-spacing:-.025em;margin:0;max-width:none;color:#fff}
-.cs .pq mark{background:none;color:#ff6a00;background:linear-gradient(#ff6a00,#ff6a00) 0 100%/0 3px no-repeat;padding-bottom:2px;transition:background-size .9s .5s cubic-bezier(.2,.8,.2,1)}
-.cs .pq.in mark,.cs .pq.visible mark,.cs .pq.show mark{background-size:100% 3px}
-.cs .pq em{display:block;margin-top:1rem;font-style:normal;color:#d9c7b8;font-size:1.05rem}
-.wph.old .phone{position:relative}
-.wph.old .ring{position:absolute;border:2.5px solid #ff6a00;border-radius:12px;pointer-events:none;z-index:5;animation:vzring 2s ease-out infinite}
-.wph.old .ring.r1{left:4%;right:4%;top:39.8%;height:6.8%}
-.wph.old .ring.r2{left:4%;right:4%;top:33%;height:24%}
-@keyframes vzring{0%{box-shadow:0 0 0 0 rgba(255,106,0,.55)}100%{box-shadow:0 0 0 14px rgba(255,106,0,0)}}
-.wph.old figure{display:flex;flex-direction:column;align-items:center;gap:1.1rem}
-.wph.old figcaption{display:flex;align-items:center;gap:.6rem;max-width:15rem;background:#fff;color:#3a2f28!important;border-radius:14px;padding:.7rem .9rem;font-size:.95rem;line-height:1.3;font-weight:600;text-align:left;box-shadow:0 8px 20px -10px rgba(120,60,0,.4)}
-.wph.old figcaption b{flex:none;width:1.6rem;height:1.6rem;border-radius:50%;background:#ff6a00;color:#fff;display:grid;place-items:center;font-size:.85rem}
-@media(prefers-reduced-motion:reduce){.wph.old .ring{animation:none}}
+.wph.old figure{display:flex;flex-direction:column;align-items:center;gap:1rem}.wph.old figcaption{max-width:14rem;text-align:center;font-size:.95rem;line-height:1.35;font-weight:600}
+.cs .problem-split>.quote{margin:1.4rem 0 2rem!important}
