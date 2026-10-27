@@ -622,3 +622,4 @@
 .cs .xf .fn2 .fnr p{font-size:.95rem!important}.cs .xf .fn2 .fnr b{font-size:1rem}
 .xf .fn+.fn{margin-top:2.2rem!important}
 .xf .fn+.fn::before{top:-1.7rem;width:.8rem;height:.8rem;border-width:2px;border-color:#f0a56b;border-radius:1px}
+.cs .xf .fn3 .fd p>b:first-child{display:block;margin-bottom:.2rem}.cs .xf .fn3 .fd p+p{margin-top:1rem}
