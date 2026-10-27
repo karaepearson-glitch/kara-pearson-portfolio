@@ -423,9 +423,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:var(--fs-labe
 .private-work .pw-lead{font-size:1.05rem}
 .case{cursor:auto}
 a.thumb{display:block;cursor:pointer}
-.private-work .pw{background:#fff;border-color:rgba(194,65,12,.12);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
-.private-work .pw:hover{transform:translateY(-3px);border-color:rgba(255,106,0,.55);box-shadow:0 14px 30px -18px rgba(194,65,12,.35)}
-@media(prefers-reduced-motion:reduce){.private-work .pw{transition:none}.private-work .pw:hover{transform:none}}
+.private-work .pw{background:#fff;border-color:rgba(194,65,12,.12);cursor:default}
 .about{padding-top:10rem}
 .snap img{animation:wobble2 7s ease-in-out infinite}.snap:nth-child(2) img{animation-delay:-3.5s}@keyframes wobble2{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-4px) rotate(.6deg)}}.snap:nth-child(2){margin-left:4rem}@media(prefers-reduced-motion:reduce){.snap img{animation:none}}
 .cs .chat{display:flex;flex-direction:column;gap:.7rem;max-width:520px!important;margin:2.5rem 0 3.5rem;padding:0}
