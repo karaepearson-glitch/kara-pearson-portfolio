@@ -179,7 +179,7 @@ phone.addEventListener('click',e=>{
   if(g){const n=+g.dataset.go;const sheet=n===7?'ai':n===8?'chat':'';const k=steps.findIndex(s=>s.s===(n>=6?6:n)&&(n<6||s.sheet===(n===6?'':sheet)));if(k>=0)go(k,true);return}
   if(e.target.closest('[data-back]')&&i>0)go(i-(steps[i].s===6&&steps[i].sheet?1:1),true);
 });
-function fit(){const s=Math.min(1.7,Math.max(.6,(innerHeight-170)/654));document.getElementById('stage').style.setProperty('--s',s)}
+function fit(){const s=Math.min(1.7,Math.max(.6,(innerHeight-130)/654));document.getElementById('stage').style.setProperty('--s',s)}
 fit();addEventListener('resize',fit);
 go(0);
 </script>

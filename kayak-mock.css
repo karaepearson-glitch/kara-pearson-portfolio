@@ -652,3 +652,10 @@
 .rs .st-body{padding:0 1.3rem 1.3rem;border-top:1px solid #f3dcc6;margin:0 1.3rem;padding:1.1rem 0 1.3rem}
 .rs .finds.four div{border-left:0;padding-left:0}.rs .finds.four b{color:#c2410c}
 @media(max-width:700px){.rs summary{grid-template-columns:1fr}}
+
+.protoh.vzp iframe{height:900px;max-height:none}
+
+.cs>.board,.cs.toc-closed>.board{max-width:none!important;width:100%}
+
+.cs>p,.cs>ul,.cs>ol,.cs>h2,.cs>h3,.cs>.eyebrow,.cs>.callout{max-width:1100px}
+.cs .problem-split.pz:has(.wph){max-width:none!important}
