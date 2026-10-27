@@ -809,3 +809,22 @@ a.thumb{display:block;cursor:pointer}
 .private-work h2{margin-bottom:.6rem!important}
 .private-work .pw-lead{margin-bottom:1.5rem}
 
+
+.about-grid>*,.cs .ov-split>*,.ovs>*,.mb-canvas>*{min-width:0}
+.ovr .chip{white-space:normal}
+@media(max-width:800px){.snap{--d:min(215px,40vw)}.snaps{padding:0 0 3rem}.snap:nth-child(2){margin-left:1rem}}
+@media(max-width:520px){.ovr{grid-template-columns:4.2rem 1fr;grid-template-areas:"k v" "k vt" "c c";row-gap:.4rem}.ovr .chip{justify-self:start}.mb-canvas{grid-template-columns:1fr!important;padding-left:3.2rem!important;padding-right:1rem!important}.steps{grid-template-columns:1fr}}
+
+
+.about{overflow-x:clip}
+
+
+@media(max-width:520px){.now-chips{flex-direction:column;align-items:flex-start}.snaps{padding-left:.6rem}}
+
+
+@media(max-width:520px){.cs .ovr{grid-template-columns:4.2rem 1fr;grid-template-areas:"k v" "k vt" "c c";row-gap:.4rem}.cs .ovr .chip{justify-self:start}.big-link{font-size:clamp(1.05rem,5.6vw,1.5rem);overflow-wrap:anywhere}}
+
+
+@media(min-width:1900px){html{font-size:112.5%}}
+@media(min-width:2400px){html{font-size:125%}}
+

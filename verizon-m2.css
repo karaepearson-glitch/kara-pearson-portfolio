@@ -87,3 +87,13 @@
 .aiw>div{border-top:1px solid #eadccd!important}
 
 .cs>h4{border-top:0!important;padding-top:0!important}
+
+.utl{grid-template-columns:minmax(0,1fr)}.utl>*,.utl-a{min-width:0}
+@media(max-width:700px){.utl .stats>div{height:auto!important;min-height:0!important}.utl .ut img{flex:1 1 40%!important;min-width:0}}
+
+
+@media(max-width:700px){.utl .stats>div{aspect-ratio:auto!important}}
+
+
+.utl .stats>div{flex:0 0 auto}
+
