@@ -828,3 +828,4 @@ a.thumb{display:block;cursor:pointer}
 @media(min-width:1900px){html{font-size:112.5%}}
 @media(min-width:2400px){html{font-size:125%}}
 
+@media(max-width:520px){.now-chips{gap:.35rem}.now-chips li+li::before{display:none}.now-chips li{align-items:baseline}}
