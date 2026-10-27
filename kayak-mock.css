@@ -620,3 +620,5 @@
 .cs .xf .fn>p,.cs .xf .fn3>p,.cs .xf .fn4>p{font-size:1.1rem!important;font-weight:600;line-height:1.4;letter-spacing:0}
 .cs .xf .fn .fd p{font-size:.95rem!important;line-height:1.5;letter-spacing:0;font-weight:400}.cs .xf .fn .fd p b{font-weight:600}
 .cs .xf .fn2 .fnr p{font-size:.95rem!important}.cs .xf .fn2 .fnr b{font-size:1rem}
+.xf .fn+.fn{margin-top:2.2rem!important}
+.xf .fn+.fn::before{top:-1.7rem;width:.8rem;height:.8rem;border-width:2px;border-color:#f0a56b;border-radius:1px}
