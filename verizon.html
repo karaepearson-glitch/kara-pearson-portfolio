@@ -91,9 +91,9 @@
       </div>
     </details>
     <details>
-      <summary><span class="st-n">04</span><span class="st-t"><b>Personas</b><em>Sarah and Jason anchored our decisions.</em></span><i></i></summary>
+      <summary><span class="st-n">04</span><span class="st-t"><b>Personas</b><em>Sarah, our primary persona, and Jason.</em></span><i></i></summary>
       <div class="st-body">
-        <div class="finds four"><div><b>Sarah, 42</b><span>HR consultant managing a family plan at $265–310 a month. Her bill jumps from about $260 to $302 and she only checks when the total changes. Her hardest question: "which family member caused the increase?"</span></div><div><b>Jason, 26</b><span>Marketing associate paying $85–110 a month. His bill goes from about $92 to $108 and he tracks spending in a budgeting app. He wants to know what changed without calling support.</span></div></div>
+        <div class="pers"><figure class="pp"><span class="pt">Primary persona</span><img src="img/verizon/persona-sarah.png" alt="Persona card for Sarah Smith, 42, HR consultant managing a family plan with four lines" loading="lazy"><figcaption>We focused on Sarah because a plan with several people means more charges to untangle and more confusion about what changed.</figcaption></figure><figure class="ps2"><span class="pt">Secondary persona</span><img src="img/verizon/persona-jason.png" alt="Persona card for Jason Lee, 26, marketing associate with a single line" loading="lazy"><figcaption>Jason, 26, a single line who wants to know what changed without calling support.</figcaption></figure></div>
       </div>
     </details>
   </div>
@@ -215,5 +215,5 @@ s.querySelectorAll('b[data-n]').forEach(function(b){var n=+b.dataset.n,t0=null;f
 xf.querySelectorAll('.fn').forEach(function(s){io.observe(s)});})();
 document.querySelectorAll('.xf .fn').forEach(function(f){function tg(){var o=f.classList.toggle('open');f.setAttribute('aria-expanded',o)}f.addEventListener('click',function(e){if(e.target.closest('a,.fd'))return;tg()});f.addEventListener('keydown',function(e){if(e.target!==f)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();tg()}})});
 document.querySelectorAll('.fnr>div').forEach(function(c){function pick(e){e.stopPropagation();var fd=c.closest('.fn'),i=+c.dataset.sx;fd.querySelectorAll('.fnr>div').forEach(function(x){x.classList.toggle('on',x===c)});fd.querySelectorAll('.sx-p').forEach(function(x,j){x.classList.toggle('on',j===i)});if(!fd.classList.contains('open')){fd.classList.add('open');fd.setAttribute('aria-expanded','true')}}c.addEventListener('click',pick);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(e)}})});
-document.querySelectorAll('.oc img').forEach(function(i){i.addEventListener('click',function(ev){ev.stopPropagation();var o=document.createElement('div');o.className='lb';var m=document.createElement('img');m.src=i.src;m.alt=i.alt;o.appendChild(m);function k(ev){if(ev.key==='Escape'){o.remove();document.removeEventListener('keydown',k)}}o.addEventListener('click',function(){o.remove();document.removeEventListener('keydown',k)});document.addEventListener('keydown',k);document.body.appendChild(o)})});</script></body>
+document.querySelectorAll('.oc img,.pers img').forEach(function(i){i.addEventListener('click',function(ev){ev.stopPropagation();var o=document.createElement('div');o.className='lb';var m=document.createElement('img');m.src=i.src;m.alt=i.alt;o.appendChild(m);function k(ev){if(ev.key==='Escape'){o.remove();document.removeEventListener('keydown',k)}}o.addEventListener('click',function(){o.remove();document.removeEventListener('keydown',k)});document.addEventListener('keydown',k);document.body.appendChild(o)})});</script></body>
 </html>
