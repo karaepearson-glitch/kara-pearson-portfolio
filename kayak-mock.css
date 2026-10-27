@@ -623,3 +623,12 @@
 .xf .fn+.fn{margin-top:2.2rem!important}
 .xf .fn+.fn::before{top:-1.7rem;width:.8rem;height:.8rem;border-width:2px;border-color:#f0a56b;border-radius:1px}
 .cs .xf .fn3 .fd p>b:first-child{display:block;margin-bottom:.2rem}.cs .xf .fn3 .fd p+p{margin-top:1rem}
+.dive.vz{margin:1.4rem 0 2.2rem}
+.dive.vz .dv-nav{padding-top:0;gap:.8rem}.dive.vz .dv-nav:before,.dive.vz .plane,.dive.vz .dv-nav button .n{display:none!important}
+.dive.vz .dv-nav button,.dive.vz .dv-nav button.on{background:#fff;border:1px solid #f0d9c4!important;border-radius:14px;box-shadow:none;padding:1rem 1.1rem;transform:none}
+.dive.vz .dv-nav button:hover{background:#fff7f0;transform:none;box-shadow:none}
+.dive.vz .dv-nav button.on{border:1.5px solid #ff6a00!important;padding:calc(1rem - .5px) calc(1.1rem - .5px)}
+.dive.vz .dv-nav button b{font-size:1rem;color:#2a2018;margin:0 0 .25rem}.dive.vz .dv-nav button.on b{color:#2a2018}
+.dive.vz .dv-nav button em{font-size:.9rem;color:#6b5d52}.dive.vz .dv-nav button.on em{color:#6b5d52}
+.dive.vz.tabbed .st-body{background:#fff;border:1px solid #f0d9c4;border-radius:14px;padding:1.3rem 1.4rem;margin-top:.8rem}
+.dive.vz .finds.four div{border-left:0;padding-left:0}.dive.vz .finds.four b{color:#c2410c}
