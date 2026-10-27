@@ -805,3 +805,7 @@ a.thumb{display:block;cursor:pointer}
 .thumb.wip .ring,.thumb.wip .wscr .cd{animation:none!important}
 .case:hover .thumb.wip .wf.wf2{transform:translateX(-50%) translateX(12%) rotate(6deg)}
 
+
+.private-work h2{margin-bottom:.6rem!important}
+.private-work .pw-lead{margin-bottom:1.5rem}
+
