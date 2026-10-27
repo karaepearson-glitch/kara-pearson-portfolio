@@ -801,3 +801,7 @@ a.thumb{display:block;cursor:pointer}
 .ai-block .ai-proof{margin-top:1.25rem;padding:1.5rem;border:1px solid rgba(194,65,12,.12);border-left:1px solid rgba(194,65,12,.12);background:#fbf6f0;border-radius:var(--r-lg);max-width:none;color:var(--muted);font-size:var(--fs-body)}
 .ai-block .ai-proof strong{color:var(--fg)}
 
+
+.thumb.wip .ring,.thumb.wip .wscr .cd{animation:none!important}
+.case:hover .thumb.wip .wf.wf2{transform:translateX(-50%) translateX(12%) rotate(6deg)}
+
