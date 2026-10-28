@@ -56,3 +56,9 @@
 .kl-g .doc{background:#7c2d12;color:#fff;border-radius:8px}
 .kl-g hr{border:0;margin:.2rem 0}
 @media(max-width:600px){.kl-g span{font-size:.6rem;padding:0 .15rem}.kl-g div{height:1.7rem}}
+.kl-dec{grid-template-columns:repeat(2,1fr);gap:1rem}
+.kl-dec>div{grid-template-columns:2.4rem 1fr;padding:1.1rem 1.2rem;background:#fffaf5;border:1px solid #f1e3d6;border-radius:14px}
+.kl-dec h4{font-size:1.05rem}
+.kl-grid3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:700px){.kl-dec,.kl-grid3{grid-template-columns:1fr}}
+.kl-vs{align-items:stretch}.kl-vs section{margin:0;min-height:0}
