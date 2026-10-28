@@ -124,3 +124,5 @@
 .kl-shots img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.12);background:#fff}
 .kl-shots figcaption{margin-top:10px;font-size:14px;text-align:center}
 @media(max-width:700px){.kl-shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px;gap:14px}.kl-shots figure{flex:0 0 62%;scroll-snap-align:center}}
+
+.kl-land{margin:2rem 0}.kl-land-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}.kl-land-grid span{display:flex;align-items:center;justify-content:center;text-align:center;min-height:4.2rem;padding:.7rem 1rem;border:1.5px dashed #e6cdb3;border-radius:16px;background:#fff;color:#5a4d43;font-weight:600}.kl-land-grid .core{flex-direction:column;border:0;background:#ff6a00;color:#fff;font-size:1.05rem;line-height:1.25}.kl-land-grid .core small{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;opacity:.9;margin-bottom:.25rem}.kl-land figcaption{font-size:.9rem;color:var(--muted);margin-top:.6rem}@media(max-width:700px){.kl-land-grid{grid-template-columns:repeat(2,1fr)}.kl-land-grid .core{grid-column:1/-1;order:-1}}
