@@ -46,3 +46,13 @@
 .kl-dec>div>i{font-style:normal;width:2.4rem;height:2.4rem;border-radius:50%;background:#ff6a00;color:#fff;font-weight:600;display:grid;place-items:center}
 .kl-dec h4{margin:0 0 .3rem;font-size:1.15rem}.kl-dec p{margin:0}
 .kl-bpm p{margin:0;line-height:1.5}
+.kl-gantt{margin:1.6rem 0;padding:1.2rem;border:1px solid #f1e3d6;border-radius:16px;background:#fffaf5}
+.kl-gantt h6{margin:0 0 .9rem;font:600 .78rem/1 inherit;letter-spacing:.08em;text-transform:uppercase;color:#9a3412}
+.kl-g{position:relative;display:grid;gap:.45rem;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(16.666% - 1px),#f1e3d6 calc(16.666% - 1px),#f1e3d6 16.666%)}
+.kl-g div{position:relative;height:2rem}
+.kl-g span{position:absolute;top:0;bottom:0;display:grid;place-items:center;border-radius:999px;font-size:.78rem;font-weight:600;white-space:nowrap;overflow:hidden;padding:0 .4rem;box-sizing:border-box}
+.kl-g .ms{border:2px solid #ff6a00;background:#fff;color:#9a3412}
+.kl-g .ph{background:#ff6a00;color:#fff;border-radius:8px}
+.kl-g .doc{background:#7c2d12;color:#fff;border-radius:8px}
+.kl-g hr{border:0;margin:.2rem 0}
+@media(max-width:600px){.kl-g span{font-size:.6rem;padding:0 .15rem}.kl-g div{height:1.7rem}}
