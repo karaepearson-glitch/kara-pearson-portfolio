@@ -52,7 +52,7 @@
 .kl-g div{position:relative;height:2rem}
 .kl-g span{position:absolute;top:0;bottom:0;display:grid;place-items:center;border-radius:999px;font-size:.78rem;font-weight:600;white-space:nowrap;overflow:hidden;padding:0 .4rem;box-sizing:border-box}
 .kl-g .ms{border:2px solid #ff6a00;background:#fff;color:#9a3412}
-.kl-g .ph{background:#ff6a00;color:#fff;border-radius:8px}
+.kl-g .gph{background:#ff6a00;color:#fff;border-radius:8px}
 .kl-g .doc{background:#7c2d12;color:#fff;border-radius:8px}
 .kl-g hr{border:0;margin:.2rem 0}
 @media(max-width:600px){.kl-g span{font-size:.6rem;padding:0 .15rem}.kl-g div{height:1.7rem}}
