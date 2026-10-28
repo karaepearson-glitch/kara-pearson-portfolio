@@ -151,3 +151,5 @@
 .kp-top h5{margin-bottom:.4rem}.kp-a{height:2.6rem;margin:.2rem 0}
 
 .kp-l{background:none;border:0;box-shadow:none;border-radius:50%}.kp-l:before{content:"";position:absolute;left:12%;right:12%;bottom:-6%;height:22%;border-radius:50%;background:radial-gradient(closest-side,rgba(26,22,20,.22),rgba(26,22,20,0));filter:blur(3px)}.kp-l img{position:relative;width:84%;height:84%;border-radius:14px;filter:drop-shadow(0 6px 8px rgba(26,22,20,.2))}@keyframes klf{0%,100%{transform:translate(0,0)}50%{transform:translate(2px,-4px)}}
+
+.kp-l{animation-duration:calc(var(--t) * 2.5)}@keyframes klf{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
